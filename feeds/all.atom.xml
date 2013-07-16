@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>if have_idea == 1: type(topic,words)</title><link href="http://localhost:8000/" rel="alternate"></link><link href="http://localhost:8000/feeds/all.atom.xml" rel="self"></link><id>http://localhost:8000/</id><updated>2013-07-16T17:50:13Z</updated></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>if have_idea == 1: type(topic,words)</title><link href="http://localhost:8000/" rel="alternate"></link><link href="http://localhost:8000/feeds/all.atom.xml" rel="self"></link><id>http://localhost:8000/</id><updated>2013-07-16T17:58:56Z</updated></feed>
