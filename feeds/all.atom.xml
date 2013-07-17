@@ -331,16 +331,18 @@ rake deploy
 
 &lt;p&gt;This will cleanly and nicely regenerate the static html, and update both the source and site in the repo. &lt;/p&gt;
 &lt;h1&gt;Setting up a computer to blog from for the first time&lt;/h1&gt;
-&lt;p&gt;&lt;code&gt;bash Cloning and setting up an existing blog http://code.dblock.org/octopress-setting-up-a-blog-and-contributing-to-an-existing-one Source
-$ git clone git@github.com:username/username.github.com.git
-$ cd username.github.com
-username.github.com$ git checkout source
-username.github.com$ mkdir _deploy
-username.github.com$ cd _deploy
-username.github.com/_deploy$ git init
-username.github.com/_deploy$ git remote add origin git@github.com:username/username.github.com.git
-username.github.com/_deploy$ git pull origin master
-username.github.com/_deploy$ cd ..
-username.github.com$&lt;/code&gt;
-After you do all that, make sure you get the latest version from the repo using the scripts in the top of the post.
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git clone git@github.com:username/username.github.com.git
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;username.github.com
+username.github.com&lt;span class="nv"&gt;$ &lt;/span&gt;git checkout &lt;span class="nb"&gt;source&lt;/span&gt;
+username.github.com&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir _deploy
+username.github.com&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;_deploy
+username.github.com/_deploy&lt;span class="nv"&gt;$ &lt;/span&gt;git init
+username.github.com/_deploy&lt;span class="nv"&gt;$ &lt;/span&gt;git remote add origin git@github.com:username/username.github.com.git
+username.github.com/_deploy&lt;span class="nv"&gt;$ &lt;/span&gt;git pull origin master
+username.github.com/_deploy&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ..
+username.github.com&lt;span class="err"&gt;$&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;After you do all that, make sure you get the latest version from the repo using the scripts in the top of the post.
 Hope that helps!&lt;/p&gt;</summary></entry></feed>
