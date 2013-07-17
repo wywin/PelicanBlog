@@ -14,6 +14,8 @@ SECTIONS = [('Blog', 'index.html'),
         ('Archive', 'archives.html'),
         ('About', 'pages/about.html')]
 
+GOOGLE_ANALYTICS_ACCOUNT = 'UA-40482036-1'
+
 DEFAULT_DATE_FORMAT = '%d %m %Y'
 GITHUB_URL = 'http://github.com/wywin'
 
