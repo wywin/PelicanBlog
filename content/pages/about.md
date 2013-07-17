@@ -24,5 +24,5 @@ Here are some links about / related to me:
 This Wyatt Winters:
 <ul>
 	<li>is not<a href="http://www.reverbnation.com/wyattwinters"> a guitar man</a></li>
-	<li>does not have <a href="http://riverview.nebo.edu/news/wyatt-winters-and-his-enthusiasm-his-country-infectious">infectious enthusiam for his country</a></li>
+	<li>does not have <a href="http://riverview.nebo.edu/news/wyatt-winters-and-his-enthusiasm-his-country-infectious">infectious enthusiasm for his country</a></li>
 </ul>
