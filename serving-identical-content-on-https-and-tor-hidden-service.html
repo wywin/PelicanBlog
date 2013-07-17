@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css' />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title> "Serving identical content on HTTPS and Tor hidden service" | if have_idea == 1: type(topic,words) </title>
+
+    <link rel="stylesheet" href="http://localhost:8000/theme/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:8000/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:8000/theme/css/font-awesome.css" type="text/css"/>
+  </head>
+  <body>
+    <div class=container>
+                    
+      <div class=navigation>
+        <ul>
+                      <li><a href="http://localhost:8000/index.html">Blog</a> </li>
+                      <li><a href="http://localhost:8000/archives.html">Archive</a> </li>
+                      <li><a href="http://localhost:8000/pages/about.html">About</a> </li>
+                  </ul>
+      </div>
+      <div class=separator></div>                
+        <div class=body>
+            <h1 class="title"> "Serving identical content on HTTPS and Tor hidden service"</h1>
+    <p class=date> 03 07 2013 </p>
+    <hr />
+<p>I recently came into an interesting problem- I wanted to serve the same website over the clearnet (the regular internet) using <em>only</em> HTTPS, and serve that same content over a Tor hidden service. I assume you have at this point a web server installed (I like Apache) that will successfully serve HTTPS exclusively, but need to add the Tor.</p>
+<!-- more -->
+
+<ol>
+<li>
+<p>Install Tor. You will want to use <a href="https://www.torproject.org/download/download-unix.html.en">the Tor Project's repos</a> to make sure you have the most up-to-date version.</p>
+</li>
+<li>
+<p>Edit your torrc. It is likely at /etc/tor/torrc. Uncomment the following lines:</p>
+<div class="highlight"><pre><span class="n">HiddenServiceDir</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">tor</span><span class="o">/</span><span class="n">hiddenService</span><span class="o">/</span>
+<span class="n">HiddenServicePort</span> <span class="mi">80</span> <span class="mf">127.0.0.1</span><span class="o">:</span><span class="mi">80</span>
+</pre></div>
+
+
+<p>and/or adjust them accordingly. If you have Apache listening on 443 (for HTTPS) and 80, you should be set with this config.</p>
+</li>
+<li>
+<p>Restart Tor to apply new settings. In Debian Wheezy: </p>
+<div class="highlight"><pre><span class="n">sudo</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">init</span><span class="p">.</span><span class="n">d</span><span class="o">/</span><span class="n">tor</span> <span class="n">restart</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Get your hostname</p>
+<div class="highlight"><pre><span class="n">sudo</span> <span class="n">cat</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">tor</span><span class="o">/</span><span class="n">hiddenService</span><span class="o">/</span><span class="n">hostname</span>
+</pre></div>
+
+
+<p>should be a string of characters followed by ".onion".</p>
+</li>
+<li>
+<p>Backup your private key</p>
+<div class="highlight"><pre><span class="n">sudo</span> <span class="n">cp</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">tor</span><span class="o">/</span><span class="n">hiddenService</span><span class="o">/</span><span class="n">privateKey</span> <span class="o">/</span><span class="n">root</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Adjust your public html folder to move users based on their requested site</p>
+<ol>
+<li>
+<p>Enable mod_rewrite (if not already)</p>
+<div class="highlight"><pre><span class="n">sudo</span> <span class="n">a2enmod</span> <span class="n">rewrite</span>
+</pre></div>
+
+
+</li>
+<li>
+<p>Edit (on a default Debian Wheezy apache install) /var/www/.htaccess and add:</p>
+<div class="highlight"><pre><span class="n">RewriteEngine</span> <span class="n">On</span>
+<span class="n">RewriteCond</span> <span class="o">%</span><span class="p">{</span><span class="n">HTTP_HOST</span><span class="p">}</span> <span class="o">!^</span><span class="n">youronionaddress</span><span class="p">.</span><span class="n">onion</span><span class="err">$</span>
+<span class="n">RewriteCond</span> <span class="o">%</span><span class="p">{</span><span class="n">HTTPS</span><span class="p">}</span> <span class="o">!</span><span class="n">on</span>
+<span class="n">RewriteRule</span> <span class="p">(.</span><span class="o">*</span><span class="p">)</span> <span class="n">https</span><span class="o">:</span><span class="c1">//%{HTTP_HOST}%{REQUEST_URI}</span>
+</pre></div>
+
+
+</li>
+</ol>
+</li>
+<li>
+<p>Test it out!</p>
+</li>
+</ol>
+<p>The .htaccess does the following:</p>
+<ol>
+<li>
+<p>Is the user not requesting the .onion? (Tor hidden services get confused when you talk HTTPS to them)</p>
+</li>
+<li>
+<p>Is HTTPS not on? (If they don't want the .onion, and HTTPS isn't on, we should turn it on!)</p>
+</li>
+<li>
+<p>If conditions 1 and 2 are met:</p>
+</li>
+<li>
+<p>Send them back to whatever address they requested, but with HTTPS.</p>
+</li>
+</ol>
+<p>Granted this does NOT hide the location of your webserver, but it will allow Tor users to save precious exit node bandwidth by staying inside the Tor network. This is especially neat because changes made on the clearnet will be reflected on the hidden service side, and vice versa.  </p>
+    
+    <div class=twitter>
+<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+            </div>
+        
+                    <div class=footer>
+  <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a></p>
+  <p> Powered by <a href="http://pypi.python.org/pypi/pelican/" target="_blank">Pelican</a>.  
+    <a href="https://github.com/fjavieralba/flasky">Theme</a>  by <a href="http://fjavieralba.com">fjavieralba</a>
+  </p> 
+  <p>
+    <div class=social style="font-size: 27px;">
+      <ul>
+        <script language="JavaScript">
+          u = 'blog';
+          s = 'wyattwinters.com';
+          document.write('<a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\">');
+        </script>
+            <li><i class="icon-envelope icon-large"></i> </li>
+        </a>
+        <a href="http://twitter.com/wyatt_winters" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a>
+        <a href="http://www.linkedin.com/in/wyattwinters"><li><i class="icon-linkedin-sign icon-large" ></i></li></a>
+        <a href="http://github.com/wywin" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
+        <a href="http://localhost:8000/feeds/all.rss.xml" rel="alternate" title="Recent Blog Posts"><li> <i class="icon-rss icon-large"></i> </li></a>
+      </ul>
+    </div>
+  </p>
+</div>            </div>
+          </body>
+</html>

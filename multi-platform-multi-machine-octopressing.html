@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css' />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title> "Multi-platform, multi-machine Octopressing" | if have_idea == 1: type(topic,words) </title>
+
+    <link rel="stylesheet" href="http://localhost:8000/theme/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:8000/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:8000/theme/css/font-awesome.css" type="text/css"/>
+  </head>
+  <body>
+    <div class=container>
+                    
+      <div class=navigation>
+        <ul>
+                      <li><a href="http://localhost:8000/index.html">Blog</a> </li>
+                      <li><a href="http://localhost:8000/archives.html">Archive</a> </li>
+                      <li><a href="http://localhost:8000/pages/about.html">About</a> </li>
+                  </ul>
+      </div>
+      <div class=separator></div>                
+        <div class=body>
+            <h1 class="title"> "Multi-platform, multi-machine Octopressing"</h1>
+    <p class=date> 29 04 2013 </p>
+    <hr />
+<p>Moving to Octopress was a bit of a challenge. Moving from the centralized, easy-to-manage Wordpress ecosystem to the distributed git-managed Octopress was a kick in the head. After acciedently and repeatedly overwriting my own posts and configurations, I decided to clear up the problem once and for all. </p>
+<p>Blogging on Octopress from  multiple machines, without doing it a <em>very</em> specific way, does bad, bad things to the blog. To rectify this, I make some scripts to treat the repo as the authoritative copy. </p>
+<!-- more -->
+
+<h1>Get latest version from repo</h1>
+<p>Before starting to work I run this:</p>
+<div class="highlight"><pre><span class="c">#!/bin/bash</span>
+git fetch
+git reset --hard origin/source
+git pull origin <span class="nb">source</span>
+<span class="nb">cd</span> ./_deploy
+git fetch
+git reset --hard origin/master
+git pull origin master
+<span class="nb">cd</span> ..
+</pre></div>
+
+
+<p>or on Windows:</p>
+<div class="highlight"><pre><span class="n">call</span> <span class="n">git</span> <span class="n">fetch</span> <span class="n">origin</span>
+<span class="n">call</span> <span class="n">git</span> <span class="n">reset</span> <span class="o">--</span><span class="n">hard</span> <span class="n">origin</span><span class="o">/</span><span class="n">source</span>
+<span class="n">call</span> <span class="n">git</span> <span class="n">pull</span> <span class="n">origin</span> <span class="n">source</span>
+<span class="n">cd</span> <span class="p">.</span><span class="o">/</span><span class="n">_deploy</span>
+<span class="n">call</span> <span class="n">git</span> <span class="n">fetch</span> <span class="n">origin</span>
+<span class="n">call</span> <span class="n">git</span> <span class="n">reset</span> <span class="o">--</span><span class="n">hard</span> <span class="n">origin</span><span class="o">/</span><span class="n">master</span>
+<span class="n">call</span> <span class="n">git</span> <span class="n">pull</span> <span class="n">origin</span> <span class="n">master</span>
+<span class="n">cd</span> <span class="p">..</span>
+</pre></div>
+
+
+<p>to effectively mirror the existing stuff on the repo, destroying(!) any unpushed changes on my current machine.</p>
+<h1>After writing a post, page, or otherwise updating the site</h1>
+<div class="highlight"><pre><span class="c">#!/bin/bash</span>
+rake generate
+git add .
+git commit -m <span class="s2">&quot;updating via script!&quot;</span>
+git push origin <span class="nb">source</span>
+rake deploy
+</pre></div>
+
+
+<p>or on Windows</p>
+<div class="highlight"><pre><span class="n">call</span> <span class="n">rake</span> <span class="n">generate</span>
+<span class="n">call</span> <span class="n">git</span> <span class="n">add</span> <span class="p">.</span>
+<span class="n">call</span> <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s">&quot;updating via script on Windows!&quot;</span>
+<span class="n">call</span> <span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">source</span>
+<span class="n">call</span> <span class="n">rake</span> <span class="n">deploy</span>
+</pre></div>
+
+
+<p>This will cleanly and nicely regenerate the static html, and update both the source and site in the repo. </p>
+<h1>Setting up a computer to blog from for the first time</h1>
+<p><code>bash Cloning and setting up an existing blog http://code.dblock.org/octopress-setting-up-a-blog-and-contributing-to-an-existing-one Source
+$ git clone git@github.com:username/username.github.com.git
+$ cd username.github.com
+username.github.com$ git checkout source
+username.github.com$ mkdir _deploy
+username.github.com$ cd _deploy
+username.github.com/_deploy$ git init
+username.github.com/_deploy$ git remote add origin git@github.com:username/username.github.com.git
+username.github.com/_deploy$ git pull origin master
+username.github.com/_deploy$ cd ..
+username.github.com$</code>
+After you do all that, make sure you get the latest version from the repo using the scripts in the top of the post.
+Hope that helps!</p>
+    
+    <div class=twitter>
+<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+            </div>
+        
+                    <div class=footer>
+  <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a></p>
+  <p> Powered by <a href="http://pypi.python.org/pypi/pelican/" target="_blank">Pelican</a>.  
+    <a href="https://github.com/fjavieralba/flasky">Theme</a>  by <a href="http://fjavieralba.com">fjavieralba</a>
+  </p> 
+  <p>
+    <div class=social style="font-size: 27px;">
+      <ul>
+        <script language="JavaScript">
+          u = 'blog';
+          s = 'wyattwinters.com';
+          document.write('<a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\">');
+        </script>
+            <li><i class="icon-envelope icon-large"></i> </li>
+        </a>
+        <a href="http://twitter.com/wyatt_winters" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a>
+        <a href="http://www.linkedin.com/in/wyattwinters"><li><i class="icon-linkedin-sign icon-large" ></i></li></a>
+        <a href="http://github.com/wywin" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
+        <a href="http://localhost:8000/feeds/all.rss.xml" rel="alternate" title="Recent Blog Posts"><li> <i class="icon-rss icon-large"></i> </li></a>
+      </ul>
+    </div>
+  </p>
+</div>            </div>
+          </body>
+</html>
