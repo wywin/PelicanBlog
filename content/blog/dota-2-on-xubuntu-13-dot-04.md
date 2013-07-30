@@ -4,6 +4,8 @@ comments: false
 categories: linux games wine
 ---
 
+***UPDATE*** Valve was awesome enough to do a native Linux port. [Get that version instead!](http://store.steampowered.com/app/570/)
+
 Dota 2 is a really good game. Linux is really good. Out of the box, they don't play nice together. Let's fix that!
 
 <!-- more -->
