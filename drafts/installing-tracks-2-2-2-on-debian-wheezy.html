@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css' />
+    <link href="http://wyattwinters.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title> Installing Tracks 2.2.2 on Debian Wheezy | if have_idea == 1: type(topic,words) </title>
+
+    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/font-awesome.css" type="text/css"/>
+  </head>
+  <body>
+    <div class=container>
+                    
+      <div class=navigation>
+        <ul>
+                      <li><a href="http://wyattwinters.com/index.html">Blog</a> </li>
+                      <li><a href="http://wyattwinters.com/archives.html">Archive</a> </li>
+                      <li><a href="http://wyattwinters.com/pages/about.html">About</a> </li>
+                  </ul>
+      </div>
+      <div class=separator></div>                
+        <div class=body>
+            <h1 class="title"> Installing Tracks 2.2.2 on Debian Wheezy</h1>
+    <p class=date> 30 07 2013 </p>
+    <hr />
+<p>This is a chronicle of my first Ruby on Rails deployment, and the things I learned while doing so. It is likely straight-forward and obvious for Rails vets, but hopefully this will help people who just want to host and use the great tool that is <a href="http://getontracks.org/">Tracks</a> without too much hassle. </p>
+<p>Assumed: apache2, mysql (you <a href="https://github.com/TracksApp/tracks/blob/v2.2.2/doc/installation.textile#decide-on-a-database">can use sqlite3</a> but I won't cover that here)
+optional: php5, phpmyadmin</p>
+<p>First, let's create a database and user for Tracks to use.
+I used phpmyadmin here because its easiest for me, but you can do it as you see fit.</p>
+<div class="highlight"><pre><span class="n">CREATE</span> <span class="n">USER</span> <span class="err">&#39;</span><span class="n">tracks</span><span class="sc">&#39;@&#39;</span><span class="n">localhost</span><span class="err">&#39;</span> <span class="n">IDENTIFIED</span> <span class="n">BY</span> <span class="err">&#39;</span><span class="o">***</span><span class="err">&#39;</span><span class="p">;</span>
+
+<span class="n">GRANT</span> <span class="n">USAGE</span> <span class="n">ON</span> <span class="o">*</span> <span class="p">.</span> <span class="o">*</span> <span class="n">TO</span> <span class="err">&#39;</span><span class="n">tracks</span><span class="sc">&#39;@&#39;</span><span class="n">localhost</span><span class="err">&#39;</span> <span class="n">IDENTIFIED</span> <span class="n">BY</span> <span class="err">&#39;</span><span class="o">***</span><span class="err">&#39;</span> <span class="n">WITH</span> <span class="n">MAX_QUERIES_PER_HOUR</span> <span class="mi">0</span> <span class="n">MAX_CONNECTIONS_PER_HOUR</span> <span class="mi">0</span> <span class="n">MAX_UPDATES_PER_HOUR</span> <span class="mi">0</span> <span class="n">MAX_USER_CONNECTIONS</span> <span class="mi">0</span> <span class="p">;</span>
+
+<span class="n">CREATE</span> <span class="n">DATABASE</span> <span class="n">IF</span> <span class="n">NOT</span> <span class="n">EXISTS</span> <span class="err">`</span><span class="n">tracks</span><span class="err">`</span> <span class="p">;</span>
+
+<span class="n">GRANT</span> <span class="n">ALL</span> <span class="n">PRIVILEGES</span> <span class="n">ON</span> <span class="err">`</span><span class="n">tracks</span><span class="err">`</span> <span class="p">.</span> <span class="o">*</span> <span class="n">TO</span> <span class="err">&#39;</span><span class="n">tracks</span><span class="sc">&#39;@&#39;</span><span class="n">localhost</span><span class="err">&#39;</span><span class="p">;</span>
+</pre></div>
+
+
+<p>Switch into a root shell with </p>
+<div class="highlight"><pre><span class="n">sudo</span> <span class="o">-</span><span class="n">s</span>
+</pre></div>
+
+
+<p>for the remainder of the install process.</p>
+<p>We need some packages, so let's install them:</p>
+<div class="highlight"><pre><span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">curl</span> <span class="n">unzip</span> <span class="n">libxslt</span><span class="o">-</span><span class="n">dev</span> <span class="n">libxml2</span><span class="o">-</span><span class="n">dev</span> <span class="n">libmysql</span><span class="o">-</span><span class="n">ruby</span> <span class="n">libmysqlclient</span><span class="o">-</span><span class="n">dev</span> <span class="n">libcurl4</span><span class="o">-</span><span class="n">openssl</span><span class="o">-</span><span class="n">dev</span> <span class="n">apache2</span><span class="o">-</span><span class="n">threaded</span><span class="o">-</span><span class="n">dev</span> <span class="n">libapr1</span><span class="o">-</span><span class="n">dev</span> <span class="n">libaprutil1</span><span class="o">-</span><span class="n">dev</span>
+</pre></div>
+
+
+<p>Tracks works best with Ruby 1.9.3, so we will use Ruby Version Manager (RVM) to install it. </p>
+<div class="highlight"><pre><span class="err">\</span><span class="n">curl</span> <span class="o">-</span><span class="n">L</span> <span class="n">https</span><span class="o">:</span><span class="c1">//get.rvm.io | bash</span>
+<span class="n">source</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">profile</span><span class="p">.</span><span class="n">d</span><span class="o">/</span><span class="n">rvm</span><span class="p">.</span><span class="n">sh</span>
+<span class="n">rvm</span> <span class="n">requirements</span>
+<span class="n">rvm</span> <span class="n">install</span> <span class="mf">1.9.3</span>
+</pre></div>
+
+
+<p>Verify </p>
+<div class="highlight"><pre><span class="n">which</span> <span class="n">ruby</span>
+</pre></div>
+
+
+<p>and</p>
+<div class="highlight"><pre><span class="n">which</span> <span class="n">gem</span>
+</pre></div>
+
+
+<p>both point to </p>
+<div class="highlight"><pre><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">rvm</span><span class="o">/</span><span class="n">rubies</span><span class="o">/</span><span class="n">ruby</span><span class="o">-</span><span class="mf">1.9.3</span><span class="o">-</span><span class="n">p448</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">ruby</span>
+</pre></div>
+
+
+<p>or similar.</p>
+<p>Now we have Ruby all situated, it's time to get Tracks.
+In /root run:</p>
+<div class="highlight"><pre><span class="n">wget</span> <span class="n">https</span><span class="o">:</span><span class="c1">//github.com/TracksApp/tracks/zipball/v2.2.2</span>
+<span class="n">mkdir</span> <span class="o">/</span><span class="n">srv</span><span class="o">/</span><span class="n">tracks</span>
+<span class="n">unzip</span> <span class="n">v2</span><span class="mf">.2.2</span> <span class="o">-</span><span class="n">d</span> <span class="o">/</span><span class="n">srv</span><span class="o">/</span><span class="n">tracks</span>
+</pre></div>
+
+
+<p>Now Tracks is unzipped and ready to be configured.</p>
+<div class="highlight"><pre><span class="n">cd</span> <span class="o">/</span><span class="n">srv</span><span class="o">/</span><span class="n">tracks</span>
+<span class="n">gem</span> <span class="n">install</span> <span class="n">bundler</span>
+<span class="n">bundle</span> <span class="n">install</span>
+<span class="n">gem</span> <span class="n">install</span> <span class="n">passenger</span>
+<span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">rvm</span><span class="o">/</span><span class="n">gems</span><span class="o">/</span><span class="n">ruby</span><span class="o">-</span><span class="mf">1.9.3</span><span class="o">-</span><span class="n">p448</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">passenger</span><span class="o">-</span><span class="n">install</span><span class="o">-</span><span class="n">apache2</span><span class="o">-</span><span class="n">module</span>
+</pre></div>
+
+
+<p>append to /etc/apache2/apache2.conf</p>
+<div class="highlight"><pre><span class="n">LoadModule</span> <span class="n">passenger_module</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">rvm</span><span class="o">/</span><span class="n">gems</span><span class="o">/</span><span class="n">ruby</span><span class="o">-</span><span class="mf">1.9.3</span><span class="o">-</span><span class="n">p448</span><span class="o">/</span><span class="n">gems</span><span class="o">/</span><span class="n">passenger</span><span class="o">-</span><span class="mf">4.0.10</span><span class="o">/</span><span class="n">buildout</span><span class="o">/</span><span class="n">apache2</span><span class="o">/</span><span class="n">mod_passenger</span><span class="p">.</span><span class="n">so</span>
+<span class="n">PassengerRoot</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">rvm</span><span class="o">/</span><span class="n">gems</span><span class="o">/</span><span class="n">ruby</span><span class="o">-</span><span class="mf">1.9.3</span><span class="o">-</span><span class="n">p448</span><span class="o">/</span><span class="n">gems</span><span class="o">/</span><span class="n">passenger</span><span class="o">-</span><span class="mf">4.0.10</span>
+<span class="n">PassengerDefaultRuby</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">rvm</span><span class="o">/</span><span class="n">wrappers</span><span class="o">/</span><span class="n">ruby</span><span class="o">-</span><span class="mf">1.9.3</span><span class="o">-</span><span class="n">p448</span><span class="o">/</span><span class="n">ruby</span>
+<span class="n">PassengerDefaultUser</span> <span class="n">www</span><span class="o">-</span><span class="n">data</span>
+</pre></div>
+
+
+<p>RailsBaseURI
+bundle exec rake db:migrate RAILS_ENV=production
+bundle exec rake assets:precompile</p>
+    
+            </div>
+        
+                    <div class=footer>
+  <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a></p>
+  <p> Powered by <a href="http://pypi.python.org/pypi/pelican/" target="_blank">Pelican</a>.  
+    <a href="https://github.com/fjavieralba/flasky">Theme</a>  by <a href="http://fjavieralba.com">fjavieralba</a>
+  </p> 
+  <p>
+    <div class=social style="font-size: 27px;">
+      <ul>
+        <script language="JavaScript">
+          u = 'blog';
+          s = 'wyattwinters.com';
+          document.write('<a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\">');
+        </script>
+            <li><i class="icon-envelope icon-large"></i> </li>
+        </a>
+        <a href="http://twitter.com/wyatt_winters" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a>
+        <a href="http://www.linkedin.com/in/wyattwinters"><li><i class="icon-linkedin-sign icon-large" ></i></li></a>
+        <a href="http://github.com/wywin" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
+        <a href="http://wyattwinters.com/feeds/all.rss.xml" rel="alternate" title="Recent Blog Posts"><li> <i class="icon-rss icon-large"></i> </li></a>
+      </ul>
+    </div>
+  </p>
+</div>            </div>
+        <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-40482036-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+      </body>
+</html>
