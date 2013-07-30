@@ -222,6 +222,7 @@ If everything went well, you should be prompted with the admin account creation 
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Granted this does NOT hide the location of your webserver, but it will allow Tor users to save precious exit node bandwidth by staying inside the Tor network. This is especially neat because changes made on the clearnet will be reflected on the hidden service side, and vice versa.  &lt;/p&gt;</summary></entry><entry><title>"Dota 2 on Xubuntu 13.04"</title><link href="http://wyattwinters.com/dota-2-on-xubuntu-1304.html" rel="alternate"></link><updated>2013-06-20T00:50:00-04:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-06-20:dota-2-on-xubuntu-1304.html</id><summary type="html">&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;UPDATE&lt;/em&gt;&lt;/strong&gt; Valve was awesome enough to do a native Linux port. &lt;a href="http://store.steampowered.com/app/570/"&gt;Get that version instead!&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Dota 2 is a really good game. Linux is really good. Out of the box, they don't play nice together. Let's fix that!&lt;/p&gt;
 &lt;!-- more --&gt;
 
