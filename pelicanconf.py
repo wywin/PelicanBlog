@@ -14,13 +14,13 @@ SECTIONS = [('Blog', 'index.html'),
         ('Archive', 'archives.html'),
         ('About', 'pages/about.html')]
 
-GOOGLE_ANALYTICS_ACCOUNT = 'UA-40482036-1'
+GOOGLE_ANALYTICS_ACCOUNT = ''
 
 DEFAULT_DATE_FORMAT = '%d %m %Y'
 GITHUB_URL = 'http://github.com/wywin'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = "feeds/all.rss.xml"
+FEED_ALL_ATOM = "feeds/all.atom.xml"
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
