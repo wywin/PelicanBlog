@@ -51,7 +51,7 @@ FILES_TO_COPY = (
 				('extra/favicon.ico', 'favicon.ico'),
 				('extra/CNAME', 'CNAME'),
 				('extra/robots.txt', 'robots.txt'),
-				('extra/8636E8A108F7D32E7C4CB440A97AD378D94A4BDF.asc', '8636E8A108F7D32E7C4CB440A97AD378D94A4BDF.asc'),
+				('extra/pubkey.txt', 'pubkey.txt'),
 				)
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
