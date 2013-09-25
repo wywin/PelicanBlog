@@ -51,8 +51,8 @@ EXTRA_PATH_METADATA = {
     'extra/pubkey.txt': {'path': 'pubkey.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/CNAME': {'path': 'CNAME'},
-    'extra/404.html': {'path': '404.gif'},
-    'extra/404.gif': {'path': '404.html'},
+    'extra/404.gif': {'path': '404.gif'},
+    'extra/404.html': {'path': '404.html'},
 
     }
 
