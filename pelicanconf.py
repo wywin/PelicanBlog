@@ -43,16 +43,27 @@ LINKEDIN_URL ='http://www.linkedin.com/in/wyattwinters'
 
 DEFAULT_PAGINATION = 100
 
-STATIC_PATHS = ["images"]
+STATIC_PATHS = ['images',
+                'extra'
+                ]
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/pubkey.txt': {'path': 'pubkey.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/CNAME': {'path': 'CNAME'},
+    'extra/404.html': {'path': '404.gif'},
+    'extra/404.gif': {'path': '404.html'},
 
-FILES_TO_COPY = (
-				('extra/404.gif', '404.gif'),
-				('extra/404.html', '404.html'),
-				('extra/favicon.ico', 'favicon.ico'),
-				('extra/CNAME', 'CNAME'),
-				('extra/robots.txt', 'robots.txt'),
-				('extra/pubkey.txt', 'pubkey.txt'),
-				)
+    }
+
+# FILES_TO_COPY = (
+# 				('extra/404.gif', '404.gif'),
+# 				('extra/404.html', '404.html'),
+# 				('extra/favicon.ico', 'favicon.ico'),
+# 				('extra/CNAME', 'CNAME'),
+# 				('extra/robots.txt', 'robots.txt'),
+# 				('extra/pubkey.txt', 'pubkey.txt'),
+# 				)
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
