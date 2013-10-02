@@ -14,7 +14,7 @@ Without getting too detailed, OpenPGP and the toolset we will use - GNU Privacy 
 Let's figure out what we need to send secret messages. Because of long-standing traditions, encryption scenarios refer to two characters: Alice and Bob. Alice is you, and Bob is who you want to talk to. Let's look at the process we need to follow to safely get secrets to Bob, using a paint metaphor.
 
 <center>
-![](/static/images/openPGPTutorial/500px-Diffie-Hellman_Key_Exchange.gif)
+![](/images/openPGPTutorial/500px-Diffie-Hellman_Key_Exchange.gif)
 </center>
 We will be working on Windows 7, but the process will likely be similar for all versions of Windows, both forward and past.
 <h2><strong>Installation and creating your keypair</strong></h2>
@@ -27,14 +27,14 @@ After install, you should see a program called Kleopatra. This is the graphical 
 Once Kleopatra is open, it will look fairly empty and boring. We need to create a keypair! Choose File -&gt; New Certificate, and select "Create a personal OpenPGP key pair".
 
 <center>
-![](/static/images/openPGPTutorial/Email1.png)
+![](/images/openPGPTutorial/Email1.png)
 </center>
 
 You will be prompted for name, email, and a comment should you choose one. These can be anything, so you can use your real name, a fake name, or any bit of text you like! If you want to make a "professional" key pair, it is recommended to use your full, real name. For now, I will create a key pair for this site!
 
 
 <center>
-![](/static/images/openPGPTutorial/Email2.png)
+![](/images/openPGPTutorial/Email2.png)
 </center>
 
 The next screen is verifying the information you entered. If it looks right, hit create key. 
@@ -47,13 +47,13 @@ Now we have a little work to do. Think of a good, complicated password. I would 
 Enter your password (twice, to make sure you didn't fat finger it), and your key pair will be created!
 
 <center>
-![](/static/images/openPGPTutorial/Email3.png)
+![](/images/openPGPTutorial/Email3.png)
 </center>
 
 <h2><strong>Encrypting with your new keypair</strong></h2>
 
 <center>
-![](/static/images/openPGPTutorial/Email4.png)
+![](/images/openPGPTutorial/Email4.png)
 </center>
 
 With your newly created keypair, you have generated your secret color. We have the mixture of step 3, and need to send our mixture to someone else to do the rest of the steps; to create a common secret. You have to get someone else's mixture - in this case, Bob's blueish mix he made on step 3. Bob can be anyone, Bob is your intended recipient. The recipient could be a friend following this tutorial, or <a href="http://www.gpg4win.org/doc/en/gpg4win-compendium_13.html#sec_publishPerEmail">the GPG robot known as Adele</a>.
@@ -65,43 +65,43 @@ Computers, handy things they are, can make our mixture sending, scrambling, and 
 You can make Thunderbird the default client for email, newsgroups, and feeds if you so choose. These choices will not affect the tutorial.
 
 <center>
-![](/static/images/openPGPTutorial/Email5.png)
+![](/images/openPGPTutorial/Email5.png)
 </center>
 
 Thunderbird, as a way of making money, offers the ability to buy a new email address, of which Mozilla, the people who make Thunderbird, get a little cut. For now, we will skip this and use an existing email.
 
 <center>
-![](/static/images/openPGPTutorial/Email6.png)
+![](/images/openPGPTutorial/Email6.png)
 </center>
 
 Thunderbird is pretty clever here, and should be able to figure out the correct settings for your email address, if you use any sizeable mail service. Hit done, and Thunderbird will retrieve your mail.
 
 <center>
-![](/static/images/openPGPTutorial/Email7.png)
+![](/images/openPGPTutorial/Email7.png)
 </center>
 
  Now that we have our email, we need to add the encryption part! In an attempt to look snazzy, Thunderbird hides the menu bar by default. Press the ALT key, and select Tools -&gt; Add-ons. In the search box in the upper right, type in "enigmail", and the first option should be the right one. Hit install, and restart Thunderbird after it finishes.
 
 <center>
-![](/static/images/openPGPTutorial/Email8.png)
+![](/images/openPGPTutorial/Email8.png)
 </center>
 
 Now we have all the software we need, so now it's time to use it! Press the "Write" button, and let's send an email to Adele!
 
 <center>
-![](/static/images/openPGPTutorial/Email9.png)
+![](/images/openPGPTutorial/Email9.png)
 </center>
 
 Before we send the email, we have to tell Enigmail to send our mixture to Adele. Assuming you used the same email in your keypair (your secret color) as you did when setting up Thunderbird, it should be smart enough to find the correct key / secret color.
 
 <center>
-![](/static/images/openPGPTutorial/Email10.png)
+![](/images/openPGPTutorial/Email10.png)
 </center>
 
 Make sure "Sign Message" is checked, then send your email! Your passphrase box will pop up, to make sure you are who should really be using your secret color. Enter your passphrase, and the mail will go out.
 
 <center>
-![](/static/images/openPGPTutorial/Email11.png)
+![](/images/openPGPTutorial/Email11.png)
 </center>
 
 In your reply, there will be an important bit of information- Adele's public key - her mixture. At the top of the Thunderbird window, hit "Decrypt", and import her public key.
@@ -111,13 +111,13 @@ Now, compose a new email to Adele, but this time, in the OpenPGP menu, check bot
 Here's the decrypted version of the email:
 
 <center>
-![](/static/images/openPGPTutorial/Email12.png)
+![](/images/openPGPTutorial/Email12.png)
 </center>
 
 and the scrambled version!
 
 <center>
-![](/static/images/openPGPTutorial/Email13.png)
+![](/images/openPGPTutorial/Email13.png)
 </center>
 
 <h1>What about files?</h1>
@@ -126,55 +126,55 @@ We already did the hard work with generating and exchanging our keys, so files a
 First, I've made this super-secret treasure map I only want Adele to see!
 
 <center>
-![](/static/images/openPGPTutorial/File1.png)
+![](/images/openPGPTutorial/File1.png)
 </center>
 
 Right click on the file in Windows Explorer and select "Sign and Encrypt"
 
 <center>
-![](/static/images/openPGPTutorial/File2.png)
+![](/images/openPGPTutorial/File2.png)
 </center>
 
 After some thinking, the Sign and Encrypt wizard from Kleopatra will appear.
 
 <center>
-![](/static/images/openPGPTutorial/File3.png)
+![](/images/openPGPTutorial/File3.png)
 </center>
 
 Next, select who you want to encrypt it to. I'll encrypt it to Adele, as I already have her public key handy.
 
 <center>
-![](/static/images/openPGPTutorial/File4.png)
+![](/images/openPGPTutorial/File4.png)
 </center>
 
 If I try to continue, Kleopatra gives me this warning:
 
 <center>
-![](/static/images/openPGPTutorial/File5.png)
+![](/images/openPGPTutorial/File5.png)
 </center>
 
 While this can be handy in some circumstances, let's encrypt it to myself also.
 
 <center>
-![](/static/images/openPGPTutorial/File6.png)
+![](/images/openPGPTutorial/File6.png)
 </center>
 
 Next, select who to sign as. I only have my own private key (secret color), so that seems like the best choice.
 
 <center>
-![](/static/images/openPGPTutorial/File7.png)
+![](/images/openPGPTutorial/File7.png)
 </center>
 
 Once that's done, it will process the file(s) you set to be signed and encrypted.
 
 <center>
-![](/static/images/openPGPTutorial/File8.png)
+![](/images/openPGPTutorial/File8.png)
 </center>
 
 Since I chose to save the unscrambled file after I made the scrambled one, my folder now looks like this:
 
 <center>
-![](/static/images/openPGPTutorial/File9.png)
+![](/images/openPGPTutorial/File9.png)
 </center>
 
 Now, the secretTreasure.png.gpg file can only be opened by Adele, and myself. However, she's a robot, and doesn't do file-handling yet. 

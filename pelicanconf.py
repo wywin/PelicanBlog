@@ -71,7 +71,7 @@ THEME = '/home/wywin/src/pelican-themes/flasky'
 
 PLUGIN_PATH = '/home/wywin/src/pelican-plugins'
 
-PLUGINS=['sitemap',]
+PLUGINS=['sitemap', 'thumbnailer']
 
 SITEMAP = {
     'format': 'xml',
@@ -86,3 +86,6 @@ SITEMAP = {
         'pages': 'monthly'
     }
 }
+IMAGE_PATH = '/home/wywin/src/PelicanBlog/content/images/'
+THUMBNAIL_DIR = '/home/wywin/src/PelicanBlog/images/thumbnails'
+THUMBNAIL_SIZES = {'regular' : '500x?'}
