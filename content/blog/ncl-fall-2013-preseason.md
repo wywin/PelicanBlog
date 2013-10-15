@@ -1,0 +1,16 @@
+Title: NCL Fall 2013 Preseason
+Date: 2013-10-15 17:50
+Slug: ncl-fall-2013-preseason
+Categories: 
+
+This past week was the National Cyber League's preseason event, and my first formal CTF game. This is apparently to place the competitors into divisions for the "real" games. I finished 27th out of 518. I am not displeased with this result. The highest position I ever got to was 8th, but I fell significantly once the weekend hit (the event was a week long), and people had more time to dig into the flags. 
+
+Some thoughts I had during the event:
+
+1. Less password cracking. While password cracking is indeed a valuable skill, for CTF challenges (especially ones with tighter time frames, the real games are ~4 hours), it comes down to who has the best / most GPUs. 
+2. Monitor the targets (more). A large problem was the "Linux 1" target they had set up. The key to this one (spoilers!) was the [VSFTPD 2.3.4 backdoor](https://www.rapid7.com/db/modules/exploit/unix/ftp/vsftpd_234_backdoor). However, someone early in the week found this, opened the backdoor, and kept an active shell, preventing anyone else from getting in. This was eventually fixed on Thursday by adding a timer (by dropping the connection) to it. 
+3. Track and punish saboteurs. Another target's trick was an unsecured phpmyadmin install with login of root and no password. Had I been feeling mean, I could easily drop all the tables, and wait for the admins to notice (and reset the target). This would prevent other players from getting the flags in that lag time. While I am well aware the difficulty of identifying wrongdoers and dangers of incorrectly punishing players, this is disappointing. 
+4. Don't put flags on a Mediawiki install, unless you lock it down properly. I love Mediawiki, but an unmoderated wiki quickly falls into a war zone, as the Web 1 target exemplified. While it was easy enough to dig into the revision history, the target was *very* slow from all the various attacks from the various users. I will admit that I enjoyed a message from the admins regarding this: "PS - Hitting the target repeatedly, with every automated tool you can think of, will likely not make the flags fall out." It turns out they were right. 
+5. Make the flag-entry less strict. This may seem greedy, but I feel that the software should be smart enough to ignore leading/trailing spaces that sometimes tag along when copying and pasting text. I also had a couple issues with upper/lowercase, something that I don't think should make that much of a difference.
+
+Overall, I very much enjoyed the event, despite these hurdles. I understand that it is difficult to monitor and keep numerous boxes up when being hammered by 500+ people, especially when those boxes are **designed** to be insecure. I applaud the admins for their diligence in resettings boxes, and I appreciate their assistance with getting my account configured (unique email addresses can sometimes break stuff!). I look forward to the proper games, but wanted to reflect on the preseason while I had some time. 
