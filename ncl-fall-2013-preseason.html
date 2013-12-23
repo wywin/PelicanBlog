@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css' />
+	<link href="http://wyattwinters.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title> NCL Fall 2013 Preseason | if have_idea == 1: type(topic,words) </title>
+
+    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/font-awesome.css" type="text/css"/>
+  </head>
+  <body>
+    <div class=container>
+
+      <div class=navigation>
+        <ul>
+            <li><a href="http://wyattwinters.com/index.html">Blog</a> </li>
+            <li><a href="http://wyattwinters.com/archives.html">Archive</a> </li>
+            <li><a href="http://wyattwinters.com/pages/about.html">About</a> </li>
+        </ul>
+      </div>
+      <div class=separator></div>        
+        <div class=body>
+    <h1 class="title"> NCL Fall 2013 Preseason</h1>
+    <p class=date> 15 10 2013 </p>
+    <p>This past week was the National Cyber League's preseason event, and my first formal CTF game. This is apparently to place the competitors into divisions for the "real" games. I finished 27th out of 518. I am not displeased with this result. The highest position I ever got to was 8th, but I fell significantly once the weekend hit (the event was a week long), and people had more time to dig into the flags. </p>
+<p>Some thoughts I had during the event:</p>
+<ol>
+<li>Less password cracking. While password cracking is indeed a valuable skill, for CTF challenges (especially ones with tighter time frames, the real games are ~4 hours), it comes down to who has the best / most GPUs. </li>
+<li>Monitor the targets (more). A large problem was the "Linux 1" target they had set up. The key to this one (spoilers!) was the <a href="https://www.rapid7.com/db/modules/exploit/unix/ftp/vsftpd_234_backdoor">VSFTPD 2.3.4 backdoor</a>. However, someone early in the week found this, opened the backdoor, and kept an active shell, preventing anyone else from getting in. This was eventually fixed on Thursday by adding a timer (by dropping the connection) to it. </li>
+<li>Track and punish saboteurs. Another target's trick was an unsecured phpmyadmin install with login of root and no password. Had I been feeling mean, I could easily drop all the tables, and wait for the admins to notice (and reset the target). This would prevent other players from getting the flags in that lag time. While I am well aware the difficulty of identifying wrongdoers and dangers of incorrectly punishing players, this is disappointing. </li>
+<li>Don't put flags on a Mediawiki install, unless you lock it down properly. I love Mediawiki, but an unmoderated wiki quickly falls into a war zone, as the Web 1 target exemplified. While it was easy enough to dig into the revision history, the target was <em>very</em> slow from all the various attacks from the various users. I will admit that I enjoyed a message from the admins regarding this: "PS - Hitting the target repeatedly, with every automated tool you can think of, will likely not make the flags fall out." It turns out they were right. </li>
+<li>Make the flag-entry less strict. This may seem greedy, but I feel that the software should be smart enough to ignore leading/trailing spaces that sometimes tag along when copying and pasting text. I also had a couple issues with upper/lowercase, something that I don't think should make that much of a difference.</li>
+</ol>
+<p>Overall, I very much enjoyed the event, despite these hurdles. I understand that it is difficult to monitor and keep numerous boxes up when being hammered by 500+ people, especially when those boxes are <strong>designed</strong> to be insecure. I applaud the admins for their diligence in resettings boxes, and I appreciate their assistance with getting my account configured (unique email addresses can sometimes break stuff!). I look forward to the proper games, but wanted to reflect on the preseason while I had some time. </p>
+    
+        </div>
+        
+<div class=footer>
+  <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a></p>
+  <p> Powered by <a href="http://pypi.python.org/pypi/pelican/" target="_blank">Pelican</a>.  
+    <a href="https://github.com/fjavieralba/flasky">Theme</a>  by <a href="http://fjavieralba.com">fjavieralba</a>
+  </p> 
+  <p>
+    <div class=social style="font-size: 27px;">
+      <ul>
+        <script language="JavaScript">
+          u = 'blog';
+          s = 'wyattwinters.com';
+          document.write('<a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\">');
+        </script>
+            <li><i class="icon-envelope icon-large"></i> </li>
+        </a>
+        <a href="http://twitter.com/wyatt_winters" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a>
+        <a href="http://www.linkedin.com/in/wyattwinters"><li><i class="icon-linkedin-sign icon-large" ></i></li></a>
+        <a href="http://github.com/wywin" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
+        <a href="http://wyattwinters.com/feeds/all.atom.xml" rel="alternate" title="Recent Blog Posts"><li> <i class="icon-rss icon-large"></i> </li></a>
+      </ul>
+    </div>
+  </p>
+</div>    </div>
+  </body>
+</html>

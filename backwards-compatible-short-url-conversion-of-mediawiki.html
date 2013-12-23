@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css' />
+	<link href="http://wyattwinters.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title> "Backwards-compatible Short URL conversion of Mediawiki" | if have_idea == 1: type(topic,words) </title>
+
+    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/font-awesome.css" type="text/css"/>
+  </head>
+  <body>
+    <div class=container>
+
+      <div class=navigation>
+        <ul>
+            <li><a href="http://wyattwinters.com/index.html">Blog</a> </li>
+            <li><a href="http://wyattwinters.com/archives.html">Archive</a> </li>
+            <li><a href="http://wyattwinters.com/pages/about.html">About</a> </li>
+        </ul>
+      </div>
+      <div class=separator></div>        
+        <div class=body>
+    <h1 class="title"> "Backwards-compatible Short URL conversion of Mediawiki"</h1>
+    <p class=date> 14 07 2013 </p>
+    <p>Further adventures in mod_rewrite town! This time I had to convert a Mediawiki install to Short URLs while maintaining backwards compatability. Let's see how it went!</p>
+<!-- more -->
+
+<p>First, if you're like me, you don't plan ahead very much when doing software installs. A Mediawiki site I help with has been running for some time, and several links exist pointing to old, ugly URLs like "www.example.com/wiki/index.php/Main_Page". However, the decision makers wanted the links to lose the "index.php" in the URL!</p>
+<p>That's easy enough to do. The <a href="https://www.mediawiki.org/wiki/Manual:Short_URL">Mediawiki meta-wiki</a> has a great write up on the topic. They also link to <a href="http://shorturls.redwerks.org/">this handy wizard</a>, which I used.</p>
+<p>You should come up with something like this:</p>
+<div class="highlight"><pre><span class="n">RewriteRule</span> <span class="o">^/?</span><span class="n">wiki</span><span class="p">(</span><span class="o">/</span><span class="p">.</span><span class="o">*</span><span class="p">)</span><span class="o">?</span><span class="err">$</span> <span class="o">%</span><span class="p">{</span><span class="n">DOCUMENT_ROOT</span><span class="p">}</span><span class="o">/</span><span class="n">w</span><span class="o">/</span><span class="n">index</span><span class="p">.</span><span class="n">php</span> <span class="p">[</span><span class="n">QSA</span><span class="p">,</span><span class="n">L</span><span class="p">]</span>
+<span class="n">RewriteRule</span> <span class="o">^/?</span><span class="err">$</span> <span class="o">%</span><span class="p">{</span><span class="n">DOCUMENT_ROOT</span><span class="p">}</span><span class="o">/</span><span class="n">w</span><span class="o">/</span><span class="n">index</span><span class="p">.</span><span class="n">php</span> <span class="p">[</span><span class="n">QSA</span><span class="p">,</span><span class="n">L</span><span class="p">]</span>
+
+<span class="n">RewriteCond</span> <span class="o">%</span><span class="p">{</span><span class="n">DOCUMENT_ROOT</span><span class="p">}</span><span class="o">%</span><span class="p">{</span><span class="n">REQUEST_URI</span><span class="p">}</span> <span class="o">!-</span><span class="n">f</span>
+<span class="n">RewriteCond</span> <span class="o">%</span><span class="p">{</span><span class="n">DOCUMENT_ROOT</span><span class="p">}</span><span class="o">%</span><span class="p">{</span><span class="n">REQUEST_URI</span><span class="p">}</span> <span class="o">!-</span><span class="n">d</span>
+<span class="n">RewriteRule</span> <span class="o">^/?</span><span class="n">w</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">thumb</span><span class="o">/</span><span class="p">[</span><span class="mi">0</span><span class="o">-</span><span class="mi">9</span><span class="n">a</span><span class="o">-</span><span class="n">f</span><span class="p">]</span><span class="o">/</span><span class="p">[</span><span class="mi">0</span><span class="o">-</span><span class="mi">9</span><span class="n">a</span><span class="o">-</span><span class="n">f</span><span class="p">][</span><span class="mi">0</span><span class="o">-</span><span class="mi">9</span><span class="n">a</span><span class="o">-</span><span class="n">f</span><span class="p">]</span><span class="o">/</span><span class="p">([</span><span class="o">^/</span><span class="p">]</span><span class="o">+</span><span class="p">)</span><span class="o">/</span><span class="p">([</span><span class="mi">0</span><span class="o">-</span><span class="mi">9</span><span class="p">]</span><span class="o">+</span><span class="p">)</span><span class="n">px</span><span class="o">-</span><span class="p">.</span><span class="o">*</span><span class="err">$</span> <span class="o">%</span><span class="p">{</span><span class="n">DOCUMENT_ROOT</span><span class="p">}</span><span class="o">/</span><span class="n">w</span><span class="o">/</span><span class="n">thumb</span><span class="p">.</span><span class="n">php</span><span class="o">?</span><span class="n">f</span><span class="o">=</span><span class="err">$</span><span class="mi">1</span><span class="o">&amp;</span><span class="n">width</span><span class="o">=</span><span class="err">$</span><span class="mi">2</span> <span class="p">[</span><span class="n">L</span><span class="p">,</span><span class="n">QSA</span><span class="p">,</span><span class="n">B</span><span class="p">]</span>
+
+<span class="n">RewriteCond</span> <span class="o">%</span><span class="p">{</span><span class="n">DOCUMENT_ROOT</span><span class="p">}</span><span class="o">%</span><span class="p">{</span><span class="n">REQUEST_URI</span><span class="p">}</span> <span class="o">!-</span><span class="n">f</span>
+<span class="n">RewriteCond</span> <span class="o">%</span><span class="p">{</span><span class="n">DOCUMENT_ROOT</span><span class="p">}</span><span class="o">%</span><span class="p">{</span><span class="n">REQUEST_URI</span><span class="p">}</span> <span class="o">!-</span><span class="n">d</span>
+<span class="n">RewriteRule</span> <span class="o">^/?</span><span class="n">w</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">thumb</span><span class="o">/</span><span class="n">archive</span><span class="o">/</span><span class="p">[</span><span class="mi">0</span><span class="o">-</span><span class="mi">9</span><span class="n">a</span><span class="o">-</span><span class="n">f</span><span class="p">]</span><span class="o">/</span><span class="p">[</span><span class="mi">0</span><span class="o">-</span><span class="mi">9</span><span class="n">a</span><span class="o">-</span><span class="n">f</span><span class="p">][</span><span class="mi">0</span><span class="o">-</span><span class="mi">9</span><span class="n">a</span><span class="o">-</span><span class="n">f</span><span class="p">]</span><span class="o">/</span><span class="p">([</span><span class="o">^/</span><span class="p">]</span><span class="o">+</span><span class="p">)</span><span class="o">/</span><span class="p">([</span><span class="mi">0</span><span class="o">-</span><span class="mi">9</span><span class="p">]</span><span class="o">+</span><span class="p">)</span><span class="n">px</span><span class="o">-</span><span class="p">.</span><span class="o">*</span><span class="err">$</span> <span class="o">%</span><span class="p">{</span><span class="n">DOCUMENT_ROOT</span><span class="p">}</span><span class="o">/</span><span class="n">w</span><span class="o">/</span><span class="n">thumb</span><span class="p">.</span><span class="n">php</span><span class="o">?</span><span class="n">f</span><span class="o">=</span><span class="err">$</span><span class="mi">1</span><span class="o">&amp;</span><span class="n">width</span><span class="o">=</span><span class="err">$</span><span class="mi">2</span><span class="o">&amp;</span><span class="n">archived</span><span class="o">=</span><span class="mi">1</span> <span class="p">[</span><span class="n">L</span><span class="p">,</span><span class="n">QSA</span><span class="p">,</span><span class="n">B</span><span class="p">]</span>
+</pre></div>
+
+
+<p>That's all great, but old links won't work anymore! Let's fix that by adding this before all the other new RewriteRules:</p>
+<div class="highlight"><pre><span class="n">RewriteRule</span> <span class="o">^/?</span><span class="n">wiki</span><span class="o">/</span><span class="n">index</span><span class="p">.</span><span class="n">php</span><span class="p">(</span><span class="o">/</span><span class="p">(.</span><span class="o">*</span><span class="p">))</span><span class="o">?</span><span class="err">$</span> <span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="err">$</span><span class="mi">2</span> <span class="p">[</span><span class="n">R</span><span class="o">=</span><span class="mi">301</span><span class="p">,</span><span class="n">L</span><span class="p">]</span>
+</pre></div>
+
+
+<p>Now you should have pretty URLs, and the old-style links should redirect to the new pretty ones too!</p>
+    
+        </div>
+        
+<div class=footer>
+  <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a></p>
+  <p> Powered by <a href="http://pypi.python.org/pypi/pelican/" target="_blank">Pelican</a>.  
+    <a href="https://github.com/fjavieralba/flasky">Theme</a>  by <a href="http://fjavieralba.com">fjavieralba</a>
+  </p> 
+  <p>
+    <div class=social style="font-size: 27px;">
+      <ul>
+        <script language="JavaScript">
+          u = 'blog';
+          s = 'wyattwinters.com';
+          document.write('<a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\">');
+        </script>
+            <li><i class="icon-envelope icon-large"></i> </li>
+        </a>
+        <a href="http://twitter.com/wyatt_winters" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a>
+        <a href="http://www.linkedin.com/in/wyattwinters"><li><i class="icon-linkedin-sign icon-large" ></i></li></a>
+        <a href="http://github.com/wywin" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
+        <a href="http://wyattwinters.com/feeds/all.atom.xml" rel="alternate" title="Recent Blog Posts"><li> <i class="icon-rss icon-large"></i> </li></a>
+      </ul>
+    </div>
+  </p>
+</div>    </div>
+  </body>
+</html>
