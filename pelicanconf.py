@@ -2,19 +2,17 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Wyatt Winters'
-SITENAME = u'if have_idea == 1: type(topic,words)'
+AUTHOR = 'Wyatt Winters'
+SITENAME = 'if have_idea == 1: type(topic,words)'
 SITEURL = 'http://wyattwinters.com'
 
 TIMEZONE = 'America/New_York'
 
-DEFAULT_LANG = u'en'
+DEFAULT_LANG = 'en'
 
 SECTIONS = [('Blog', 'index.html'),
         ('Archive', 'archives.html'),
         ('About', 'pages/about.html')]
-
-GOOGLE_ANALYTICS_ACCOUNT = ''
 
 DEFAULT_DATE_FORMAT = '%d %m %Y'
 GITHUB_URL = 'http://github.com/wywin'
