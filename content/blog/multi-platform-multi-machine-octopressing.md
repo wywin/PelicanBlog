@@ -1,4 +1,4 @@
-title: "Multi-platform, multi-machine Octopressing"
+title: Multi-platform, multi-machine Octopressing
 date: 2013-04-29 07:40
 comments: false
 categories: octopress multi-platform

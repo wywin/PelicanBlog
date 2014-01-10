@@ -1,4 +1,4 @@
-title: "Dota 2 on Xubuntu 13.04"
+title: Dota 2 on Xubuntu 13.04
 date: 2013-06-20 00:50
 comments: false
 categories: linux games wine

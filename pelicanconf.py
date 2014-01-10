@@ -5,13 +5,12 @@ from __future__ import unicode_literals
 AUTHOR = 'Wyatt Winters'
 SITENAME = 'if have_idea == 1: type(topic,words)'
 SITEURL = 'http://wyattwinters.com'
-
+#SITEURL = 'http://localhost:8000'
 TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
 
 SECTIONS = [('Blog', 'index.html'),
-        ('Archive', 'archives.html'),
         ('About', 'pages/about.html')]
 
 DEFAULT_DATE_FORMAT = '%d %m %Y'

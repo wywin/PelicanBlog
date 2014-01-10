@@ -1,4 +1,4 @@
-title: "Encrypting emails and files with OpenPGP"
+title: Encrypting emails and files with OpenPGP
 date: 2013-05-26 12:58
 comments: false
 categories: encryption openPGP

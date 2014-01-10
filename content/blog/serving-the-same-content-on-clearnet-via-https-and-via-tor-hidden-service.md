@@ -1,4 +1,4 @@
-title: "Serving identical content on HTTPS and Tor hidden service"
+title: Serving identical content on HTTPS and Tor hidden service
 date: 2013-07-03 21:52
 comments: false
 categories: encryption tor mod_rewrite apache

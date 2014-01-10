@@ -1,4 +1,4 @@
-title: "Backwards-compatible Short URL conversion of Mediawiki"
+title: Backwards-compatible Short URL conversion of Mediawiki
 date: 2013-07-14 14:27
 comments: false
 categories: mediawiki apache mod_rewrite
