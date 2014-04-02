@@ -5,42 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://wyattwinters.com/index.html</loc>
-<lastmod>2014-04-02T00:01:55-00:00</lastmod>
+<lastmod>2014-04-02T00:04:50-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://wyattwinters.com/archives.html</loc>
-<lastmod>2014-04-02T00:01:55-00:00</lastmod>
+<lastmod>2014-04-02T00:04:50-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://wyattwinters.com/tags.html</loc>
-<lastmod>2014-04-02T00:01:55-00:00</lastmod>
+<lastmod>2014-04-02T00:04:50-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://wyattwinters.com/categories.html</loc>
-<lastmod>2014-04-02T00:01:55-00:00</lastmod>
+<lastmod>2014-04-02T00:04:50-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://wyattwinters.com/pages/about.html</loc>
-<lastmod>2014-04-02T00:01:55-00:00</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>http://wyattwinters.com/making-mediawiki-internal-links-relative.html</loc>
-<lastmod>2014-01-14T15:32:00-00:00</lastmod>
+<lastmod>2014-04-02T00:04:50-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -103,14 +96,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://wyattwinters.com/category/blog.html</loc>
-<lastmod>2014-01-14T15:32:00-00:00</lastmod>
+<lastmod>2013-10-15T17:50:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://wyattwinters.com/author/wyatt-winters.html</loc>
-<lastmod>2014-01-14T15:32:00-00:00</lastmod>
+<lastmod>2013-10-15T17:50:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
