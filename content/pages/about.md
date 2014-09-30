@@ -23,6 +23,6 @@ Here are some links about / related to me:
 <br><br>
 This Wyatt Winters:
 <ul>
-	<li>is not <a href="http://hearitlocal.com/Wyatt">a guitar man</a></li>
+	<li>is not <a href="http://wyattwinters.bandcamp.com/">a guitar man</a></li>
 	<li>does not have <a href="http://riverview.nebo.edu/news/wyatt-winters-and-his-enthusiasm-his-country-infectious">infectious enthusiasm for his country</a></li>
 </ul>

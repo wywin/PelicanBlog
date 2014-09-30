@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Wyatt Winters'
-SITENAME = 'if have_idea == 1: type(topic,words)'
+SITENAME = 'Wyatt Winters | Saving the world one computer at a time'
 SITEURL = 'http://wyattwinters.com'
 #SITEURL = 'http://localhost:8000'
 TIMEZONE = 'America/New_York'
