@@ -22,7 +22,7 @@
 &lt;p&gt;However, I found his &lt;a href="http://makeatronics.blogspot.com/2013/04/thermostat-software.html"&gt;software&lt;/a&gt; implementation lacking, but admittedly functional.&lt;/p&gt;
 &lt;h2&gt;The project&lt;/h2&gt;
 &lt;p&gt;&lt;center&gt;
-&lt;img alt="" src="/images/thumbnails/rubustathookups_regular.jpg" /&gt;&lt;br&gt;
+&lt;img alt="" src="/images/thumbnails/ubustat/rubustathookups_regular.jpg" /&gt;&lt;br&gt;
 The controller board (left) and thermometer (right) crammed into the GPIO ribbon cable
 &lt;br&gt;
 I soldered the connector on the PCB backwards. Oops!
@@ -32,21 +32,21 @@ I soldered the connector on the PCB backwards. Oops!
 &lt;p&gt;Being a huge fan of lazy portmanteaus, I knew it had to be something raspberry related. The genus of the common raspberry is Rubus, so the name "Rubustat" practically made itself.&lt;/p&gt;
 &lt;h3&gt;The daemon&lt;/h3&gt;
 &lt;p&gt;The daemon was originally based on a straight copy of Nich's &lt;a href="http://makeatronics.blogspot.com/2013/04/thermostat-software.html"&gt;software&lt;/a&gt;. However, I found it to be a tad unstable, and used more external bash calls than I liked. While his use of outdoor temperature to determine heating vs cooling is clever, the primary user of the end product (my dad) preferred more manual control.&lt;/p&gt;
-&lt;p&gt;After some extended debugging, I found that it was difficult to cleanly kill off my daemon (which at this point was a endless while loop). I instead opted to use a daemon class written by &lt;a href="http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/"&gt;Sander Marechal&lt;/a&gt; which worked better. To fully stabilize/debug the daemon, I had to add stale PID checks. &lt;/p&gt;
+&lt;p&gt;After some extended debugging, I found that it was difficult to cleanly kill off my daemon (which at this point was a endless while loop). I instead opted to use a daemon class written by &lt;a href="http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/"&gt;Sander Marechal&lt;/a&gt; which worked better. To fully stabilize/debug the daemon, I had to add stale PID checks.&lt;/p&gt;
 &lt;p&gt;In it's final version, the daemon handles the GPIO pins, sqlite logging (initially to make fancy graphs, but the thermometer I ended up using wasn't precise enough to make any graphs except ones that look like sawteeth), email error reporting (implemented because one of the alligator clips fell off on the temporary hardware and the house got outstandingly warm), and monitoring of the status file to know what temperature and mode to be in.&lt;/p&gt;
 &lt;p&gt;I also got to learn the word "hysteresis", so that's fun.&lt;/p&gt;
 &lt;h3&gt;The web UI&lt;/h3&gt;
 &lt;p&gt;&lt;center&gt;
-&lt;img alt="" src="/images/thumbnails/phoneui_regular.png" /&gt; &lt;br&gt;
+&lt;img alt="" src="/images/thumbnails/ubustat/phoneui_regular.png" /&gt; &lt;br&gt;
 Firefox for Android on a Galaxy Note&lt;br&gt;
 &lt;br&gt;
-&lt;img alt="" src="/images/thumbnails/desktopui_regular.png" /&gt;
+&lt;img alt="" src="/images/thumbnails/ubustat/desktopui_regular.png" /&gt;
 &lt;br&gt; Firefox on Windows
 &lt;/center&gt;
 &lt;br&gt;
 This is primary reason the project was created. We could get any number of cheap, difficult-to-control thermostats, or we could get any of a slightly smaller number of expensive, web-enabled thermostats. The beauty of this project is we got a cheap, web-enabled thermostat! You don't have to learn how to program the schedules! I doesn't even have the &lt;strong&gt;&lt;em&gt;ability&lt;/em&gt;&lt;/strong&gt; to run schedules! (feature forthcoming?)&lt;/p&gt;
-&lt;p&gt;The web UI looks like a hot pile of garbage. More importantly, however, is it a &lt;strong&gt;functional&lt;/strong&gt; hot pile of garbage. I don't have much exciting to say about this interface. It writes directly to the status file, which is in turn read by the daemon and adjusts the GPIO pins accordingly. &lt;/p&gt;
-&lt;p&gt;The reason the interface is so dang big is because I have no idea how to do reactive design, and the idea was for the UI to be mobile-friendly. In a very inelegant way, it is mobile-friendly. I did however implement &lt;a href="https://github.com/ftlabs/fastclick"&gt;fastclick&lt;/a&gt; so it feels like you're poking a button rather than a Slowbro. &lt;/p&gt;
+&lt;p&gt;The web UI looks like a hot pile of garbage. More importantly, however, is it a &lt;strong&gt;functional&lt;/strong&gt; hot pile of garbage. I don't have much exciting to say about this interface. It writes directly to the status file, which is in turn read by the daemon and adjusts the GPIO pins accordingly.&lt;/p&gt;
+&lt;p&gt;The reason the interface is so dang big is because I have no idea how to do reactive design, and the idea was for the UI to be mobile-friendly. In a very inelegant way, it is mobile-friendly. I did however implement &lt;a href="https://github.com/ftlabs/fastclick"&gt;fastclick&lt;/a&gt; so it feels like you're poking a button rather than a Slowbro.&lt;/p&gt;
 &lt;p&gt;Another in the line of features inspired by catastrophic failure is the daemon status section. I felt rather silly when the web UI started without the daemon, so the adjustments made would have no effect. While playing with this functionality, I included the GPIO statuses above that, the colors corresponding to the LEDs on the physical board.&lt;/p&gt;
 &lt;h3&gt;The wrap up&lt;/h3&gt;
 &lt;p&gt;I took &lt;em&gt;no&lt;/em&gt; security precautions in the code itself. If you make a Rubustat of your own &lt;strong&gt;&lt;em&gt;DO NOT&lt;/em&gt;&lt;/strong&gt; expose the RPi to the outside internet. It is a dreadful idea. It works just fine when confined to the LAN.&lt;/p&gt;
