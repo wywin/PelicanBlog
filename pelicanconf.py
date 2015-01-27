@@ -6,14 +6,14 @@ AUTHOR = 'Wyatt Winters'
 SITENAME = 'Wyatt Winters | Saving the world one computer at a time'
 SITEURL = 'http://wyattwinters.com'
 #SITEURL = 'http://localhost:8000'
-TIMEZONE = 'America/New_York'
+TIMEZONE = 'UTC'
 
 DEFAULT_LANG = 'en'
 
 SECTIONS = [('Blog', 'index.html'),
         ('About', 'pages/about.html')]
 
-DEFAULT_DATE_FORMAT = '%d %m %Y'
+DEFAULT_DATE_FORMAT = '%Y %m %d'
 GITHUB_URL = 'http://github.com/wywin'
 
 # Feed generation is usually not desired when developing
