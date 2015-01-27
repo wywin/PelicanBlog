@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Wyatt Winters | Saving the world one computer at a time</title><link href="http://wyattwinters.com/" rel="alternate"></link><link href="http://wyattwinters.com/feeds/blog.atom.xml" rel="self"></link><id>http://wyattwinters.com/</id><updated>2013-10-15T17:50:00-04:00</updated><entry><title>NCL Fall 2013 Preseason</title><link href="http://wyattwinters.com/ncl-fall-2013-preseason.html" rel="alternate"></link><updated>2013-10-15T17:50:00-04:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-10-15:ncl-fall-2013-preseason.html</id><summary type="html">&lt;p&gt;This past week was the National Cyber League's preseason event, and my first formal CTF game. This is apparently to place the competitors into divisions for the "real" games. I finished 27th out of 518. I am not displeased with this result. The highest position I ever got to was 8th, but I fell significantly once the weekend hit (the event was a week long), and people had more time to dig into the flags. &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Wyatt Winters | Saving the world one computer at a time</title><link href="http://wyattwinters.com/" rel="alternate"></link><link href="http://wyattwinters.com/feeds/blog.atom.xml" rel="self"></link><id>http://wyattwinters.com/</id><updated>2015-01-27T17:50:00+00:00</updated><entry><title>BIZLEGFOSS@RIT - Week 1</title><link href="http://wyattwinters.com/bizlegfoss-at-rit-week-1.html" rel="alternate"></link><updated>2015-01-27T17:50:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-01-27:bizlegfoss-at-rit-week-1.html</id><summary type="html">&lt;p&gt;Whoa, what? An update on this website that has been almost completely stagnant for over a year? Weird!&lt;/p&gt;
+&lt;p&gt;I'm somewhat hesitant to write a big long story giving exposition for why this post suddenly appeared, but since my Github account &lt;em&gt;is&lt;/em&gt; bound to the &lt;a href="https://github.com/FOSSRIT"&gt;RIT FOSSBox's group page&lt;/a&gt;, I suppose it's not all that big of a secret where I go to school. If you're stalking me (or the NSA agent assigned to me) and didn't draw that conclusion, well, there you go, and also, you're bad at what you do.&lt;/p&gt;
+&lt;p&gt;So, RIT is the first university in North America to offer &lt;a href="http://magic.rit.edu/foss/"&gt;a minor in Free and Open Source Software&lt;/a&gt;, and I get to be one of the first people to complete it! As such, I am taking "Legal/Business Aspects of FOSS", or BIZLEGFOSS for short (the short name apparently subject to change, but I rather like it).&lt;/p&gt;
+&lt;p&gt;The first homework assignment for this course was to make a handful of accounts (blog, github, freenode nickserv, etc), all of which I already had. The final part was to write a blog post about your experience. I could get a little recursive and write about writing this blog post, but that is both silly and time consuming. Hopefully this class will get me back into the blogging mindset. I do have a handful of topics to write about, so perhaps some of those will appear sooner rather than later.&lt;/p&gt;</summary></entry><entry><title>NCL Fall 2013 Preseason</title><link href="http://wyattwinters.com/ncl-fall-2013-preseason.html" rel="alternate"></link><updated>2013-10-15T17:50:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-10-15:ncl-fall-2013-preseason.html</id><summary type="html">&lt;p&gt;This past week was the National Cyber League's preseason event, and my first formal CTF game. This is apparently to place the competitors into divisions for the "real" games. I finished 27th out of 518. I am not displeased with this result. The highest position I ever got to was 8th, but I fell significantly once the weekend hit (the event was a week long), and people had more time to dig into the flags. &lt;/p&gt;
 &lt;p&gt;Some thoughts I had during the event:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Less password cracking. While password cracking is indeed a valuable skill, for CTF challenges (especially ones with tighter time frames, the real games are ~4 hours), it comes down to who has the best / most GPUs. &lt;/li&gt;
@@ -8,7 +11,7 @@
 &lt;li&gt;Don't put flags on a Mediawiki install, unless you lock it down properly. I love Mediawiki, but an unmoderated wiki quickly falls into a war zone, as the Web 1 target exemplified. While it was easy enough to dig into the revision history, the target was &lt;em&gt;very&lt;/em&gt; slow from all the various attacks from the various users. I will admit that I enjoyed a message from the admins regarding this: "PS - Hitting the target repeatedly, with every automated tool you can think of, will likely not make the flags fall out." It turns out they were right. &lt;/li&gt;
 &lt;li&gt;Make the flag-entry less strict. This may seem greedy, but I feel that the software should be smart enough to ignore leading/trailing spaces that sometimes tag along when copying and pasting text. I also had a couple issues with upper/lowercase, something that I don't think should make that much of a difference.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Overall, I very much enjoyed the event, despite these hurdles. I understand that it is difficult to monitor and keep numerous boxes up when being hammered by 500+ people, especially when those boxes are &lt;strong&gt;designed&lt;/strong&gt; to be insecure. I applaud the admins for their diligence in resettings boxes, and I appreciate their assistance with getting my account configured (unique email addresses can sometimes break stuff!). I look forward to the proper games, but wanted to reflect on the preseason while I had some time. &lt;/p&gt;</summary></entry><entry><title>Rubustat - the Raspberry Pi Thermostat</title><link href="http://wyattwinters.com/rubustat-the-raspberry-pi-thermostat.html" rel="alternate"></link><updated>2013-10-01T16:48:00-04:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-10-01:rubustat-the-raspberry-pi-thermostat.html</id><summary type="html">&lt;p&gt;It's been some time since I actually wrote a blog post. Mostly because I have had nothing original to write, and partially because school keeps me busy. Let's change that!&lt;/p&gt;
+&lt;p&gt;Overall, I very much enjoyed the event, despite these hurdles. I understand that it is difficult to monitor and keep numerous boxes up when being hammered by 500+ people, especially when those boxes are &lt;strong&gt;designed&lt;/strong&gt; to be insecure. I applaud the admins for their diligence in resettings boxes, and I appreciate their assistance with getting my account configured (unique email addresses can sometimes break stuff!). I look forward to the proper games, but wanted to reflect on the preseason while I had some time. &lt;/p&gt;</summary></entry><entry><title>Rubustat - the Raspberry Pi Thermostat</title><link href="http://wyattwinters.com/rubustat-the-raspberry-pi-thermostat.html" rel="alternate"></link><updated>2013-10-01T16:48:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-10-01:rubustat-the-raspberry-pi-thermostat.html</id><summary type="html">&lt;p&gt;It's been some time since I actually wrote a blog post. Mostly because I have had nothing original to write, and partially because school keeps me busy. Let's change that!&lt;/p&gt;
 &lt;p&gt;I figured I would do a proper writeup on one of my summer projects - the Rubustat.&lt;/p&gt;
 &lt;h2&gt;Disclaimer&lt;/h2&gt;
 &lt;p&gt;While I enjoy programming and enjoyed making this project immensely, I make no claims that I am good at programming. High level Pythoners may wish to look away. However, the only way to get better is practice, right?&lt;/p&gt;
@@ -48,149 +51,149 @@ This is primary reason the project was created. We could get any number of cheap
 &lt;h3&gt;The wrap up&lt;/h3&gt;
 &lt;p&gt;I took &lt;em&gt;no&lt;/em&gt; security precautions in the code itself. If you make a Rubustat of your own &lt;strong&gt;&lt;em&gt;DO NOT&lt;/em&gt;&lt;/strong&gt; expose the RPi to the outside internet. It is a dreadful idea. It works just fine when confined to the LAN.&lt;/p&gt;
 &lt;p&gt;I'm actually pretty pleased with how this thing turned out. While it is by no means particularly pretty or elegant, it gets the job done, and doesn't catch fire. That's a success in my book.&lt;/p&gt;
-&lt;p&gt;If you want to look over the source or run it yourself, hit the &lt;a href="https://github.com/wywin/Rubustat"&gt;Github repo&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>Installing Tracks 2.2.2 on Debian Wheezy</title><link href="http://wyattwinters.com/installing-tracks-2-2-2-on-debian-wheezy.html" rel="alternate"></link><updated>2013-07-30T10:59:00-04:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-07-30:installing-tracks-2-2-2-on-debian-wheezy.html</id><summary type="html">&lt;hr /&gt;
+&lt;p&gt;If you want to look over the source or run it yourself, hit the &lt;a href="https://github.com/wywin/Rubustat"&gt;Github repo&lt;/a&gt;.&lt;/p&gt;</summary></entry><entry><title>Installing Tracks 2.2.2 on Debian Wheezy</title><link href="http://wyattwinters.com/installing-tracks-2-2-2-on-debian-wheezy.html" rel="alternate"></link><updated>2013-07-30T10:59:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-07-30:installing-tracks-2-2-2-on-debian-wheezy.html</id><summary type="html">&lt;hr /&gt;
 &lt;p&gt;This is a chronicle of my first Ruby on Rails deployment, and the things I learned while doing so. It is likely straight-forward and obvious for Rails vets, but hopefully this will help people who just want to host and use the great tool that is &lt;a href="http://getontracks.org/"&gt;Tracks&lt;/a&gt; without too much hassle. &lt;/p&gt;
 &lt;p&gt;Assumed: apache2, mysql (you &lt;a href="https://github.com/TracksApp/tracks/blob/v2.2.2/doc/installation.textile#decide-on-a-database"&gt;can use sqlite3&lt;/a&gt; but I won't cover that here)&lt;/p&gt;
 &lt;p&gt;optional: php5, phpmyadmin&lt;/p&gt;
 &lt;p&gt;First, let's create a database and user for Tracks to use.
 I used phpmyadmin here because its easiest for me, but you can do it as you see fit.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;CREATE&lt;/span&gt; &lt;span class="n"&gt;USER&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;tracks&lt;/span&gt;&lt;span class="sc"&gt;&amp;#39;@&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;localhost&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;IDENTIFIED&lt;/span&gt; &lt;span class="n"&gt;BY&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;***&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;CREATE USER &amp;#39;tracks&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;***&amp;#39;;
 
-&lt;span class="n"&gt;GRANT&lt;/span&gt; &lt;span class="n"&gt;USAGE&lt;/span&gt; &lt;span class="n"&gt;ON&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;TO&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;tracks&lt;/span&gt;&lt;span class="sc"&gt;&amp;#39;@&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;localhost&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;IDENTIFIED&lt;/span&gt; &lt;span class="n"&gt;BY&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;***&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt; &lt;span class="n"&gt;WITH&lt;/span&gt; &lt;span class="n"&gt;MAX_QUERIES_PER_HOUR&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="n"&gt;MAX_CONNECTIONS_PER_HOUR&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="n"&gt;MAX_UPDATES_PER_HOUR&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="n"&gt;MAX_USER_CONNECTIONS&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt;
+GRANT USAGE ON * . * TO &amp;#39;tracks&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;***&amp;#39; WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0 ;
 
-&lt;span class="n"&gt;CREATE&lt;/span&gt; &lt;span class="n"&gt;DATABASE&lt;/span&gt; &lt;span class="n"&gt;IF&lt;/span&gt; &lt;span class="n"&gt;NOT&lt;/span&gt; &lt;span class="n"&gt;EXISTS&lt;/span&gt; &lt;span class="err"&gt;`&lt;/span&gt;&lt;span class="n"&gt;tracks&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt;
+CREATE DATABASE IF NOT EXISTS `tracks` ;
 
-&lt;span class="n"&gt;GRANT&lt;/span&gt; &lt;span class="n"&gt;ALL&lt;/span&gt; &lt;span class="n"&gt;PRIVILEGES&lt;/span&gt; &lt;span class="n"&gt;ON&lt;/span&gt; &lt;span class="err"&gt;`&lt;/span&gt;&lt;span class="n"&gt;tracks&lt;/span&gt;&lt;span class="err"&gt;`&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;TO&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;tracks&lt;/span&gt;&lt;span class="sc"&gt;&amp;#39;@&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;localhost&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+GRANT ALL PRIVILEGES ON `tracks` . * TO &amp;#39;tracks&amp;#39;@&amp;#39;localhost&amp;#39;;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Switch into a root shell with &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo -s
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;for the remainder of the install process.&lt;/p&gt;
 &lt;p&gt;We need some packages, so let's install them:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;curl&lt;/span&gt; &lt;span class="n"&gt;unzip&lt;/span&gt; &lt;span class="n"&gt;libxslt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt; &lt;span class="n"&gt;libxml2&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt; &lt;span class="n"&gt;libmysql&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt; &lt;span class="n"&gt;libmysqlclient&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt; &lt;span class="n"&gt;libcurl4&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;openssl&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt; &lt;span class="n"&gt;apache2&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;threaded&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt; &lt;span class="n"&gt;libapr1&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt; &lt;span class="n"&gt;libaprutil1&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;apt-get install curl unzip libxslt-dev libxml2-dev libmysql-ruby libmysqlclient-dev libcurl4-openssl-dev apache2-threaded-dev libapr1-dev libaprutil1-dev
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Tracks works best with Ruby 1.9.3, so we will use Ruby Version Manager (RVM) to install it. &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="n"&gt;curl&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//get.rvm.io | bash&lt;/span&gt;
-&lt;span class="n"&gt;source&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;profile&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rvm&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sh&lt;/span&gt;
-&lt;span class="n"&gt;rvm&lt;/span&gt; &lt;span class="n"&gt;requirements&lt;/span&gt;
-&lt;span class="n"&gt;rvm&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="mf"&gt;1.9.3&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;\curl -L https://get.rvm.io | bash
+source /etc/profile.d/rvm.sh
+rvm requirements
+rvm install 1.9.3
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Verify &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;which&lt;/span&gt; &lt;span class="n"&gt;ruby&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;which ruby
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;and&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;which&lt;/span&gt; &lt;span class="n"&gt;gem&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;which gem
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;point to &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rvm&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rubies&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.9.3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p448&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;
-&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rvm&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rubies&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.9.3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p448&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gem&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;/usr/local/rvm/rubies/ruby-1.9.3-p448/bin/ruby
+/usr/local/rvm/rubies/ruby-1.9.3-p448/bin/gem
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;respectively, or something close to that.&lt;/p&gt;
 &lt;p&gt;Now we have Ruby all situated, it's time to get Tracks.
 In /root run:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;wget&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//github.com/TracksApp/tracks/zipball/v2.2.2&lt;/span&gt;
-&lt;span class="n"&gt;mkdir&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;srv&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tracks&lt;/span&gt;
-&lt;span class="n"&gt;unzip&lt;/span&gt; &lt;span class="n"&gt;v2&lt;/span&gt;&lt;span class="mf"&gt;.2.2&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;srv&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tracks&lt;/span&gt;
-&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;srv&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tracks&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;TracksApp&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tracks&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bc8b817&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
-&lt;span class="n"&gt;mv&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;..&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
-&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="p"&gt;..&lt;/span&gt;
-&lt;span class="n"&gt;rm&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="n"&gt;TracksApp&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tracks&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bc8b817&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;wget https://github.com/TracksApp/tracks/zipball/v2.2.2
+mkdir /srv/tracks
+unzip v2.2.2 -d /srv/tracks
+cd /srv/tracks/TracksApp-tracks-bc8b817/
+mv * ../
+cd ..
+rm -r TracksApp-tracks-bc8b817/
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Now Tracks is unzipped and ready to be installed.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;srv&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tracks&lt;/span&gt;
-&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;bundler&lt;/span&gt;
-&lt;span class="n"&gt;bundle&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt;
-&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;passenger&lt;/span&gt;
-&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rvm&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gems&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.9.3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p448&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;passenger&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;apache2&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;module&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;cd /srv/tracks
+gem install bundler
+bundle install
+gem install passenger
+/usr/local/rvm/gems/ruby-1.9.3-p448/bin/passenger-install-apache2-module
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;The passenger install wizard will do its magic, and spit back out something similar to:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;LoadModule&lt;/span&gt; &lt;span class="n"&gt;passenger_module&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rvm&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gems&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.9.3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p448&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gems&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;passenger&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;4.0.10&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;buildout&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;apache2&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mod_passenger&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;so&lt;/span&gt;
-&lt;span class="n"&gt;PassengerRoot&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rvm&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gems&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.9.3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p448&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gems&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;passenger&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;4.0.10&lt;/span&gt;
-&lt;span class="n"&gt;PassengerDefaultRuby&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;rvm&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;wrappers&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;1.9.3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;p448&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;LoadModule passenger_module /usr/local/rvm/gems/ruby-1.9.3-p448/gems/passenger-4.0.10/buildout/apache2/mod_passenger.so
+PassengerRoot /usr/local/rvm/gems/ruby-1.9.3-p448/gems/passenger-4.0.10
+PassengerDefaultRuby /usr/local/rvm/wrappers/ruby-1.9.3-p448/ruby
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Append those lines along with&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;PassengerDefaultUser&lt;/span&gt; &lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;PassengerDefaultUser www-data
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;to the end of /etc/apache2/apache2.conf&lt;/p&gt;
 &lt;p&gt;In your VirtualHosts files (likely at /etc/apache2/sites-enabled/&lt;em&gt;yoursitehere&lt;/em&gt;), add&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;RailsBaseURI&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tracks&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;RailsBaseURI /tracks
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;or whatever you want to be the directory that holds Tracks.&lt;/p&gt;
 &lt;p&gt;Now that Apache knows where to look, we need to tell Tracks what database to look for, and what settings to use&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;srv&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tracks&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;
-&lt;span class="n"&gt;cp&lt;/span&gt; &lt;span class="n"&gt;site&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;yml&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tmpl&lt;/span&gt; &lt;span class="n"&gt;site&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;yml&lt;/span&gt;
-&lt;span class="n"&gt;cp&lt;/span&gt; &lt;span class="n"&gt;database&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;yml&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;tmpl&lt;/span&gt; &lt;span class="n"&gt;database&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;yml&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;cd /srv/tracks/config
+cp site.yml.tmpl site.yml
+cp database.yml.tmpl database.yml
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Configure variables per &lt;a href="https://github.com/TracksApp/tracks/blob/v2.2.2/doc/installation.textile#configure-variables"&gt;official documentation.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Back in /srv/tracks finish installation with the new database settings:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;bundle&lt;/span&gt; &lt;span class="n"&gt;exec&lt;/span&gt; &lt;span class="n"&gt;rake&lt;/span&gt; &lt;span class="n"&gt;db&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;migrate&lt;/span&gt; &lt;span class="n"&gt;RAILS_ENV&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;production&lt;/span&gt;
-&lt;span class="n"&gt;bundle&lt;/span&gt; &lt;span class="n"&gt;exec&lt;/span&gt; &lt;span class="n"&gt;rake&lt;/span&gt; &lt;span class="n"&gt;assets&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;precompile&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;bundle exec rake db:migrate RAILS_ENV=production
+bundle exec rake assets:precompile
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;The final step is adding a link in /var/www to the public folder of Tracks:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ln&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tracks&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;srv&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tracks&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;public&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;ln -s /var/www/tracks /srv/tracks/public
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Restart Apache to make sure it's up to date:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;apache2&lt;/span&gt; &lt;span class="n"&gt;restart&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;/etc/init.d/apache2 restart
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;and point your browser to the Apache server.
 If everything went well, you should be prompted with the admin account creation page.&lt;/p&gt;
-&lt;p&gt;Now go get things done! &lt;/p&gt;</summary></entry><entry><title>Backwards-compatible Short URL conversion of Mediawiki</title><link href="http://wyattwinters.com/backwards-compatible-short-url-conversion-of-mediawiki.html" rel="alternate"></link><updated>2013-07-14T14:27:00-04:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-07-14:backwards-compatible-short-url-conversion-of-mediawiki.html</id><summary type="html">&lt;p&gt;Further adventures in mod_rewrite town! This time I had to convert a Mediawiki install to Short URLs while maintaining backwards compatability. Let's see how it went!&lt;/p&gt;
+&lt;p&gt;Now go get things done! &lt;/p&gt;</summary></entry><entry><title>Backwards-compatible Short URL conversion of Mediawiki</title><link href="http://wyattwinters.com/backwards-compatible-short-url-conversion-of-mediawiki.html" rel="alternate"></link><updated>2013-07-14T14:27:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-07-14:backwards-compatible-short-url-conversion-of-mediawiki.html</id><summary type="html">&lt;p&gt;Further adventures in mod_rewrite town! This time I had to convert a Mediawiki install to Short URLs while maintaining backwards compatability. Let's see how it went!&lt;/p&gt;
 &lt;!-- more --&gt;
 
 &lt;p&gt;First, if you're like me, you don't plan ahead very much when doing software installs. A Mediawiki site I help with has been running for some time, and several links exist pointing to old, ugly URLs like "www.example.com/wiki/index.php/Main_Page". However, the decision makers wanted the links to lose the "index.php" in the URL!&lt;/p&gt;
 &lt;p&gt;That's easy enough to do. The &lt;a href="https://www.mediawiki.org/wiki/Manual:Short_URL"&gt;Mediawiki meta-wiki&lt;/a&gt; has a great write up on the topic. They also link to &lt;a href="http://shorturls.redwerks.org/"&gt;this handy wizard&lt;/a&gt;, which I used.&lt;/p&gt;
 &lt;p&gt;You should come up with something like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;RewriteRule&lt;/span&gt; &lt;span class="o"&gt;^/?&lt;/span&gt;&lt;span class="n"&gt;wiki&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;DOCUMENT_ROOT&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;QSA&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;RewriteRule&lt;/span&gt; &lt;span class="o"&gt;^/?&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;DOCUMENT_ROOT&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;QSA&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;RewriteRule ^/?wiki(/.*)?$ %{DOCUMENT_ROOT}/w/index.php [QSA,L]
+RewriteRule ^/?$ %{DOCUMENT_ROOT}/w/index.php [QSA,L]
 
-&lt;span class="n"&gt;RewriteCond&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;DOCUMENT_ROOT&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;REQUEST_URI&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="o"&gt;!-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;
-&lt;span class="n"&gt;RewriteCond&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;DOCUMENT_ROOT&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;REQUEST_URI&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="o"&gt;!-&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;
-&lt;span class="n"&gt;RewriteRule&lt;/span&gt; &lt;span class="o"&gt;^/?&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;images&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;thumb&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="o"&gt;^/&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="n"&gt;px&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;DOCUMENT_ROOT&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;thumb&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;QSA&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;B&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-d
+RewriteRule ^/?w/images/thumb/[0-9a-f]/[0-9a-f][0-9a-f]/([^/]+)/([0-9]+)px-.*$ %{DOCUMENT_ROOT}/w/thumb.php?f=$1&amp;amp;width=$2 [L,QSA,B]
 
-&lt;span class="n"&gt;RewriteCond&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;DOCUMENT_ROOT&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;REQUEST_URI&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="o"&gt;!-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;
-&lt;span class="n"&gt;RewriteCond&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;DOCUMENT_ROOT&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;REQUEST_URI&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="o"&gt;!-&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;
-&lt;span class="n"&gt;RewriteRule&lt;/span&gt; &lt;span class="o"&gt;^/?&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;images&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;thumb&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;archive&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="o"&gt;^/&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="n"&gt;px&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;DOCUMENT_ROOT&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;thumb&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;archived&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;QSA&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;B&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-d
+RewriteRule ^/?w/images/thumb/archive/[0-9a-f]/[0-9a-f][0-9a-f]/([^/]+)/([0-9]+)px-.*$ %{DOCUMENT_ROOT}/w/thumb.php?f=$1&amp;amp;width=$2&amp;amp;archived=1 [L,QSA,B]
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;That's all great, but old links won't work anymore! Let's fix that by adding this before all the other new RewriteRules:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;RewriteRule&lt;/span&gt; &lt;span class="o"&gt;^/?&lt;/span&gt;&lt;span class="n"&gt;wiki&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;(.&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;wiki&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;R&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;301&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;RewriteRule ^/?wiki/index.php(/(.*))?$ /wiki/$2 [R=301,L]
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Now you should have pretty URLs, and the old-style links should redirect to the new pretty ones too!&lt;/p&gt;</summary></entry><entry><title>Serving identical content on HTTPS and Tor hidden service</title><link href="http://wyattwinters.com/serving-identical-content-on-https-and-tor-hidden-service.html" rel="alternate"></link><updated>2013-07-03T21:52:00-04:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-07-03:serving-identical-content-on-https-and-tor-hidden-service.html</id><summary type="html">&lt;hr /&gt;
+&lt;p&gt;Now you should have pretty URLs, and the old-style links should redirect to the new pretty ones too!&lt;/p&gt;</summary></entry><entry><title>Serving identical content on HTTPS and Tor hidden service</title><link href="http://wyattwinters.com/serving-identical-content-on-https-and-tor-hidden-service.html" rel="alternate"></link><updated>2013-07-03T21:52:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-07-03:serving-identical-content-on-https-and-tor-hidden-service.html</id><summary type="html">&lt;hr /&gt;
 &lt;p&gt;I recently came into an interesting problem- I wanted to serve the same website over the clearnet (the regular internet) using &lt;em&gt;only&lt;/em&gt; HTTPS, and serve that same content over a Tor hidden service. I assume you have at this point a web server installed (I like Apache) that will successfully serve HTTPS exclusively, but need to add the Tor.&lt;/p&gt;
 &lt;!-- more --&gt;
 
@@ -200,8 +203,8 @@ If everything went well, you should be prompted with the admin account creation 
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Edit your torrc. It is likely at /etc/tor/torrc. Uncomment the following lines:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;HiddenServiceDir&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lib&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tor&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;hiddenService&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
-&lt;span class="n"&gt;HiddenServicePort&lt;/span&gt; &lt;span class="mi"&gt;80&lt;/span&gt; &lt;span class="mf"&gt;127.0.0.1&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;80&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;HiddenServiceDir /var/lib/tor/hiddenService/
+HiddenServicePort 80 127.0.0.1:80
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -209,14 +212,14 @@ If everything went well, you should be prompted with the admin account creation 
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Restart Tor to apply new settings. In Debian Wheezy: &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tor&lt;/span&gt; &lt;span class="n"&gt;restart&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo /etc/init.d/tor restart
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Get your hostname&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;cat&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lib&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tor&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;hiddenService&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;hostname&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo cat /var/lib/tor/hiddenService/hostname
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -224,7 +227,7 @@ If everything went well, you should be prompted with the admin account creation 
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Backup your private key&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;cp&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lib&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;tor&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;hiddenService&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;privateKey&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo cp /var/lib/tor/hiddenService/privateKey /root
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -234,17 +237,17 @@ If everything went well, you should be prompted with the admin account creation 
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Enable mod_rewrite (if not already)&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;a2enmod&lt;/span&gt; &lt;span class="n"&gt;rewrite&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo a2enmod rewrite
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Edit (on a default Debian Wheezy apache install) /var/www/.htaccess and add:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;RewriteEngine&lt;/span&gt; &lt;span class="n"&gt;On&lt;/span&gt;
-&lt;span class="n"&gt;RewriteCond&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;HTTP_HOST&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="o"&gt;!^&lt;/span&gt;&lt;span class="n"&gt;youronionaddress&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;onion&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;
-&lt;span class="n"&gt;RewriteCond&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="n"&gt;HTTPS&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt;
-&lt;span class="n"&gt;RewriteRule&lt;/span&gt; &lt;span class="p"&gt;(.&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//%{HTTP_HOST}%{REQUEST_URI}&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;RewriteEngine On
+RewriteCond %{HTTP_HOST} !^youronionaddress.onion$
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -270,7 +273,7 @@ If everything went well, you should be prompted with the admin account creation 
 &lt;p&gt;Send them back to whatever address they requested, but with HTTPS.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Granted this does NOT hide the location of your webserver, but it will allow Tor users to save precious exit node bandwidth by staying inside the Tor network. This is especially neat because changes made on the clearnet will be reflected on the hidden service side, and vice versa.  &lt;/p&gt;</summary></entry><entry><title>Dota 2 on Xubuntu 13.04</title><link href="http://wyattwinters.com/dota-2-on-xubuntu-1304.html" rel="alternate"></link><updated>2013-06-20T00:50:00-04:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-06-20:dota-2-on-xubuntu-1304.html</id><summary type="html">&lt;hr /&gt;
+&lt;p&gt;Granted this does NOT hide the location of your webserver, but it will allow Tor users to save precious exit node bandwidth by staying inside the Tor network. This is especially neat because changes made on the clearnet will be reflected on the hidden service side, and vice versa.  &lt;/p&gt;</summary></entry><entry><title>Dota 2 on Xubuntu 13.04</title><link href="http://wyattwinters.com/dota-2-on-xubuntu-1304.html" rel="alternate"></link><updated>2013-06-20T00:50:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-06-20:dota-2-on-xubuntu-1304.html</id><summary type="html">&lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;UPDATE&lt;/em&gt;&lt;/strong&gt; Valve was awesome enough to do a native Linux port. &lt;a href="http://store.steampowered.com/app/570/"&gt;Get that version instead!&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Dota 2 is a really good game. Linux is really good. Out of the box, they don't play nice together. Let's fix that!&lt;/p&gt;
 &lt;!-- more --&gt;
@@ -286,45 +289,45 @@ If everything went well, you should be prompted with the admin account creation 
 &lt;p&gt;and on all low settings I can easily get a solid 60 FPS in-game, with no dips. Your mileage may vary according to your hardware. &lt;/p&gt;
 &lt;h2&gt;Drivers&lt;/h2&gt;
 &lt;p&gt;First, we need the latest drivers from Nvidia (or ATI, depending on your card). The open source drivers are fine for day-to-day computing, but they don't handle games so well. A rather sexy fellow named Harold Hope made a delightful and very colorful script called &lt;a href="http://smxi.org/site/donations.htm"&gt;sgfxi&lt;/a&gt; that makes installing your latest and greatest binary drivers very easy. Grab a root shell, and run&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;wget&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Nc&lt;/span&gt; &lt;span class="n"&gt;smxi&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;org&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;sgfxi&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;chmod&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="n"&gt;sgfxi&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;cd /usr/local/bin &amp;amp;&amp;amp; wget -Nc smxi.org/sgfxi &amp;amp;&amp;amp; chmod +x sgfxi
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Now we need to get into a non-X shell. CTRL-ALT-F1 will do the job nicely. Log in, and run&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;sgfxi&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo sgfxi
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;and follow the wizard. You may have to do this once or twice, to remove the old free-as-in-speech drivers before installing the binary drivers. It should be easy to follow.&lt;/p&gt;
 &lt;h2&gt;Getting Wine&lt;/h2&gt;
 &lt;p&gt;Man, Wine has improved &lt;em&gt;so much&lt;/em&gt; since I last messed with it around the Gutsy Gibon days. Let's add their PPA&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;repository&lt;/span&gt; &lt;span class="n"&gt;ppa&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;ubuntu&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;wine&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ppa&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;update&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;wine&lt;/span&gt; &lt;span class="n"&gt;winetricks&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo add-apt-repository ppa:ubuntu-wine/ppa &amp;amp;&amp;amp; sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install wine winetricks
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;and wait for all the goodies to download.&lt;/p&gt;
 &lt;p&gt;After Wine is installed and situated, we will follow a modified/updated version of the writeup on &lt;a href="http://appdb.winehq.org/objectManager.php?sClass=version&amp;amp;iId=24458"&gt;WineHQ&lt;/a&gt;. &lt;/p&gt;
 &lt;p&gt;Here's what we need to do:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;WINEPREFIX&lt;/span&gt;&lt;span class="o"&gt;=~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;wine_dota2&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;winecfg&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;WINEPREFIX=~/.wine_dota2/ winecfg
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;will set up a new bottle (haha wine puns) to be our Dota 2 machine. &lt;/p&gt;
 &lt;h2&gt;Getting Steamy&lt;/h2&gt;
 &lt;p&gt;Now, let's install Steam!&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;wget&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//winetricks.org/winetricks&lt;/span&gt;
-&lt;span class="n"&gt;WINEPREFIX&lt;/span&gt;&lt;span class="o"&gt;=~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;wine_dota2&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;sh&lt;/span&gt; &lt;span class="n"&gt;winetricks&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;no&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;isolate&lt;/span&gt; &lt;span class="n"&gt;steam&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;wget http://winetricks.org/winetricks
+WINEPREFIX=~/.wine_dota2/ sh winetricks --no-isolate steam
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Follow the wizard, let it update, and log into Steam. Download Dota 2, and add some launch options. Right click Dota 2 in the games list -&amp;gt; properties -&amp;gt; set launch options. These work for me:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;novid&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;console&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;noforcemaccel&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;forcemspd&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;useforcedmparms&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;high&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;nod3d9ex&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;nod3dx&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;noborder&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;gl&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;-novid -console -noforcemaccel -forcemspd -useforcedmparms -high -nod3d9ex -nod3dx -noborder -gl
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;"-novid" disables the intro video. "-console" enables the console. "-noforcemaccel -forcemspd -useforcedmparms" disables mouse acceleration. "-high" starts the game with high CPU priority. "-nod3d9ex -nod3dx -gl" are video tweaks to make it run smoother. "-noborder" starts the game in a borderless window, making alt-tabbing out should the need occur much easier. &lt;/p&gt;
 &lt;p&gt;It should be noted that with Wine wine-1.6-rc2 and the setup outlined above, I am not affected by any of the bugs on the &lt;a href="http://appdb.winehq.org/objectManager.php?sClass=version&amp;amp;iId=24458"&gt;WineHQ page&lt;/a&gt;. I'm not sure if that's luck of my hardware or improvements in Wine. There is some hitching when the game is loading things (hero selection, playing new sounds for the first time) but once everything is loaded up, the hitching disappears. Very playable, and not booting into Windows anytime soon!&lt;/p&gt;
-&lt;p&gt;I don't have comments on this blog because comments are for jerks and weirdos. Email me if you have questions or comments, and I will edit the post accordingly. glhf!&lt;/p&gt;</summary></entry><entry><title>Encrypting emails and files with OpenPGP</title><link href="http://wyattwinters.com/encrypting-emails-and-files-with-openpgp.html" rel="alternate"></link><updated>2013-05-26T12:58:00-04:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-05-26:encrypting-emails-and-files-with-openpgp.html</id><summary type="html">&lt;hr /&gt;
+&lt;p&gt;I don't have comments on this blog because comments are for jerks and weirdos. Email me if you have questions or comments, and I will edit the post accordingly. glhf!&lt;/p&gt;</summary></entry><entry><title>Encrypting emails and files with OpenPGP</title><link href="http://wyattwinters.com/encrypting-emails-and-files-with-openpgp.html" rel="alternate"></link><updated>2013-05-26T12:58:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-05-26:encrypting-emails-and-files-with-openpgp.html</id><summary type="html">&lt;hr /&gt;
 &lt;p&gt;This was originally written for a blog I co-run with my sister, over at nesasio.com (hence the domain in the screenshots). Actively writing to a single blog is hard enough, let alone multiple. Oh well, here's this post.&lt;/p&gt;
 &lt;p&gt;Have you ever wanted to make sure nobody else saw an email or file except who you wanted? Have you ever wanted to feel like a super spy? Well, through the magic of math (and it is very close to magic!), a system called OpenPGP makes that possible!&lt;/p&gt;
 &lt;!-- more --&gt;
@@ -445,7 +448,7 @@ Now we have a little work to do. Think of a good, complicated password. I would 
 &lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;Now, the secretTreasure.png.gpg file can only be opened by Adele, and myself. However, she's a robot, and doesn't do file-handling yet. &lt;/p&gt;
 &lt;p&gt;While this is by no means a complete or comprehensive OpenPGP lesson, this is enough to get you up and running, and passing encrypted emails and files back and forth between your friends. The neat part about the key exchange (the paint color exchange) is that the public keys (the mixtures) can be shared openly! As long as your secret key (secret color) stays secret, the system will be (relativley) secure!
-If you are interested in more, &lt;a href="https://en.wikipedia.org/wiki/Public-key_encryption"&gt;I would recommend Wikipedia as a starting point. &lt;/a&gt;There is lots of documentation and articles on public key encryption, especially OpenPGP.&lt;/p&gt;&lt;/p&gt;</summary></entry><entry><title>Multi-platform, multi-machine Octopressing</title><link href="http://wyattwinters.com/multi-platform-multi-machine-octopressing.html" rel="alternate"></link><updated>2013-04-29T07:40:00-04:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-04-29:multi-platform-multi-machine-octopressing.html</id><summary type="html">&lt;hr /&gt;
+If you are interested in more, &lt;a href="https://en.wikipedia.org/wiki/Public-key_encryption"&gt;I would recommend Wikipedia as a starting point. &lt;/a&gt;There is lots of documentation and articles on public key encryption, especially OpenPGP.&lt;/p&gt;&lt;/p&gt;</summary></entry><entry><title>Multi-platform, multi-machine Octopressing</title><link href="http://wyattwinters.com/multi-platform-multi-machine-octopressing.html" rel="alternate"></link><updated>2013-04-29T07:40:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2013-04-29:multi-platform-multi-machine-octopressing.html</id><summary type="html">&lt;hr /&gt;
 &lt;p&gt;Moving to Octopress was a bit of a challenge. Moving from the centralized, easy-to-manage Wordpress ecosystem to the distributed git-managed Octopress was a kick in the head. After acciedently and repeatedly overwriting my own posts and configurations, I decided to clear up the problem once and for all. &lt;/p&gt;
 &lt;p&gt;Blogging on Octopress from  multiple machines, without doing it a &lt;em&gt;very&lt;/em&gt; specific way, does bad, bad things to the blog. To rectify this, I make some scripts to treat the repo as the authoritative copy. &lt;/p&gt;
 &lt;!-- more --&gt;
@@ -465,14 +468,14 @@ git pull origin master
 
 
 &lt;p&gt;or on Windows:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;call&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;fetch&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt;
-&lt;span class="n"&gt;call&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;reset&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;hard&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;source&lt;/span&gt;
-&lt;span class="n"&gt;call&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;pull&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;source&lt;/span&gt;
-&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;_deploy&lt;/span&gt;
-&lt;span class="n"&gt;call&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;fetch&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt;
-&lt;span class="n"&gt;call&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;reset&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;hard&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;master&lt;/span&gt;
-&lt;span class="n"&gt;call&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;pull&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt;
-&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="p"&gt;..&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;call git fetch origin
+call git reset --hard origin/source
+call git pull origin source
+cd ./_deploy
+call git fetch origin
+call git reset --hard origin/master
+call git pull origin master
+cd ..
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -488,11 +491,11 @@ rake deploy
 
 
 &lt;p&gt;or on Windows&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;call&lt;/span&gt; &lt;span class="n"&gt;rake&lt;/span&gt; &lt;span class="n"&gt;generate&lt;/span&gt;
-&lt;span class="n"&gt;call&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt;
-&lt;span class="n"&gt;call&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;updating via script on Windows!&amp;quot;&lt;/span&gt;
-&lt;span class="n"&gt;call&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;source&lt;/span&gt;
-&lt;span class="n"&gt;call&lt;/span&gt; &lt;span class="n"&gt;rake&lt;/span&gt; &lt;span class="n"&gt;deploy&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;call rake generate
+call git add .
+call git commit -m &amp;quot;updating via script on Windows!&amp;quot;
+call git push origin source
+call rake deploy
 &lt;/pre&gt;&lt;/div&gt;
 
 

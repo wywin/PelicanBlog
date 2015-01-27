@@ -23,7 +23,7 @@
       <div class=separator></div>        
         <div class=body>
     <h1 class="title"> Serving identical content on HTTPS and Tor hidden service</h1>
-    <p class=date> 03 07 2013 </p>
+    <p class=date> 2013 07 03 </p>
     <hr />
 <p>I recently came into an interesting problem- I wanted to serve the same website over the clearnet (the regular internet) using <em>only</em> HTTPS, and serve that same content over a Tor hidden service. I assume you have at this point a web server installed (I like Apache) that will successfully serve HTTPS exclusively, but need to add the Tor.</p>
 <!-- more -->
@@ -34,8 +34,8 @@
 </li>
 <li>
 <p>Edit your torrc. It is likely at /etc/tor/torrc. Uncomment the following lines:</p>
-<div class="highlight"><pre><span class="n">HiddenServiceDir</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">tor</span><span class="o">/</span><span class="n">hiddenService</span><span class="o">/</span>
-<span class="n">HiddenServicePort</span> <span class="mi">80</span> <span class="mf">127.0.0.1</span><span class="o">:</span><span class="mi">80</span>
+<div class="highlight"><pre>HiddenServiceDir /var/lib/tor/hiddenService/
+HiddenServicePort 80 127.0.0.1:80
 </pre></div>
 
 
@@ -43,14 +43,14 @@
 </li>
 <li>
 <p>Restart Tor to apply new settings. In Debian Wheezy: </p>
-<div class="highlight"><pre><span class="n">sudo</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">init</span><span class="p">.</span><span class="n">d</span><span class="o">/</span><span class="n">tor</span> <span class="n">restart</span>
+<div class="highlight"><pre>sudo /etc/init.d/tor restart
 </pre></div>
 
 
 </li>
 <li>
 <p>Get your hostname</p>
-<div class="highlight"><pre><span class="n">sudo</span> <span class="n">cat</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">tor</span><span class="o">/</span><span class="n">hiddenService</span><span class="o">/</span><span class="n">hostname</span>
+<div class="highlight"><pre>sudo cat /var/lib/tor/hiddenService/hostname
 </pre></div>
 
 
@@ -58,7 +58,7 @@
 </li>
 <li>
 <p>Backup your private key</p>
-<div class="highlight"><pre><span class="n">sudo</span> <span class="n">cp</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">tor</span><span class="o">/</span><span class="n">hiddenService</span><span class="o">/</span><span class="n">privateKey</span> <span class="o">/</span><span class="n">root</span>
+<div class="highlight"><pre>sudo cp /var/lib/tor/hiddenService/privateKey /root
 </pre></div>
 
 
@@ -68,17 +68,17 @@
 <ol>
 <li>
 <p>Enable mod_rewrite (if not already)</p>
-<div class="highlight"><pre><span class="n">sudo</span> <span class="n">a2enmod</span> <span class="n">rewrite</span>
+<div class="highlight"><pre>sudo a2enmod rewrite
 </pre></div>
 
 
 </li>
 <li>
 <p>Edit (on a default Debian Wheezy apache install) /var/www/.htaccess and add:</p>
-<div class="highlight"><pre><span class="n">RewriteEngine</span> <span class="n">On</span>
-<span class="n">RewriteCond</span> <span class="o">%</span><span class="p">{</span><span class="n">HTTP_HOST</span><span class="p">}</span> <span class="o">!^</span><span class="n">youronionaddress</span><span class="p">.</span><span class="n">onion</span><span class="err">$</span>
-<span class="n">RewriteCond</span> <span class="o">%</span><span class="p">{</span><span class="n">HTTPS</span><span class="p">}</span> <span class="o">!</span><span class="n">on</span>
-<span class="n">RewriteRule</span> <span class="p">(.</span><span class="o">*</span><span class="p">)</span> <span class="n">https</span><span class="o">:</span><span class="c1">//%{HTTP_HOST}%{REQUEST_URI}</span>
+<div class="highlight"><pre>RewriteEngine On
+RewriteCond %{HTTP_HOST} !^youronionaddress.onion$
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 </pre></div>
 
 
