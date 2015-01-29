@@ -87,3 +87,4 @@ SITEMAP = {
 IMAGE_PATH = '/home/wywin/src/PelicanBlog/content/images/'
 THUMBNAIL_DIR = '/home/wywin/src/PelicanBlog/output/images/thumbnails'
 THUMBNAIL_SIZES = {'regular' : '500x?'}
+READERS = {"html": None}
