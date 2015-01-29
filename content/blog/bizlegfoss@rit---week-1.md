@@ -2,6 +2,7 @@ Title: BIZLEGFOSS@RIT - Week 1
 Date: 2015-01-27 17:50
 Slug: bizlegfoss-at-rit-week-1
 Categories: bizlegfoss
+Tags: bizlegfoss
 
 Whoa, what? An update on this website that has been almost completely stagnant for over a year? Weird!
 
