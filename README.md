@@ -1,4 +1,4 @@
 PelicanBlog
 ===========
 
-Makin' me a blog! Migrating from Octopress...
+The horrible, twisted mess that somehow makes wyattwinters.com happen.

@@ -17,7 +17,7 @@ Here are some links about / related to me:
 	<li><a href="https://en.wikipedia.org/wiki/User:Wywin">English Wikipedia user page</a></li>
 	<li><a href="https://github.com/wywin">Github</a></li>
 	<li><a href="http://wyattwinters.com/pubkey.txt">My public OpenPGP key (F0AC23DA)</a></li>
-    <li><a href="https://twitter.com/wyatt_winters">Twitter (updated rarely)</a></li>
+    <li><a href="https://twitter.com/wyatt_winters">Twitter (not even sure why I still have this)</a></li>
     <li><a href="mailto:blog@wyattwinters.com">My email</a></li>
 </ul>
 <br><br>

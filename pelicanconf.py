@@ -3,14 +3,18 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Wyatt Winters'
+
 SITENAME = 'Wyatt Winters | Saving the world one computer at a time'
 SITEURL = 'http://wyattwinters.com'
 #SITEURL = 'http://localhost:8000'
 TIMEZONE = 'UTC'
 
+USE_FOLDER_AS_CATEGORY = True
+
 DEFAULT_LANG = 'en'
 
-SECTIONS = [('Blog', 'index.html'),
+SECTIONS = [('Blog', 'category/blog'),
+        ('BIZLEGFOSS@RIT', 'category/bizlegfoss'),
         ('About', 'pages/about.html')]
 
 DEFAULT_DATE_FORMAT = '%Y %m %d'
@@ -18,9 +22,11 @@ GITHUB_URL = 'http://github.com/wywin'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = "feeds/all.atom.xml"
-CATEGORY_FEED_ATOM = None
 TAG_FEED_ATOM = 'feeds/%s.atom.xml'
+CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM= None
+AUTHOR_FEED_RSS= None
 
 DEFAULT_CATEGORY = 'Uncategorized'
 DATE_FORMAT = {
@@ -36,10 +42,7 @@ DEFAULT_PAGINATION = 10
 MAIL_USERNAME = 'blog'
 MAIL_HOST = 'wyattwinters.com'
 
-
 LINKEDIN_URL ='http://www.linkedin.com/in/wyattwinters'
-
-DEFAULT_PAGINATION = 100
 
 STATIC_PATHS = ['images',
                 'extra'
@@ -53,17 +56,6 @@ EXTRA_PATH_METADATA = {
     'extra/404.html': {'path': '404.html'},
 
     }
-
-# FILES_TO_COPY = (
-# 				('extra/404.gif', '404.gif'),
-# 				('extra/404.html', '404.html'),
-# 				('extra/favicon.ico', 'favicon.ico'),
-# 				('extra/CNAME', 'CNAME'),
-# 				('extra/robots.txt', 'robots.txt'),
-# 				('extra/pubkey.txt', 'pubkey.txt'),
-# 				)
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
 
 THEME = '/home/wywin/src/pelican-themes/flasky'
 
@@ -88,3 +80,7 @@ IMAGE_PATH = '/home/wywin/src/PelicanBlog/content/images/'
 THUMBNAIL_DIR = '/home/wywin/src/PelicanBlog/output/images/thumbnails'
 THUMBNAIL_SIZES = {'regular' : '500x?'}
 READERS = {"html": None}
+
+AUTHORS_SAVE_AS = ''
+AUTHOR_SAVE_AS = ''
+
