@@ -1,5 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Wyatt Winters | Saving the world one computer at a time</title><link href="http://wyattwinters.com/" rel="alternate"></link><link href="http://wyattwinters.com/feeds/bizlegfoss.atom.xml" rel="self"></link><id>http://wyattwinters.com/</id><updated>2015-01-27T17:50:00+00:00</updated><entry><title>BIZLEGFOSS@RIT - Week 1</title><link href="http://wyattwinters.com/bizlegfoss-at-rit-week-1.html" rel="alternate"></link><updated>2015-01-27T17:50:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-01-27:bizlegfoss-at-rit-week-1.html</id><summary type="html">&lt;p&gt;Whoa, what? An update on this website that has been almost completely stagnant for over a year? Weird!&lt;/p&gt;
-&lt;p&gt;I'm somewhat hesitant to write a big long story giving exposition for why this post suddenly appeared, but since my Github account &lt;em&gt;is&lt;/em&gt; bound to the &lt;a href="https://github.com/FOSSRIT"&gt;RIT FOSSBox's group page&lt;/a&gt;, I suppose it's not all that big of a secret where I go to school. If you're stalking me (or the NSA agent assigned to me) and didn't draw that conclusion, well, there you go, and also, you're bad at what you do.&lt;/p&gt;
-&lt;p&gt;So, RIT is the first university in North America to offer &lt;a href="http://magic.rit.edu/foss/"&gt;a minor in Free and Open Source Software&lt;/a&gt;, and I get to be one of the first people to complete it! As such, I am taking "Legal/Business Aspects of FOSS", or BIZLEGFOSS for short (the short name apparently subject to change, but I rather like it).&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Wyatt Winters | Saving the world one computer at a time</title><link href="http://wyattwinters.com/" rel="alternate"></link><link href="http://wyattwinters.com/feeds/bizlegfoss.atom.xml" rel="self"></link><id>http://wyattwinters.com/</id><updated>2015-02-04T13:48:00+00:00</updated><entry><title>In which I read, watch, and write. (BIZLEGFOSS Week 2)</title><link href="http://wyattwinters.com/in-which-i-read-watch-and-write-bizlegfoss-week-2.html" rel="alternate"></link><updated>2015-02-04T13:48:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-04:in-which-i-read-watch-and-write-bizlegfoss-week-2.html</id><summary type="html">&lt;p&gt;Having to write on this site this often is weird. I had gotten into such a deep
+rut of assuming "oh, that's not really worthy of a blog post" about nearly
+everything I do (so much so that I hadn't posted anything in like 15 months),
+that having to write blog posts (for grades!) this frequently, on a variety of
+topics, seems quite strange. Given how relatively surgical and calculated my previous posts have
+been, this continues to be a foreign practice to me. Hopefully it will get more
+comfortable (or I will stop irrationally worrying about every little thing that
+I post. If I go for volume, maybe people won't see the occasional dumb thing I post!)&lt;/p&gt;
+&lt;p&gt;Onto the assignments for this week:&lt;/p&gt;
+&lt;div id="vidreview0"&gt;&lt;/div&gt;
+
+&lt;h2&gt;&lt;a href="#vidreview0"&gt;Assignment 1: "Vidreview0"&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Who&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/remixeverything" target="_blank"&gt;Kirby Ferguson&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://everythingisaremix.info/" target="_blank"&gt;&lt;em&gt;Everything is a Remix&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Where&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://everythingisaremix.info/watch-the-series/" target="_blank"&gt;http://everythingisaremix.info/watch-the-series/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The fourth and final part was released 2012-02-15.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Gist&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This is a well done (and exhaustively sourced) documentary-of-sorts about
+the history, impacts, and interactions between copyright, patent law, creative
+culture, and (as the title would suggest) remixing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Good&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The production values were quite good, and it was obvious Mr. Ferguson put
+a lot of effort into it.&lt;/li&gt;
+&lt;li&gt;I'm always a fan of not-actually-copyright-notice screens. This one wasn't
+particularly funny, but still an excellent use of the trope.&lt;/li&gt;
+&lt;li&gt;I have no idea why, but the animated sequence at 9:25 at least on &lt;a href="https://www.youtube.com/watch?v=coGpmA4saEk" target="_blank"&gt;this copy&lt;/a&gt; was maybe my favorite part.
+Very Sesame Street-esque.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Bad&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Youtube version I was linked had some serious compression and artifacting.&lt;/li&gt;
+&lt;li&gt;It's common in these documentary / educational type pieces, but I don't
+really like the "call to action" bit at the end.&lt;/li&gt;
+&lt;li&gt;There were points that just seemed over-produced - excessive transitions,
+sequences with filters for no apparent reason, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Questions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The call to action part doesn't go far enough - what can one do to "fix" the issue(s)?&lt;/li&gt;
+&lt;li&gt;While patent trolls are obviously bad, but what are the creator's opinion
+about the current state of copyright length?&lt;/li&gt;
+&lt;li&gt;Why was this video done in four parts?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Your Review&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I actually enjoyed this quite a bit, despite some of the flaws noted above.
+It was educational, engaging, and well made. However, it's difficult to understand
+&lt;em&gt;why&lt;/em&gt; it was made, aside from being an educational piece. The creator obviously
+feels strongly about the covered topics, but does nothing to encourage the viewer to
+get involved in free/open source projects or really take any sort of action.
+The ending felt more like it petered out than finished strong...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4/5 &amp;lt;review increments&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id="litreview0"&gt;&lt;/div&gt;
+
+&lt;h2&gt;&lt;a href="#litreview0"&gt;Assignment 2: "Litreview0"&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Who&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.softwarefreedom.org/" target="_blank"&gt;Software Freedom Law Center&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.softwarefreedom.org/resources/2008/foss-primer.pdf" target="_blank"&gt;&lt;em&gt;A Legal Issues Primer for Open Source and Free Software Projects&lt;/em&gt;&lt;/a&gt; (Intro to the end of Chapter 2)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Where&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.softwarefreedom.org/resources/2008/foss-primer.pdf" target="_blank"&gt;https://www.softwarefreedom.org/resources/2008/foss-primer.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The date on the title page indicates version 1.5.2 was released 2008-06-04&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Gist&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This is a FOSS-developer targeted legal primer on a number of issues and
+legal topics relevant to FOSS development. It covers copyright, licensing,
+organizational structure, patents, and trademarks. It is intended to be a
+guideline, not actual cut-and-dried legal advice.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Good&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Links in PDFs are awesome.&lt;/li&gt;
+&lt;li&gt;"If you find yourself feeling the urge to write a new license, it’s a
+good sign that you might need to reconsider your approach."&lt;/li&gt;
+&lt;li&gt;I had no idea about the Affero GPL, which seems like an excellent idea.
+I wonder why it's not implemented more widely (or maybe I haven't been looking for it)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Bad&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;"...send a letter, via as many different methods as possible (at least by email, courier service, and fax)." Fax? Really?&lt;/li&gt;
+&lt;li&gt;While I understand the need, at points the concentration of acronyms got a little
+unreadable.&lt;/li&gt;
+&lt;li&gt;The section on copyright for documentation seems oddly short, especially after
+they talk up the importance of good documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Questions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Is there a simple(r) solution for small projects?&lt;/li&gt;
+&lt;li&gt;Is this information globally relevant, or USA specific?&lt;/li&gt;
+&lt;li&gt;Why are there so many versions of the GPL, and what are the differences?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Your Review&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It's hard to make legal guidelines / information exciting. I understand that.
+I suppose this could be far less engaging, but given the nature of the material,
+it was engaging enough. More than anything, I'm kind of terrified of FOSS licenses
+and how they interact now. No wonder GPL violations (and other license violations)
+are so common.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3/5 &amp;lt;review increments&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="bizlegfoss"></category></entry><entry><title>BIZLEGFOSS@RIT - Week 1</title><link href="http://wyattwinters.com/bizlegfoss-at-rit-week-1.html" rel="alternate"></link><updated>2015-01-27T17:50:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-01-27:bizlegfoss-at-rit-week-1.html</id><summary type="html">&lt;p&gt;Whoa, what? An update on this website that has been almost completely stagnant for over a year? Weird!&lt;/p&gt;
+&lt;p&gt;I'm somewhat hesitant to write a big long story giving exposition for why this post suddenly appeared, but since my Github account &lt;em&gt;is&lt;/em&gt; bound to the &lt;a href="https://github.com/FOSSRIT" target="_blank"&gt;RIT FOSSBox's group page&lt;/a&gt;, I suppose it's not all that big of a secret where I go to school. If you're stalking me (or the NSA agent assigned to me) and didn't draw that conclusion, well, there you go, and also, you're bad at what you do.&lt;/p&gt;
+&lt;p&gt;So, RIT is the first university in North America to offer &lt;a href="http://magic.rit.edu/foss/" target="_blank"&gt;a minor in Free and Open Source Software&lt;/a&gt;, and I get to be one of the first people to complete it! As such, I am taking "Legal/Business Aspects of FOSS", or BIZLEGFOSS for short (the short name apparently subject to change, but I rather like it).&lt;/p&gt;
 &lt;p&gt;The first homework assignment for this course was to make a handful of accounts (blog, github, freenode nickserv, etc), all of which I already had. The final part was to write a blog post about your experience. I could get a little recursive and write about writing this blog post, but that is both silly and time consuming. Hopefully this class will get me back into the blogging mindset. I do have a handful of topics to write about, so perhaps some of those will appear sooner rather than later.&lt;/p&gt;</summary><category term="bizlegfoss"></category></entry></feed>
