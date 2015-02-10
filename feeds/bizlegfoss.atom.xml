@@ -1,5 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Wyatt Winters | Saving the world one computer at a time</title><link href="http://wyattwinters.com/" rel="alternate"></link><link href="http://wyattwinters.com/feeds/bizlegfoss.atom.xml" rel="self"></link><id>http://wyattwinters.com/</id><updated>2015-02-04T13:48:00+00:00</updated><entry><title>In which I read, watch, and write. (BIZLEGFOSS Week 2)</title><link href="http://wyattwinters.com/in-which-i-read-watch-and-write-bizlegfoss-week-2.html" rel="alternate"></link><updated>2015-02-04T13:48:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-04:in-which-i-read-watch-and-write-bizlegfoss-week-2.html</id><summary type="html">&lt;p&gt;Having to write on this site this often is weird. I had gotten into such a deep
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Wyatt Winters | Saving the world one computer at a time</title><link href="http://wyattwinters.com/" rel="alternate"></link><link href="http://wyattwinters.com/feeds/bizlegfoss.atom.xml" rel="self"></link><id>http://wyattwinters.com/</id><updated>2015-02-10T10:40:00+00:00</updated><entry><title>Further adventures in GPL land (BIZLEGFOSS Week 3)</title><link href="http://wyattwinters.com/further-adventures-in-gpl-land-bizlegfoss-week-3.html" rel="alternate"></link><updated>2015-02-10T10:40:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-10:further-adventures-in-gpl-land-bizlegfoss-week-3.html</id><summary type="html">&lt;h2&gt;Assignment 1: "Litreview1"&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Who&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://copyleft.org/guide/" target="_blank"&gt;copyleft.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://copyleft.org/guide/" target="_blank"&gt;&lt;em&gt;Copyleft and the GNU General Public License: A Comprehensive Tutorial and Guide&lt;/em&gt;&lt;/a&gt; (Chapter 1 specifically)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Where&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://copyleft.org/guide/" target="_blank"&gt;http://copyleft.org/guide/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There are copyright notices dated as late as 2014. So some time in 2014 was the last update.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Gist&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The first chapter of this document explains various aspects of software freedom, such
+as the GPL, copyleft ideology, and the differences between copyleft and public domain.
+It is written in a (relatively) universally understandable way (meaning not
+developer-specific).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Good&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Again, the in-PDF links are fantastic. Some are even to external sources!&lt;/li&gt;
+&lt;li&gt;"It was once rare that this freedom [the freedom to run] was restricted by even proprietary software; but such is quite common today."&lt;ul&gt;
+&lt;li&gt;Since most of my computing has been in the post-EULA era, this was interesting
+to contemplate.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;I now have a way better understanding of software freedom vs. public domain software.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Bad&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;"Copyleft modifies, or 'hacks' copyright law..."&lt;ul&gt;
+&lt;li&gt;The more people use the term "hack" the less I like seeing it. It's been
+muddied and overused, and doesn't really have a concrete meaning anymore.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Some of the wording feels a bit biased. It feels more like a persuasive document,
+rather than a general-information document for people trying to learn more about
+software freedom and the GPL.&lt;/li&gt;
+&lt;li&gt;While I love semantics as much as the next guy, it feels like their definitions of
+similar terms are fuzzy at best.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Questions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Are there any downsides to licensing one's code under the GPL?&lt;/li&gt;
+&lt;li&gt;If one wants to make a living by writing code, is the GPL still viable / appropriate?&lt;/li&gt;
+&lt;li&gt;Are there cases where releasing into the public domain makes more sense than releasing
+under the GPL?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Your Review&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;While informative, this first chapter wasn't terribly interesting or engaging to read.
+Regardless, it is undoubtedly well written, and exhaustively sourced. Given
+the inherently dry nature of legal writing, it was more than adequate.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4/5 &amp;lt;review increments&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="bizlegfoss"></category></entry><entry><title>In which I read, watch, and write. (BIZLEGFOSS Week 2)</title><link href="http://wyattwinters.com/in-which-i-read-watch-and-write-bizlegfoss-week-2.html" rel="alternate"></link><updated>2015-02-04T13:48:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-04:in-which-i-read-watch-and-write-bizlegfoss-week-2.html</id><summary type="html">&lt;p&gt;Having to write on this site this often is weird. I had gotten into such a deep
 rut of assuming "oh, that's not really worthy of a blog post" about nearly
 everything I do (so much so that I hadn't posted anything in like 15 months),
 that having to write blog posts (for grades!) this frequently, on a variety of
