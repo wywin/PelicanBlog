@@ -1,5 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Wyatt Winters | Saving the world one computer at a time</title><link href="http://wyattwinters.com/" rel="alternate"></link><link href="http://wyattwinters.com/feeds/bizlegfoss.atom.xml" rel="self"></link><id>http://wyattwinters.com/</id><updated>2015-02-10T10:40:00+00:00</updated><entry><title>Further adventures in GPL land (BIZLEGFOSS Week 3)</title><link href="http://wyattwinters.com/further-adventures-in-gpl-land-bizlegfoss-week-3.html" rel="alternate"></link><updated>2015-02-10T10:40:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-10:further-adventures-in-gpl-land-bizlegfoss-week-3.html</id><summary type="html">&lt;h2&gt;Assignment 1: "Litreview1"&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Wyatt Winters | Saving the world one computer at a time</title><link href="http://wyattwinters.com/" rel="alternate"></link><link href="http://wyattwinters.com/feeds/bizlegfoss.atom.xml" rel="self"></link><id>http://wyattwinters.com/</id><updated>2015-02-12T09:05:00+00:00</updated><entry><title>Terms of Service documents are a pain to read</title><link href="http://wyattwinters.com/terms-of-service-documents-are-a-pain-to-read.html" rel="alternate"></link><updated>2015-02-12T09:05:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-12:terms-of-service-documents-are-a-pain-to-read.html</id><summary type="html">&lt;p&gt;I should probably stop including the class and week in the title. It is getting
+a bit redundant at this point, huh.&lt;/p&gt;
+&lt;p&gt;Anyways, here's the other assignment for this week, a triple threat of documents!
+I even read something no man was ever meant to read, the iTunes TOS!&lt;/p&gt;
+&lt;h2&gt;Assignment 2: "Litreview2"&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Who&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.apple.com/" target="_blank"&gt;Apple Inc.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://getfedora.org/" target="_blank"&gt;The Fedora Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.python.org/psf/" target="_blank"&gt;The Python Software Foundation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.apple.com/legal/internet-services/itunes/us/terms.html" target="_blank"&gt;The iTunes Terms of Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://fedoraproject.org/wiki/Legal:Fedora_Project_Contributor_Agreement" target="_blank"&gt;The Fedora Project Contributors' Agreement&lt;/a&gt; (or the FPCA)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://legacy.python.org/psf/contrib/contrib-form/contributor-agreement.pdf" target="_blank"&gt;Python Software Foundation CLA&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Where&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.apple.com/legal/internet-services/itunes/us/terms.html" target="_blank"&gt;https://www.apple.com/legal/internet-services/itunes/us/terms.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://fedoraproject.org/wiki/Legal:Fedora_Project_Contributor_Agreement" target="_blank"&gt;https://fedoraproject.org/wiki/Legal:Fedora_Project_Contributor_Agreement&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://legacy.python.org/psf/contrib/contrib-form/contributor-agreement.pdf" target="_blank"&gt;ttp://legacy.python.org/psf/contrib/contrib-form/contributor-agreement.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This iteration of the iTunes TOS was updated September 17, 2014&lt;/li&gt;
+&lt;li&gt;The Fedora Project Contributor Agreement is on a wiki (which doesn't allow
+anonymous edits, so it's probably fine), and the last edit
+was &lt;a href="https://fedoraproject.org/w/index.php?title=Legal:Fedora_Project_Contributor_Agreement&amp;amp;oldid=402596" target="_blank"&gt;2015-02-03&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The Python CLA doesn't indicate any obvious date/time information.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Gist&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The iTunes TOS gets right to it in the first paragraph: "IF YOU DO NOT AGREE TO THESE TERMS, DO NOT CLICK "AGREE," AND DO NOT USE THE SERVICES."&lt;/li&gt;
+&lt;li&gt;The Fedora Project Contributor Agreement is in place to ensure that contributions
+are assigned appropriate licenses as to not impede the progress of the project.
+It is clear to point out that "The FPCA is &lt;em&gt;not&lt;/em&gt; a copyright assignment agreement."&lt;/li&gt;
+&lt;li&gt;The Python CLA is similar to the Fedora document, but significantly shorter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Good&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This is a somewhat well-known quote, but the iTunes TOS indicates: "You also agree that you will not use these products [iTunes and associated services] for any purposes prohibited by United States law, including, without limitation, the development, design, manufacture, or production of nuclear, missile, or chemical or biological weapons." You would &lt;em&gt;hope&lt;/em&gt; that you could omit the part after "purposes prohibited by United States law," but apparently
+they felt it was necessary to include that. As with other warning signs, it makes you
+assume that someone did that at one point, so they had to include it?&lt;/li&gt;
+&lt;li&gt;The FPCA is significantly more readable (and more concise) than the iTunes TOS.
+The sections are also zero-indexed, so that's fun.&lt;/li&gt;
+&lt;li&gt;The Python CLA is an outlier in this group of documents - the entire thing
+is roughly 2 paragraphs, but (I assume) still does the job to not cause any problems.
+That being said, it is easily the most readable and non-lawyer friendly document of the bunch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Bad&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The iTunes TOS is &lt;em&gt;so long&lt;/em&gt;! I assume it's partly to cover every conceivable issue
+(including biological weapons), but I imagine it's also partly so they can sneak in
+nefarious things without being too noticeable. They also forgot / didn't type
+a word here, under the heading "POPULAR NEAR ME":
+"Apple will, from time to time, automatically collect information related to certain [aspects?] of your App Store Products."
+I guess it's hard to proofread a 15790 word nightmare, but that's pretty obvious.&lt;/li&gt;
+&lt;li&gt;It's pretty nitpicky, but having the FAQ before the document that the FAQ is &lt;em&gt;about&lt;/em&gt; seems
+strange. In addition, I understand that it's for legal purposes, but the constant Use
+of Frequent Capitalization on Defined Terms makes Reading it Pretty difficult.&lt;/li&gt;
+&lt;li&gt;It's hard to find flaws in a document as short as the Python CLA, but I suppose having
+time / date information on the PDF would be helpful.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Questions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I've heard conflicting things - are TOS and EULAs actually legally binding?&lt;/li&gt;
+&lt;li&gt;Can I still submit very small patches (typo fixes, etc) to Fedora without
+signing / agreeing to the FPCA? Not that I'm opposed to it, but I'm lazy.&lt;/li&gt;
+&lt;li&gt;Have there been disputes that make contributor agreements necessary, or are they more
+of a "if and when" sort of thing?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Your Review&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reviewing legal documents seems weird. It's even more difficult because
+I am not a lawyer, and I have no idea if they're any good. So, from that not-lawyer
+position, these documents are &lt;strong&gt;&lt;em&gt;dreadfully boring&lt;/em&gt;&lt;/strong&gt;! While they vary in length
+(iTunes obviously being the worst offender), they are written with so many
+definitions and CamelCase words, they are neigh-unreadable most of the time.
+The Python CLA is the most user-friendly document, but the link I was given
+is on the subdomain legacy.python.org, so I'm guessing it was retired / updated
+since this version was penned. I hope they didn't make it much longer...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2/5 &amp;lt;review increments&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="bizlegfoss"></category></entry><entry><title>Further adventures in GPL land (BIZLEGFOSS Week 3)</title><link href="http://wyattwinters.com/further-adventures-in-gpl-land-bizlegfoss-week-3.html" rel="alternate"></link><updated>2015-02-10T10:40:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-10:further-adventures-in-gpl-land-bizlegfoss-week-3.html</id><summary type="html">&lt;h2&gt;Assignment 1: "Litreview1"&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Who&lt;/p&gt;
