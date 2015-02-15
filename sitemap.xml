@@ -5,35 +5,42 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://wyattwinters.com/</loc>
-<lastmod>2015-02-12T10:23:59-00:00</lastmod>
+<lastmod>2015-02-15T17:01:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://wyattwinters.com/archives.html</loc>
-<lastmod>2015-02-12T10:23:59-00:00</lastmod>
+<lastmod>2015-02-15T17:01:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://wyattwinters.com/tags.html</loc>
-<lastmod>2015-02-12T10:23:59-00:00</lastmod>
+<lastmod>2015-02-15T17:01:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://wyattwinters.com/categories.html</loc>
-<lastmod>2015-02-12T10:23:59-00:00</lastmod>
+<lastmod>2015-02-15T17:01:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://wyattwinters.com/pages/about.html</loc>
-<lastmod>2015-02-12T10:23:59-00:00</lastmod>
+<lastmod>2015-02-15T17:01:11-00:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://wyattwinters.com/software-classification-and-preservation.html</loc>
+<lastmod>2015-02-15T16:00:00+00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -123,6 +130,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://wyattwinters.com/category/school.html</loc>
+<lastmod>2015-02-15T16:00:00+00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://wyattwinters.com/category/blog.html</loc>
 <lastmod>2013-10-15T17:50:00+00:00</lastmod>
 <changefreq>daily</changefreq>
@@ -130,8 +144,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://wyattwinters.com/category/bizlegfoss.html</loc>
-<lastmod>2015-02-12T09:05:00+00:00</lastmod>
+<loc>http://wyattwinters.com/tag/foscis.html</loc>
+<lastmod>2015-02-15T16:00:00+00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
