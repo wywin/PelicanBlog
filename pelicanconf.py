@@ -13,9 +13,10 @@ USE_FOLDER_AS_CATEGORY = True
 
 DEFAULT_LANG = 'en'
 
-SECTIONS = [('Blog', 'category/blog'),
-        ('BIZLEGFOSS@RIT', 'category/bizlegfoss'),
-        ('About', 'pages/about.html')]
+SECTIONS = [('About', 'pages/about.html'),
+        ('Blog', 'category/blog'),
+        ('School-related', 'category/school')
+        ]
 
 DEFAULT_DATE_FORMAT = '%Y %m %d'
 GITHUB_URL = 'http://github.com/wywin'
