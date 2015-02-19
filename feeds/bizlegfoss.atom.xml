@@ -1,5 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Wyatt Winters | Saving the world one computer at a time</title><link href="http://wyattwinters.com/" rel="alternate"></link><link href="http://wyattwinters.com/feeds/bizlegfoss.atom.xml" rel="self"></link><id>http://wyattwinters.com/</id><updated>2015-02-17T11:19:00+00:00</updated><entry><title>Software Patents Sure Are Weird</title><link href="http://wyattwinters.com/software-patents-sure-are-weird.html" rel="alternate"></link><updated>2015-02-17T11:19:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-17:software-patents-sure-are-weird.html</id><summary type="html">&lt;h2&gt;Litreview3&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Wyatt Winters | Saving the world one computer at a time</title><link href="http://wyattwinters.com/" rel="alternate"></link><link href="http://wyattwinters.com/feeds/bizlegfoss.atom.xml" rel="self"></link><id>http://wyattwinters.com/</id><updated>2015-02-19T10:37:00+00:00</updated><entry><title>Software Patents, and Corporate Pledges</title><link href="http://wyattwinters.com/software-patents-and-corporate-pledges.html" rel="alternate"></link><updated>2015-02-19T10:37:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-19:software-patents-and-corporate-pledges.html</id><summary type="html">&lt;p&gt;Continuing from last post, now we read pledges from a handful of companies to not be jerks about their patents, provided your potentially infringing code is open source! That's nice of them!&lt;/p&gt;
+&lt;h2&gt;Litreview4&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Who&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.redhat.com" target="_blank"&gt;Red Hat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.google.com" target="_blank"&gt;Google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.ibm.com" target="_blank"&gt;IBM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.redhat.com/legal/patent_policy.html" target="_blank"&gt;Red Hat Patent Policy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.ibm.com/ibm/licensing/patents/pledgedpatents.pdf" target="_blank"&gt;IBM Statement of Non-Assertion of Named Patents Against OSS&lt;/a&gt; (PDF)&lt;/li&gt;
+&lt;li&gt;Google's &lt;a href="https://www.google.com/patents/opnpledge/pledge/" target="_blank"&gt;Open Patent Non-Assertion Pledge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Red Hat Magazine's &lt;a href="https://www.redhat.com/magazine/001nov04/features/patents/" target="_blank"&gt;The Red Hat Patent Promise: Encouraging Innovation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Where&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.redhat.com/legal/patent_policy.html" target="_blank"&gt;http://www.redhat.com/legal/patent_policy.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.ibm.com/ibm/licensing/patents/pledgedpatents.pdf" target="_blank"&gt;http://www.ibm.com/ibm/licensing/patents/pledgedpatents.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.google.com/patents/opnpledge/pledge/" target="_blank"&gt;https://www.google.com/patents/opnpledge/pledge/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.redhat.com/magazine/001nov04/features/patents/" target="_blank"&gt;https://www.redhat.com/magazine/001nov04/features/patents/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Red Hat's Patent Pledge: ~2001&lt;/li&gt;
+&lt;li&gt;Google's Pledge: Archive.org's first scrape is &lt;a href="https://web.archive.org/web/20130331033642/http://www.google.com/patents/opnpledge/pledge" target="_blank"&gt;2013-03-31&lt;/a&gt;, so somewhere around then.&lt;/li&gt;
+&lt;li&gt;The magazine article: November 2004. The article also mentions IBM's pledge, so some form of it existed around then.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Gist&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Each company's pledge is essentially: "If you have infringing code in a project
+that is licensed under an approved license, we won't sue you." Google reserves
+the right to terminate their pledge though...&lt;/li&gt;
+&lt;li&gt;The Red Hat article has some explanation and comparisons / critiques about
+the pledges as they stood in 2004. Since I haven't heard any huge stories
+about open source projects getting sued over patents, I guess they all worked
+out?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Good&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IBM apparently owns a patent for &lt;a href="https://www.google.com/patents/US6285777" target="_blank"&gt;"Internet assisted mail"&lt;/a&gt;. They actually "invented" &lt;strong&gt;&lt;em&gt;printing out emails&lt;/em&gt;&lt;/strong&gt; and
+physically mailing them to people. I almost want that to exist, just because
+it's so absurd. In our impending dark cyberpunk dystopia, this may become a reality. I,
+for one, am excited.&lt;ul&gt;
+&lt;li&gt;I suppose this also means that I could implement this myself (as it's on their list of pledged patents), as long as I open source it...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Based on the list of patents that Google and IBM won't assert for FOSS projects,
+it's amazing software gets made at all. There's just a patent called "Web browser system" (US 5793964 A)? I guess it's good they allow FOSS projects to use that one. It makes you
+wonder how IE exists... Maybe that's why IE is so terrible, they have to design
+around this patent.&lt;/li&gt;
+&lt;li&gt;Something about Red Hat's use of "Really Big Companies" as a proper (pro?)noun is
+pretty humorous.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Bad&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;From Google: "Google is therefore pledging the free use of certain of its patents".
+I think they accidentally a word. That sure happens a lot in these fancy legal documents, when
+one actually reads them. Weird.&lt;/li&gt;
+&lt;li&gt;It's getting repetitive at this point, but even after a handful of weeks reading them,
+legal documents are still incredibly bland.&lt;/li&gt;
+&lt;li&gt;I suppose it's to be expected, but the Red Hat article could basically just read:
+"There are other patent pledges, but ours is easily the best for everyone."
+Have some humility!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Questions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Has any open source project (of any size) actually been sued over patent
+infringement? If so, did they actually take it to court?&lt;/li&gt;
+&lt;li&gt;Are there other companies that have similar pledges?&lt;/li&gt;
+&lt;li&gt;Is "Internet assisted mail" actually implemented anywhere in the world, or
+is that just a "in case this ever happens, we're ready" sort of patent?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Your Review&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It's tempting to rate these documents highly, simply because of what they
+(theoretically) enable, and I understand they have to be written a certain way
+to be (again, theoretically) legally enforceable, but it's still overwhelmingly
+dull. That balances out to a 3/5, yeah?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3/5 &amp;lt;review increments&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="bizlegfoss"></category></entry><entry><title>Software Patents Sure Are Weird</title><link href="http://wyattwinters.com/software-patents-sure-are-weird.html" rel="alternate"></link><updated>2015-02-17T11:19:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-17:software-patents-sure-are-weird.html</id><summary type="html">&lt;h2&gt;Litreview3&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Who&lt;/p&gt;
