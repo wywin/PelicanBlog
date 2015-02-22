@@ -1,5 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Wyatt Winters | Saving the world one computer at a time</title><link href="http://wyattwinters.com/" rel="alternate"></link><link href="http://wyattwinters.com/feeds/foscis.atom.xml" rel="self"></link><id>http://wyattwinters.com/</id><updated>2015-02-15T16:00:00+00:00</updated><entry><title>Software: Classification and Preservation</title><link href="http://wyattwinters.com/software-classification-and-preservation.html" rel="alternate"></link><updated>2015-02-15T16:00:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-15:software-classification-and-preservation.html</id><summary type="html">&lt;p&gt;So begins (perhaps a little late into the semester) my adventures in independent study.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Wyatt Winters | Saving the world one computer at a time</title><link href="http://wyattwinters.com/" rel="alternate"></link><link href="http://wyattwinters.com/feeds/foscis.atom.xml" rel="self"></link><id>http://wyattwinters.com/</id><updated>2015-02-22T14:17:00+00:00</updated><entry><title>Social Media is Terrifying</title><link href="http://wyattwinters.com/social-media-is-terrifying.html" rel="alternate"></link><updated>2015-02-22T14:17:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-22:social-media-is-terrifying.html</id><summary type="html">&lt;p&gt;Another week of independent study, another medium.com article. This week:&lt;/p&gt;
+&lt;h2&gt;&lt;em&gt;What Is Public?&lt;/em&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Who&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://dashes.com/anil/about.html" target="_blank"&gt;Anil Dash&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://medium.com/message/what-is-public-f33b16d780f9" target="_blank"&gt;&lt;em&gt;What Is Public?&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Where&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://medium.com/message/what-is-public-f33b16d780f9" target="_blank"&gt;https://medium.com/message/what-is-public-f33b16d780f9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2014-07-24&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Gist&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This article discusses the post-internet concept of "public," and the numerous
+issues surrounding "public" content.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Good&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I absolutely &lt;em&gt;despise&lt;/em&gt; Gawker and their entire network of sites, so I'm
+always glad to see them disparaged by others.&lt;/li&gt;
+&lt;li&gt;That Facebook chart is terrifying.&lt;/li&gt;
+&lt;li&gt;The author's end goal is noble, so I respect that.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Bad&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;"any of us might throw in a hashtag to gather our thoughts". I never want to
+meet anyone who does that. Ever.&lt;/li&gt;
+&lt;li&gt;While I admit that Twitter and Facebook both have significant "anti-privacy
+creep," this article seems to be written from the perspective that Twitter and
+Facebook are mandatory. I acknowledge that the regular, average user of social
+media is less technical than I; I would like to hope that people understand that
+the entirety of their generated content is being indexed and monetized.
+Sadly, I know that isn't the case.&lt;/li&gt;
+&lt;li&gt;This author apparently doesn't understand private messaging, or other
+methods of communication besides Twitter and Facebook. There are a &lt;em&gt;vast&lt;/em&gt;
+number of options for less-public communication on the internet, ranging from casual to
+paranoid.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Questions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Given that the legal system &lt;em&gt;enabled&lt;/em&gt; things like the NSA's dragnet, does
+legal reform for privacy / public content issues seem viable?&lt;/li&gt;
+&lt;li&gt;Should social media companies be more explicit about their privacy settings
+and / or their business models?&lt;/li&gt;
+&lt;li&gt;Is this problem fixable, and if so, what would be some of the steps?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Your Review&lt;/p&gt;
+&lt;p&gt;I don't like this article. A number of places in the article talk about consent and the
+end user not being able to give it concerning their content. This is
+fundamentally flawed - the user gives consent for whatever they post as soon
+as they post it. While this may not be ideal, that is the
+current state of the social media, and that is unlikely to change any time
+soon. One's options are take the good with the bad, or simply don't use
+social media.&lt;/p&gt;
+&lt;p&gt;While I agree that the wide variety of nastiness that can happen
+online (swatting, doxxing, harassment, people sending pizzas) is deplorable,
+there are also some positives to truly public content - educational value
+(there have actually been some fascinating data aggregation projects),
+and even the CDC &lt;a href="http://fcw.com/articles/2013/01/25/flu-social-media.aspx" target="_blank"&gt;tracking and predicting the flu&lt;/a&gt;. The internet, specifically social media is a terrifying beast,
+but there are a number of cool things that come out of it. I don't think it's the
+fault of the services themselves, but rather the small percentage of awful
+people who use them for their own, malicious ends.&lt;/p&gt;
+&lt;p&gt;This is all scary, uncharted territory for both society and our legal system.
+Who knows if (and how much) it has to get worse before it gets better, if it does at all.
+At the end of the day, all of this is opt-in. If you can't deal with the
+potential wretchedness that could rear its head, don't sign up!&lt;/p&gt;
+&lt;p&gt;1/5 &amp;lt;review increments&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="foscis"></category></entry><entry><title>Software: Classification and Preservation</title><link href="http://wyattwinters.com/software-classification-and-preservation.html" rel="alternate"></link><updated>2015-02-15T16:00:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-15:software-classification-and-preservation.html</id><summary type="html">&lt;p&gt;So begins (perhaps a little late into the semester) my adventures in independent study.
 In order to finish my FOSS minor at RIT, I am doing an independent study adaptation of a pre-existing course. Because of scheduling conflicts, I cannot take it normally before I graduate, and this is the last requirement to finish out the minor.&lt;/p&gt;
 &lt;p&gt;Doing an independent study version of a class that is very much focused around
 reading and group discussion is perhaps a bit suboptimal, but I have been tasked with

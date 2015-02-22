@@ -5,35 +5,42 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://wyattwinters.com/</loc>
-<lastmod>2015-02-19T11:45:24-00:00</lastmod>
+<lastmod>2015-02-22T15:02:03-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://wyattwinters.com/archives.html</loc>
-<lastmod>2015-02-19T11:45:24-00:00</lastmod>
+<lastmod>2015-02-22T15:02:03-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://wyattwinters.com/tags.html</loc>
-<lastmod>2015-02-19T11:45:24-00:00</lastmod>
+<lastmod>2015-02-22T15:02:03-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://wyattwinters.com/categories.html</loc>
-<lastmod>2015-02-19T11:45:24-00:00</lastmod>
+<lastmod>2015-02-22T15:02:03-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://wyattwinters.com/pages/about.html</loc>
-<lastmod>2015-02-19T11:45:24-00:00</lastmod>
+<lastmod>2015-02-22T15:02:03-00:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://wyattwinters.com/social-media-is-terrifying.html</loc>
+<lastmod>2015-02-22T14:17:00+00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -145,7 +152,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://wyattwinters.com/category/school.html</loc>
-<lastmod>2015-02-19T10:37:00+00:00</lastmod>
+<lastmod>2015-02-22T14:17:00+00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -159,7 +166,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://wyattwinters.com/tag/foscis.html</loc>
-<lastmod>2015-02-15T16:00:00+00:00</lastmod>
+<lastmod>2015-02-22T14:17:00+00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
