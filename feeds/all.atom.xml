@@ -1,5 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Wyatt Winters | Saving the world one computer at a time</title><link href="http://wyattwinters.com/" rel="alternate"></link><link href="http://wyattwinters.com/feeds/all.atom.xml" rel="self"></link><id>http://wyattwinters.com/</id><updated>2015-02-22T14:17:00+00:00</updated><entry><title>Social Media is Terrifying</title><link href="http://wyattwinters.com/social-media-is-terrifying.html" rel="alternate"></link><updated>2015-02-22T14:17:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-22:social-media-is-terrifying.html</id><summary type="html">&lt;p&gt;Another week of independent study, another medium.com article. This week:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Wyatt Winters | Saving the world one computer at a time</title><link href="http://wyattwinters.com/" rel="alternate"></link><link href="http://wyattwinters.com/feeds/all.atom.xml" rel="self"></link><id>http://wyattwinters.com/</id><updated>2015-02-24T12:23:00+00:00</updated><entry><title>FOSS Primer Chapter 5 - Trademarks</title><link href="http://wyattwinters.com/foss-primer-chapter-5---trademarks.html" rel="alternate"></link><updated>2015-02-24T12:23:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-24:foss-primer-chapter-5---trademarks.html</id><summary type="html">&lt;h2&gt;Litreview5&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Who&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.softwarefreedom.org/" target="_blank"&gt;Software Freedom Law Center&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.softwarefreedom.org/resources/2008/foss-primer.pdf" target="_blank"&gt;&lt;em&gt;A Legal Issues Primer for Open Source and Free Software Projects&lt;/em&gt;&lt;/a&gt; (Chapter 5 this time)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Where&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.softwarefreedom.org/resources/2008/foss-primer.pdf" target="_blank"&gt;https://www.softwarefreedom.org/resources/2008/foss-primer.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The date on the title page indicates version 1.5.2 was released 2008-06-04&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Gist&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chapter 5 covers trademarks (both common law and registered), and how they
+apply to and are used by FOSS projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Good&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The term "genericide" is pretty fantastic. I was familiar with the concept,
+ but never had a name attached to it. What fun!&lt;/li&gt;
+&lt;li&gt;I have a much more thorough understanding of "™" vs "®", and how each differ.&lt;/li&gt;
+&lt;li&gt;The definition for class 9 trademarks is fantastic:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"Scientific, nautical, surveying, photographic, cinematographic, optical, weighing, measuring, signalling [sic], checking (supervision), life-saving and teaching apparatus and instruments; apparatus and instruments for conducting, switching, transforming, accumulating, regulating or controlling electricity; apparatus for recording, transmission or reproduction of sound or images; magnetic data carriers, recording discs; compact discs, DVDs and other digital recording media; mechanisms for coin-operated apparatus; cash registers, calculating machines, data processing equipment, computers; computer software; fire-extinguishing apparatus." (&lt;a href="http://www.uspto.gov/trademark/trademark-updates-and-announcements/nice-agreement-tenth-edition-general-remarks-class" target="_blank"&gt;Source&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Because &lt;em&gt;of course&lt;/em&gt; computers and fire-extinguishing equipment are
+in the same category. Also worth noting:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"This Class includes, in particular: ... protractors;"&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Are there enough trademarks for brands of protractors being filed that this is necessary
+to include?!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Bad&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The section on Cease and Desist letters seems oddly short. Granted, it is
+difficult to give generic advice for such, but it seems like it should be
+more verbose, given how frequent (and scary) C&amp;amp;Ds are.&lt;/li&gt;
+&lt;li&gt;"use your trademark in a consistent and distinctive manner." I'm not writing
+master, but this seems like a bad idea - both from a readability perspective,
+and also from a not-seeming-like-a-self-important-weirdo perspective. If the
+word in question is in &lt;strong&gt;bold&lt;/strong&gt; every time it's used, that seems off-putting.&lt;/li&gt;
+&lt;li&gt;In my continuing train of being picky about grammar / spelling, "signaling"
+is spelled wrong in the Class 9 description. In addition, there are &lt;em&gt;numerous&lt;/em&gt;
+instances of British English: "jewellery," "colours," "tyres". What?!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Questions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;As most FOSS projects are global (or at least have global reach),
+are United States trademarks enforceable in other countries?&lt;/li&gt;
+&lt;li&gt;When is it worth the trouble to register one's common law trademark?&lt;/li&gt;
+&lt;li&gt;Do trademark applications ever get rejected, and if so, for what reasons?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Your Review&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This chapter was significantly more helpful than the last. I definitely
+have a better understanding of trademarks, and I feel like I could register
+and enforce one with relative ease, provided I actually had anything worth
+trademarking. The more I read legal things, it all seems so murky and
+case-by-case that it's amazing there's any consistency to any of it. What
+a strange set of systems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4/5 &amp;lt;review increments&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="bizlegfoss"></category></entry><entry><title>Social Media is Terrifying</title><link href="http://wyattwinters.com/social-media-is-terrifying.html" rel="alternate"></link><updated>2015-02-22T14:17:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-22:social-media-is-terrifying.html</id><summary type="html">&lt;p&gt;Another week of independent study, another medium.com article. This week:&lt;/p&gt;
 &lt;h2&gt;&lt;em&gt;What Is Public?&lt;/em&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
