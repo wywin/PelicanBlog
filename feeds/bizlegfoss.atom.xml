@@ -1,5 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Wyatt Winters | Saving the world one computer at a time</title><link href="http://wyattwinters.com/" rel="alternate"></link><link href="http://wyattwinters.com/feeds/bizlegfoss.atom.xml" rel="self"></link><id>http://wyattwinters.com/</id><updated>2015-02-24T12:23:00+00:00</updated><entry><title>FOSS Primer Chapter 5 - Trademarks</title><link href="http://wyattwinters.com/foss-primer-chapter-5---trademarks.html" rel="alternate"></link><updated>2015-02-24T12:23:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-24:foss-primer-chapter-5---trademarks.html</id><summary type="html">&lt;h2&gt;Litreview5&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Wyatt Winters | Saving the world one computer at a time</title><link href="http://wyattwinters.com/" rel="alternate"></link><link href="http://wyattwinters.com/feeds/bizlegfoss.atom.xml" rel="self"></link><id>http://wyattwinters.com/</id><updated>2015-02-26T10:27:00+00:00</updated><entry><title>Vidreview1</title><link href="http://wyattwinters.com/vidreview1.html" rel="alternate"></link><updated>2015-02-26T10:27:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-26:vidreview1.html</id><summary type="html">&lt;p&gt;The complexity and novelty of the titles has hit rock bottom. Oh well. Here's Vidreview1:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Who&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Karen_Sandler" target="_blank"&gt;Karen Sandler&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.slideshare.net/AllThingsOpen/trademarks-allthingsopen" target="_blank"&gt;&lt;em&gt;Trademarks and Your Free and Open Source Software Project&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Where&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=JY6AtbtAuts" target="_blank"&gt;https://www.youtube.com/watch?v=JY6AtbtAuts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2014-10-22&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Gist&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This talk is quite similar to Chapter 5 of &lt;a href="https://www.softwarefreedom.org/resources/2008/foss-primer.pdf"&gt;&lt;em&gt;A Legal Issues Primer for Open Source and Free Software Projects&lt;/em&gt;&lt;/a&gt; (PDF), likely because it was (at least in part) written by the same person. It covers trademark, and how it applies and helps / hinders FOSS projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Good&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The anecdotes were humorous, and helped reinforce the main points of the talk.&lt;/li&gt;
+&lt;li&gt;I feel like the use of a trademark policy was more clear in the video than the written
+chapter.&lt;/li&gt;
+&lt;li&gt;I was on the fence / confused why a FOSS project needs to trademark things, but
+the example about &lt;a href="http://evergreen-ils.org/" target="_blank"&gt;Evergreen&lt;/a&gt; gave a clear
+use case.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Bad&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Not specific to the talk, but some of the questions were too quiet, and the
+slides were occasionally difficult to see. Luckily they were posted &lt;a href="http://www.slideshare.net/AllThingsOpen/trademarks-allthingsopen" target="_blank"&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Some of the content was redundant to the chapter we &lt;em&gt;just&lt;/em&gt; read.&lt;/li&gt;
+&lt;li&gt;ORANGE SHIRT GUY STOP JIGGLING YOUR FOOT!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Questions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If common law trademarks can be enforced, what's the point of registering?&lt;/li&gt;
+&lt;li&gt;Are there downsides to trademarking / registering trademarks?&lt;/li&gt;
+&lt;li&gt;If you use a name frequently without the "™", can you "go back" and enforce
+it if you start using the "™" with it?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Your Review&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I can't quite decide if this is a good reinforcement of the content of the reading, or
+is just reduntant information with a smattering of funny stories. While I
+did get good examples of the benefits of trademarking in FOSS projects, it
+seems like the only real use is shutting down the distribution of malicious
+ / backdoored versions of your software. Regardless, it was relatively entertaining, informative, and decently paced.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4/5 &amp;lt;review increments&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="bizlegfoss"></category></entry><entry><title>FOSS Primer Chapter 5 - Trademarks</title><link href="http://wyattwinters.com/foss-primer-chapter-5---trademarks.html" rel="alternate"></link><updated>2015-02-24T12:23:00+00:00</updated><author><name>Wyatt Winters</name></author><id>tag:wyattwinters.com,2015-02-24:foss-primer-chapter-5---trademarks.html</id><summary type="html">&lt;h2&gt;Litreview5&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Who&lt;/p&gt;
