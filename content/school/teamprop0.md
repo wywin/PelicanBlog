@@ -41,7 +41,8 @@ IRC(old): #wordpress @ freenode
 
 ###What do you anticipate the easy parts will be?
 - Wordpress is pretty gigantic, so information should be easy to come by.
-What do you anticipate the hard parts will be?
+
+###What do you anticipate the hard parts will be?
 - We're all making this up as we go, so the actual presentations / profiles are going to be weird the first couple times.
 - This form doesn't seem completely appropriate for making short-term presentation teams, so making up answers for these questions is difficult.
 
