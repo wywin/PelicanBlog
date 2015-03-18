@@ -54,7 +54,7 @@ Oh, wow. Another reading about authorship. Weird. It's FOSCIS week 7!
     It is readable (definitely more so than "Author"), and relatively engaging.
     I can always nitpick some word choice or grammar usage, but it seems well
     written.
-    - "Author" is neigh unreadable. The jargon is packed so densely (as well as
+    - "Author" is nigh unreadable. The jargon is packed so densely (as well as
     the text itself!) that it is difficult to comprehend. I'm not a fan of
     philosophy in general, and this did little to change my mind on the matter.
 

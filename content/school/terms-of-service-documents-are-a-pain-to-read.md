@@ -76,7 +76,7 @@ I even read something no man was ever meant to read, the iTunes TOS!
     I am not a lawyer, and I have no idea if they're any good. So, from that not-lawyer
     position, these documents are ***dreadfully boring***! While they vary in length
     (iTunes obviously being the worst offender), they are written with so many
-    definitions and CamelCase words, they are neigh-unreadable most of the time.
+    definitions and CamelCase words, they are nigh-unreadable most of the time.
     The Python CLA is the most user-friendly document, but the link I was given
     is on the subdomain legacy.python.org, so I'm guessing it was retired / updated
     since this version was penned. I hope they didn't make it much longer...
