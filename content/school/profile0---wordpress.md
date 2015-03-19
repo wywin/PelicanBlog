@@ -130,7 +130,8 @@ Your subject likely runs or contributes to one or more Open Source products or p
     - It’s a small group - one can only make changes with discrete patch files, not pull requests. Patches are submitted to the bug tracker ([https://core.trac.wordpress.org/](https://core.trac.wordpress.org/){target=_blank}) and assessed / merged from there by core devs.
 - Is this the kind of structure you would enjoy working in? Why, or why not?
     - While the strict structure resulted in a very robust and very stable core product, it feels difficult to contribute. It also feels a little too reliant on a small group of people.
-Technology/Product (Section adapted from EFF Worksheet)
+
+###Technology/Product (Section adapted from [EFF Worksheet](http://www.teachingcopyright.org/handout/technology-history-worksheet){target=_blank})
 - Who invented, created, or sponsored the technology?
     - Matt Mullenweg and Mike Little founded Automattic Inc. to (initially) work on Wordpress.
 - What was the technology designed to do? How was it used?
