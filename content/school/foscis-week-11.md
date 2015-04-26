@@ -26,7 +26,6 @@ Tags: foscis
 - The Questions
     - Are all DDoS attacks political in nature?
     - As DDoS mitigation (very slowly) improves, what's the next "online civil disobedience" method of choice?
-    - 
 - Your Review
     - I feel like I'm always super negative with these reviews. This week was *vastly* better than previous weeks, but still wasn't fantastic. My main point of contention is that *politically motivated* DDoS attacks seem super rare, and even then, the political ties are shaky at best. The most recent Github DDoS was barely political, the Lizard Squad DDoS of PSN / Xbox Live over Christmas was *barely* political (I vaguely heard them whining about corporate greed or some such nonsense at one point). Getting a good DDoS going is pretty trivial at this point - one can rent time on botnets pretty easily, or even buy "stress testing" services and point them wherever. DDoS is practically commonplace at this point, so they aren't nearly as special or worthy of attention anymore. I think that severely mitigates their political potential. The writing itself was fine, but I find the premise a little flawed.
 
