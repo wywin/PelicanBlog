@@ -9,7 +9,7 @@ As BIZLEGFOSS wraps up, so approaches the final "exam". However, this exam is le
 Anyways, here's my 3 suggestions for questions:
 
 - What topic/subject/section would you want to expand on?
-- what topic/subject/section would you want to remove / minimize?
+- What topic/subject/section would you want to remove / minimize?
 - What was your least favorite part of the course?
 
 I imagine a lot of the other responses will be pretty similar, but there you are.
