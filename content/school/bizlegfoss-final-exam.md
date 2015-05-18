@@ -10,7 +10,7 @@ What a delightfully bizarre class this has been. Assignments that were sometimes
     + When you save it out to a file.
 - If you could wave a magic wand, and open source any piece of proprietary software, what software would you choose?
     + As cars become more and more computers with some neat peripherals attached (like steering columns, gasoline engines, and wheels), the software that powers cars should be open sourced. By extension, that software should be easily user-upgradeable, since security patches seem like they would be *pretty dang important*. 
-- If the software above was open sourced, would it’s [[sic](http://www.homestarrunner.com/sbemail89.html){target=_blank}] company remain stable? How would the company continue to make money?
+- If the software above was open sourced, would it’s [[sic](https://youtu.be/ctJ1L4c9HNA?t=23s){target=_blank}] company remain stable? How would the company continue to make money?
     + This is like the ultimate form of widget frosting, so I imagine car companies would be perfectly fine, if not slightly higher sales from *really* hardcore hackers who want to develop ***for cars***. The future is now! Or at least in my imagination!
 - What do you feel like was the most beneficial thing to learn in the class?
     + I have a much better grasp of the various OSI licenses available to me. More accurately, I now have enough of a grasp to just use GPLv2 and hope nothing explodes. Licenses are complicated!
