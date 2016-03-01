@@ -13,7 +13,6 @@ Wyatt Winters is a nerd-of-all-trades. He is interested in:
 </ul>
 Here are some links about / related to me:
 <ul>
-	<li><a href="http://www.linkedin.com/in/wyattwinters">LinkedIn</a></li>
 	<li><a href="https://en.wikipedia.org/wiki/User:Wywin">English Wikipedia user page</a></li>
 	<li><a href="https://github.com/wywin">Github</a></li>
 	<li><a href="http://wyattwinters.com/pubkey.txt">My public OpenPGP key (F0AC23DA)</a></li>

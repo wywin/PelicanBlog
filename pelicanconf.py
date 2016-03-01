@@ -31,7 +31,7 @@ AUTHOR_FEED_RSS= None
 
 DEFAULT_CATEGORY = 'Uncategorized'
 DATE_FORMAT = {
-'en': '%d %m %Y'
+'en': '%Y-%m-%d'
 }
 TWITTER_USERNAME = 'wyatt_winters'
 
@@ -43,7 +43,7 @@ DEFAULT_PAGINATION = 10
 MAIL_USERNAME = 'blog'
 MAIL_HOST = 'wyattwinters.com'
 
-LINKEDIN_URL ='http://www.linkedin.com/in/wyattwinters'
+LINKEDIN_URL =''
 
 STATIC_PATHS = ['images',
                 'extra'
