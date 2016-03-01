@@ -4,24 +4,30 @@
     <link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css' />
     <link href="http://wyattwinters.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+    <meta name="description" content="">
+    <meta name="author" content="Wyatt Winters">
+
     <title> Serving identical content on HTTPS and Tor hidden service | Wyatt Winters | Saving the world one computer at a time </title>
 
-    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/font-awesome.css" type="text/css"/>
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="/theme/css/font-awesome.css" type="text/css"/>
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
   </head>
   <body>
     <div class=container>
+<div class="header">
+    <a href="/">Wyatt Winters | Saving the world one computer at a time</a> <span class="muted"></span>
+</div>
 
-      <div class=navigation>
-        <ul>
-            <li><a href="http://wyattwinters.com/pages/about.html">About</a> </li>
-            <li><a href="http://wyattwinters.com/category/blog">Blog</a> </li>
-            <li><a href="http://wyattwinters.com/category/school">School-related</a> </li>
-        </ul>
-      </div>
-      <div class=separator></div>        
+<div class=navigation>
+    <ul>
+            <li><a href="/pages/about.html">About</a> </li>
+            <li><a href="/category/blog">Blog</a> </li>
+            <li><a href="/category/school">School-related</a> </li>
+    </ul>
+</div>
+<div class=separator></div>        
         <div class=body>
     <h1 class="title"> Serving identical content on HTTPS and Tor hidden service</h1>
     <p class=date> 2013 07 03 </p>
@@ -35,7 +41,7 @@
 </li>
 <li>
 <p>Edit your torrc. It is likely at /etc/tor/torrc. Uncomment the following lines:</p>
-<div class="highlight"><pre>HiddenServiceDir /var/lib/tor/hiddenService/
+<div class="highlight"><pre><span></span>HiddenServiceDir /var/lib/tor/hiddenService/
 HiddenServicePort 80 127.0.0.1:80
 </pre></div>
 
@@ -44,14 +50,14 @@ HiddenServicePort 80 127.0.0.1:80
 </li>
 <li>
 <p>Restart Tor to apply new settings. In Debian Wheezy: </p>
-<div class="highlight"><pre>sudo /etc/init.d/tor restart
+<div class="highlight"><pre><span></span>sudo /etc/init.d/tor restart
 </pre></div>
 
 
 </li>
 <li>
 <p>Get your hostname</p>
-<div class="highlight"><pre>sudo cat /var/lib/tor/hiddenService/hostname
+<div class="highlight"><pre><span></span>sudo cat /var/lib/tor/hiddenService/hostname
 </pre></div>
 
 
@@ -59,7 +65,7 @@ HiddenServicePort 80 127.0.0.1:80
 </li>
 <li>
 <p>Backup your private key</p>
-<div class="highlight"><pre>sudo cp /var/lib/tor/hiddenService/privateKey /root
+<div class="highlight"><pre><span></span>sudo cp /var/lib/tor/hiddenService/privateKey /root
 </pre></div>
 
 
@@ -69,14 +75,14 @@ HiddenServicePort 80 127.0.0.1:80
 <ol>
 <li>
 <p>Enable mod_rewrite (if not already)</p>
-<div class="highlight"><pre>sudo a2enmod rewrite
+<div class="highlight"><pre><span></span>sudo a2enmod rewrite
 </pre></div>
 
 
 </li>
 <li>
 <p>Edit (on a default Debian Wheezy apache install) /var/www/.htaccess and add:</p>
-<div class="highlight"><pre>RewriteEngine On
+<div class="highlight"><pre><span></span>RewriteEngine On
 RewriteCond %{HTTP_HOST} !^youronionaddress.onion$
 RewriteCond %{HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
@@ -111,23 +117,21 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
         
 <div class=footer>
   <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a></p>
-  <p> Powered by <a href="http://pypi.python.org/pypi/pelican/" target="_blank">Pelican</a>.  
+  <p> Powered by <a href="http://pypi.python.org/pypi/pelican/" target="_blank">Pelican</a>.
     <a href="https://github.com/fjavieralba/flasky">Theme</a>  by <a href="http://fjavieralba.com">fjavieralba</a>
-  </p> 
+  </p>
   <p>
     <div class=social style="font-size: 27px;">
       <ul>
-        <script language="JavaScript">
+<script language="JavaScript">
           u = 'blog';
           s = 'wyattwinters.com';
           document.write('<a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\">');
         </script>
             <li><i class="icon-envelope icon-large"></i> </li>
-        </a>
-        <a href="http://twitter.com/wyatt_winters" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a>
-        <a href="http://www.linkedin.com/in/wyattwinters"><li><i class="icon-linkedin-sign icon-large" ></i></li></a>
-        <a href="http://github.com/wywin" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
-        <a href="http://wyattwinters.com/feeds/all.atom.xml" rel="alternate" title="Recent Blog Posts"><li> <i class="icon-rss icon-large"></i> </li></a>
+        </a><a href="http://twitter.com/wyatt_winters" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a><a href="http://github.com/wywin" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
+
+        <a href="http://wyattwinters.com/feeds/all.rss.xml" rel="alternate" title="Recent Blog Posts"><li> <i class="icon-rss icon-large"></i> </li></a>
       </ul>
     </div>
   </p>

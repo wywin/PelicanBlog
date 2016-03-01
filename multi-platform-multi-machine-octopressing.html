@@ -4,24 +4,30 @@
     <link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css' />
     <link href="http://wyattwinters.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+    <meta name="description" content="">
+    <meta name="author" content="Wyatt Winters">
+
     <title> Multi-platform, multi-machine Octopressing | Wyatt Winters | Saving the world one computer at a time </title>
 
-    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/font-awesome.css" type="text/css"/>
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="/theme/css/font-awesome.css" type="text/css"/>
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
   </head>
   <body>
     <div class=container>
+<div class="header">
+    <a href="/">Wyatt Winters | Saving the world one computer at a time</a> <span class="muted"></span>
+</div>
 
-      <div class=navigation>
-        <ul>
-            <li><a href="http://wyattwinters.com/pages/about.html">About</a> </li>
-            <li><a href="http://wyattwinters.com/category/blog">Blog</a> </li>
-            <li><a href="http://wyattwinters.com/category/school">School-related</a> </li>
-        </ul>
-      </div>
-      <div class=separator></div>        
+<div class=navigation>
+    <ul>
+            <li><a href="/pages/about.html">About</a> </li>
+            <li><a href="/category/blog">Blog</a> </li>
+            <li><a href="/category/school">School-related</a> </li>
+    </ul>
+</div>
+<div class=separator></div>        
         <div class=body>
     <h1 class="title"> Multi-platform, multi-machine Octopressing</h1>
     <p class=date> 2013 04 29 </p>
@@ -32,7 +38,7 @@
 
 <h1>Get latest version from repo</h1>
 <p>Before starting to work I run this:</p>
-<div class="highlight"><pre><span class="c">#!/bin/bash</span>
+<div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
 git fetch
 git reset --hard origin/source
 git pull origin <span class="nb">source</span>
@@ -45,7 +51,7 @@ git pull origin master
 
 
 <p>or on Windows:</p>
-<div class="highlight"><pre>call git fetch origin
+<div class="highlight"><pre><span></span>call git fetch origin
 call git reset --hard origin/source
 call git pull origin source
 cd ./_deploy
@@ -58,7 +64,7 @@ cd ..
 
 <p>to effectively mirror the existing stuff on the repo, destroying(!) any unpushed changes on my current machine.</p>
 <h1>After writing a post, page, or otherwise updating the site</h1>
-<div class="highlight"><pre><span class="c">#!/bin/bash</span>
+<div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
 rake generate
 git add .
 git commit -m <span class="s2">&quot;updating via script!&quot;</span>
@@ -68,7 +74,7 @@ rake deploy
 
 
 <p>or on Windows</p>
-<div class="highlight"><pre>call rake generate
+<div class="highlight"><pre><span></span>call rake generate
 call git add .
 call git commit -m &quot;updating via script on Windows!&quot;
 call git push origin source
@@ -78,16 +84,16 @@ call rake deploy
 
 <p>This will cleanly and nicely regenerate the static html, and update both the source and site in the repo. </p>
 <h1>Setting up a computer to blog from for the first time</h1>
-<div class="highlight"><pre><span class="nv">$ </span>git clone git@github.com:username/username.github.com.git
-<span class="nv">$ </span><span class="nb">cd </span>username.github.com
-username.github.com<span class="nv">$ </span>git checkout <span class="nb">source</span>
-username.github.com<span class="nv">$ </span>mkdir _deploy
-username.github.com<span class="nv">$ </span><span class="nb">cd </span>_deploy
-username.github.com/_deploy<span class="nv">$ </span>git init
-username.github.com/_deploy<span class="nv">$ </span>git remote add origin git@github.com:username/username.github.com.git
-username.github.com/_deploy<span class="nv">$ </span>git pull origin master
-username.github.com/_deploy<span class="nv">$ </span><span class="nb">cd</span> ..
-username.github.com<span class="err">$</span>
+<div class="highlight"><pre><span></span>$ git clone git@github.com:username/username.github.com.git
+$ <span class="nb">cd</span> username.github.com
+username.github.com$ git checkout <span class="nb">source</span>
+username.github.com$ mkdir _deploy
+username.github.com$ <span class="nb">cd</span> _deploy
+username.github.com/_deploy$ git init
+username.github.com/_deploy$ git remote add origin git@github.com:username/username.github.com.git
+username.github.com/_deploy$ git pull origin master
+username.github.com/_deploy$ <span class="nb">cd</span> ..
+username.github.com$
 </pre></div>
 
 
@@ -98,23 +104,21 @@ Hope that helps!</p>
         
 <div class=footer>
   <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a></p>
-  <p> Powered by <a href="http://pypi.python.org/pypi/pelican/" target="_blank">Pelican</a>.  
+  <p> Powered by <a href="http://pypi.python.org/pypi/pelican/" target="_blank">Pelican</a>.
     <a href="https://github.com/fjavieralba/flasky">Theme</a>  by <a href="http://fjavieralba.com">fjavieralba</a>
-  </p> 
+  </p>
   <p>
     <div class=social style="font-size: 27px;">
       <ul>
-        <script language="JavaScript">
+<script language="JavaScript">
           u = 'blog';
           s = 'wyattwinters.com';
           document.write('<a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\">');
         </script>
             <li><i class="icon-envelope icon-large"></i> </li>
-        </a>
-        <a href="http://twitter.com/wyatt_winters" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a>
-        <a href="http://www.linkedin.com/in/wyattwinters"><li><i class="icon-linkedin-sign icon-large" ></i></li></a>
-        <a href="http://github.com/wywin" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
-        <a href="http://wyattwinters.com/feeds/all.atom.xml" rel="alternate" title="Recent Blog Posts"><li> <i class="icon-rss icon-large"></i> </li></a>
+        </a><a href="http://twitter.com/wyatt_winters" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a><a href="http://github.com/wywin" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
+
+        <a href="http://wyattwinters.com/feeds/all.rss.xml" rel="alternate" title="Recent Blog Posts"><li> <i class="icon-rss icon-large"></i> </li></a>
       </ul>
     </div>
   </p>

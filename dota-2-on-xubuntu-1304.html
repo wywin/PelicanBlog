@@ -4,24 +4,30 @@
     <link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css' />
     <link href="http://wyattwinters.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+    <meta name="description" content="">
+    <meta name="author" content="Wyatt Winters">
+
     <title> Dota 2 on Xubuntu 13.04 | Wyatt Winters | Saving the world one computer at a time </title>
 
-    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/font-awesome.css" type="text/css"/>
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="/theme/css/font-awesome.css" type="text/css"/>
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
   </head>
   <body>
     <div class=container>
+<div class="header">
+    <a href="/">Wyatt Winters | Saving the world one computer at a time</a> <span class="muted"></span>
+</div>
 
-      <div class=navigation>
-        <ul>
-            <li><a href="http://wyattwinters.com/pages/about.html">About</a> </li>
-            <li><a href="http://wyattwinters.com/category/blog">Blog</a> </li>
-            <li><a href="http://wyattwinters.com/category/school">School-related</a> </li>
-        </ul>
-      </div>
-      <div class=separator></div>        
+<div class=navigation>
+    <ul>
+            <li><a href="/pages/about.html">About</a> </li>
+            <li><a href="/category/blog">Blog</a> </li>
+            <li><a href="/category/school">School-related</a> </li>
+    </ul>
+</div>
+<div class=separator></div>        
         <div class=body>
     <h1 class="title"> Dota 2 on Xubuntu 13.04</h1>
     <p class=date> 2013 06 20 </p>
@@ -41,39 +47,39 @@
 <p>and on all low settings I can easily get a solid 60 FPS in-game, with no dips. Your mileage may vary according to your hardware. </p>
 <h2>Drivers</h2>
 <p>First, we need the latest drivers from Nvidia (or ATI, depending on your card). The open source drivers are fine for day-to-day computing, but they don't handle games so well. A rather sexy fellow named Harold Hope made a delightful and very colorful script called <a href="http://smxi.org/site/donations.htm">sgfxi</a> that makes installing your latest and greatest binary drivers very easy. Grab a root shell, and run</p>
-<div class="highlight"><pre>cd /usr/local/bin &amp;&amp; wget -Nc smxi.org/sgfxi &amp;&amp; chmod +x sgfxi
+<div class="highlight"><pre><span></span>cd /usr/local/bin &amp;&amp; wget -Nc smxi.org/sgfxi &amp;&amp; chmod +x sgfxi
 </pre></div>
 
 
 <p>Now we need to get into a non-X shell. CTRL-ALT-F1 will do the job nicely. Log in, and run</p>
-<div class="highlight"><pre>sudo sgfxi
+<div class="highlight"><pre><span></span>sudo sgfxi
 </pre></div>
 
 
 <p>and follow the wizard. You may have to do this once or twice, to remove the old free-as-in-speech drivers before installing the binary drivers. It should be easy to follow.</p>
 <h2>Getting Wine</h2>
 <p>Man, Wine has improved <em>so much</em> since I last messed with it around the Gutsy Gibon days. Let's add their PPA</p>
-<div class="highlight"><pre>sudo add-apt-repository ppa:ubuntu-wine/ppa &amp;&amp; sudo apt-get update &amp;&amp; sudo apt-get install wine winetricks
+<div class="highlight"><pre><span></span>sudo add-apt-repository ppa:ubuntu-wine/ppa &amp;&amp; sudo apt-get update &amp;&amp; sudo apt-get install wine winetricks
 </pre></div>
 
 
 <p>and wait for all the goodies to download.</p>
 <p>After Wine is installed and situated, we will follow a modified/updated version of the writeup on <a href="http://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=24458">WineHQ</a>. </p>
 <p>Here's what we need to do:</p>
-<div class="highlight"><pre>WINEPREFIX=~/.wine_dota2/ winecfg
+<div class="highlight"><pre><span></span>WINEPREFIX=~/.wine_dota2/ winecfg
 </pre></div>
 
 
 <p>will set up a new bottle (haha wine puns) to be our Dota 2 machine. </p>
 <h2>Getting Steamy</h2>
 <p>Now, let's install Steam!</p>
-<div class="highlight"><pre>wget http://winetricks.org/winetricks
+<div class="highlight"><pre><span></span>wget http://winetricks.org/winetricks
 WINEPREFIX=~/.wine_dota2/ sh winetricks --no-isolate steam
 </pre></div>
 
 
 <p>Follow the wizard, let it update, and log into Steam. Download Dota 2, and add some launch options. Right click Dota 2 in the games list -&gt; properties -&gt; set launch options. These work for me:</p>
-<div class="highlight"><pre>-novid -console -noforcemaccel -forcemspd -useforcedmparms -high -nod3d9ex -nod3dx -noborder -gl
+<div class="highlight"><pre><span></span>-novid -console -noforcemaccel -forcemspd -useforcedmparms -high -nod3d9ex -nod3dx -noborder -gl
 </pre></div>
 
 
@@ -85,23 +91,21 @@ WINEPREFIX=~/.wine_dota2/ sh winetricks --no-isolate steam
         
 <div class=footer>
   <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a></p>
-  <p> Powered by <a href="http://pypi.python.org/pypi/pelican/" target="_blank">Pelican</a>.  
+  <p> Powered by <a href="http://pypi.python.org/pypi/pelican/" target="_blank">Pelican</a>.
     <a href="https://github.com/fjavieralba/flasky">Theme</a>  by <a href="http://fjavieralba.com">fjavieralba</a>
-  </p> 
+  </p>
   <p>
     <div class=social style="font-size: 27px;">
       <ul>
-        <script language="JavaScript">
+<script language="JavaScript">
           u = 'blog';
           s = 'wyattwinters.com';
           document.write('<a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\">');
         </script>
             <li><i class="icon-envelope icon-large"></i> </li>
-        </a>
-        <a href="http://twitter.com/wyatt_winters" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a>
-        <a href="http://www.linkedin.com/in/wyattwinters"><li><i class="icon-linkedin-sign icon-large" ></i></li></a>
-        <a href="http://github.com/wywin" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
-        <a href="http://wyattwinters.com/feeds/all.atom.xml" rel="alternate" title="Recent Blog Posts"><li> <i class="icon-rss icon-large"></i> </li></a>
+        </a><a href="http://twitter.com/wyatt_winters" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a><a href="http://github.com/wywin" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
+
+        <a href="http://wyattwinters.com/feeds/all.rss.xml" rel="alternate" title="Recent Blog Posts"><li> <i class="icon-rss icon-large"></i> </li></a>
       </ul>
     </div>
   </p>

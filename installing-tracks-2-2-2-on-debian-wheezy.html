@@ -4,24 +4,30 @@
     <link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css' />
     <link href="http://wyattwinters.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+    <meta name="description" content="">
+    <meta name="author" content="Wyatt Winters">
+
     <title> Installing Tracks 2.2.2 on Debian Wheezy | Wyatt Winters | Saving the world one computer at a time </title>
 
-    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/font-awesome.css" type="text/css"/>
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="/theme/css/font-awesome.css" type="text/css"/>
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
   </head>
   <body>
     <div class=container>
+<div class="header">
+    <a href="/">Wyatt Winters | Saving the world one computer at a time</a> <span class="muted"></span>
+</div>
 
-      <div class=navigation>
-        <ul>
-            <li><a href="http://wyattwinters.com/pages/about.html">About</a> </li>
-            <li><a href="http://wyattwinters.com/category/blog">Blog</a> </li>
-            <li><a href="http://wyattwinters.com/category/school">School-related</a> </li>
-        </ul>
-      </div>
-      <div class=separator></div>        
+<div class=navigation>
+    <ul>
+            <li><a href="/pages/about.html">About</a> </li>
+            <li><a href="/category/blog">Blog</a> </li>
+            <li><a href="/category/school">School-related</a> </li>
+    </ul>
+</div>
+<div class=separator></div>        
         <div class=body>
     <h1 class="title"> Installing Tracks 2.2.2 on Debian Wheezy</h1>
     <p class=date> 2013 07 30 </p>
@@ -31,7 +37,7 @@
 <p>optional: php5, phpmyadmin</p>
 <p>First, let's create a database and user for Tracks to use.
 I used phpmyadmin here because its easiest for me, but you can do it as you see fit.</p>
-<div class="highlight"><pre>CREATE USER &#39;tracks&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;***&#39;;
+<div class="highlight"><pre><span></span>CREATE USER &#39;tracks&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;***&#39;;
 
 GRANT USAGE ON * . * TO &#39;tracks&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;***&#39; WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0 ;
 
@@ -42,18 +48,18 @@ GRANT ALL PRIVILEGES ON `tracks` . * TO &#39;tracks&#39;@&#39;localhost&#39;;
 
 
 <p>Switch into a root shell with </p>
-<div class="highlight"><pre>sudo -s
+<div class="highlight"><pre><span></span>sudo -s
 </pre></div>
 
 
 <p>for the remainder of the install process.</p>
 <p>We need some packages, so let's install them:</p>
-<div class="highlight"><pre>apt-get install curl unzip libxslt-dev libxml2-dev libmysql-ruby libmysqlclient-dev libcurl4-openssl-dev apache2-threaded-dev libapr1-dev libaprutil1-dev
+<div class="highlight"><pre><span></span>apt-get install curl unzip libxslt-dev libxml2-dev libmysql-ruby libmysqlclient-dev libcurl4-openssl-dev apache2-threaded-dev libapr1-dev libaprutil1-dev
 </pre></div>
 
 
 <p>Tracks works best with Ruby 1.9.3, so we will use Ruby Version Manager (RVM) to install it. </p>
-<div class="highlight"><pre>\curl -L https://get.rvm.io | bash
+<div class="highlight"><pre><span></span>\curl -L https://get.rvm.io | bash
 source /etc/profile.d/rvm.sh
 rvm requirements
 rvm install 1.9.3
@@ -61,17 +67,17 @@ rvm install 1.9.3
 
 
 <p>Verify </p>
-<div class="highlight"><pre>which ruby
+<div class="highlight"><pre><span></span>which ruby
 </pre></div>
 
 
 <p>and</p>
-<div class="highlight"><pre>which gem
+<div class="highlight"><pre><span></span>which gem
 </pre></div>
 
 
 <p>point to </p>
-<div class="highlight"><pre>/usr/local/rvm/rubies/ruby-1.9.3-p448/bin/ruby
+<div class="highlight"><pre><span></span>/usr/local/rvm/rubies/ruby-1.9.3-p448/bin/ruby
 /usr/local/rvm/rubies/ruby-1.9.3-p448/bin/gem
 </pre></div>
 
@@ -79,7 +85,7 @@ rvm install 1.9.3
 <p>respectively, or something close to that.</p>
 <p>Now we have Ruby all situated, it's time to get Tracks.
 In /root run:</p>
-<div class="highlight"><pre>wget https://github.com/TracksApp/tracks/zipball/v2.2.2
+<div class="highlight"><pre><span></span>wget https://github.com/TracksApp/tracks/zipball/v2.2.2
 mkdir /srv/tracks
 unzip v2.2.2 -d /srv/tracks
 cd /srv/tracks/TracksApp-tracks-bc8b817/
@@ -90,7 +96,7 @@ rm -r TracksApp-tracks-bc8b817/
 
 
 <p>Now Tracks is unzipped and ready to be installed.</p>
-<div class="highlight"><pre>cd /srv/tracks
+<div class="highlight"><pre><span></span>cd /srv/tracks
 gem install bundler
 bundle install
 gem install passenger
@@ -99,26 +105,26 @@ gem install passenger
 
 
 <p>The passenger install wizard will do its magic, and spit back out something similar to:</p>
-<div class="highlight"><pre>LoadModule passenger_module /usr/local/rvm/gems/ruby-1.9.3-p448/gems/passenger-4.0.10/buildout/apache2/mod_passenger.so
+<div class="highlight"><pre><span></span>LoadModule passenger_module /usr/local/rvm/gems/ruby-1.9.3-p448/gems/passenger-4.0.10/buildout/apache2/mod_passenger.so
 PassengerRoot /usr/local/rvm/gems/ruby-1.9.3-p448/gems/passenger-4.0.10
 PassengerDefaultRuby /usr/local/rvm/wrappers/ruby-1.9.3-p448/ruby
 </pre></div>
 
 
 <p>Append those lines along with</p>
-<div class="highlight"><pre>PassengerDefaultUser www-data
+<div class="highlight"><pre><span></span>PassengerDefaultUser www-data
 </pre></div>
 
 
 <p>to the end of /etc/apache2/apache2.conf</p>
 <p>In your VirtualHosts files (likely at /etc/apache2/sites-enabled/<em>yoursitehere</em>), add</p>
-<div class="highlight"><pre>RailsBaseURI /tracks
+<div class="highlight"><pre><span></span>RailsBaseURI /tracks
 </pre></div>
 
 
 <p>or whatever you want to be the directory that holds Tracks.</p>
 <p>Now that Apache knows where to look, we need to tell Tracks what database to look for, and what settings to use</p>
-<div class="highlight"><pre>cd /srv/tracks/config
+<div class="highlight"><pre><span></span>cd /srv/tracks/config
 cp site.yml.tmpl site.yml
 cp database.yml.tmpl database.yml
 </pre></div>
@@ -126,18 +132,18 @@ cp database.yml.tmpl database.yml
 
 <p>Configure variables per <a href="https://github.com/TracksApp/tracks/blob/v2.2.2/doc/installation.textile#configure-variables">official documentation.</a></p>
 <p>Back in /srv/tracks finish installation with the new database settings:</p>
-<div class="highlight"><pre>bundle exec rake db:migrate RAILS_ENV=production
+<div class="highlight"><pre><span></span>bundle exec rake db:migrate RAILS_ENV=production
 bundle exec rake assets:precompile
 </pre></div>
 
 
 <p>The final step is adding a link in /var/www to the public folder of Tracks:</p>
-<div class="highlight"><pre>ln -s /var/www/tracks /srv/tracks/public
+<div class="highlight"><pre><span></span>ln -s /var/www/tracks /srv/tracks/public
 </pre></div>
 
 
 <p>Restart Apache to make sure it's up to date:</p>
-<div class="highlight"><pre>/etc/init.d/apache2 restart
+<div class="highlight"><pre><span></span>/etc/init.d/apache2 restart
 </pre></div>
 
 
@@ -149,23 +155,21 @@ If everything went well, you should be prompted with the admin account creation 
         
 <div class=footer>
   <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a></p>
-  <p> Powered by <a href="http://pypi.python.org/pypi/pelican/" target="_blank">Pelican</a>.  
+  <p> Powered by <a href="http://pypi.python.org/pypi/pelican/" target="_blank">Pelican</a>.
     <a href="https://github.com/fjavieralba/flasky">Theme</a>  by <a href="http://fjavieralba.com">fjavieralba</a>
-  </p> 
+  </p>
   <p>
     <div class=social style="font-size: 27px;">
       <ul>
-        <script language="JavaScript">
+<script language="JavaScript">
           u = 'blog';
           s = 'wyattwinters.com';
           document.write('<a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\">');
         </script>
             <li><i class="icon-envelope icon-large"></i> </li>
-        </a>
-        <a href="http://twitter.com/wyatt_winters" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a>
-        <a href="http://www.linkedin.com/in/wyattwinters"><li><i class="icon-linkedin-sign icon-large" ></i></li></a>
-        <a href="http://github.com/wywin" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
-        <a href="http://wyattwinters.com/feeds/all.atom.xml" rel="alternate" title="Recent Blog Posts"><li> <i class="icon-rss icon-large"></i> </li></a>
+        </a><a href="http://twitter.com/wyatt_winters" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a><a href="http://github.com/wywin" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
+
+        <a href="http://wyattwinters.com/feeds/all.rss.xml" rel="alternate" title="Recent Blog Posts"><li> <i class="icon-rss icon-large"></i> </li></a>
       </ul>
     </div>
   </p>

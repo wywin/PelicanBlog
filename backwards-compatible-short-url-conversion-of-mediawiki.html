@@ -4,24 +4,30 @@
     <link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css' />
     <link href="http://wyattwinters.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+    <meta name="description" content="">
+    <meta name="author" content="Wyatt Winters">
+
     <title> Backwards-compatible Short URL conversion of Mediawiki | Wyatt Winters | Saving the world one computer at a time </title>
 
-    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="http://wyattwinters.com/theme/css/font-awesome.css" type="text/css"/>
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="/theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="/theme/css/font-awesome.css" type="text/css"/>
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
   </head>
   <body>
     <div class=container>
+<div class="header">
+    <a href="/">Wyatt Winters | Saving the world one computer at a time</a> <span class="muted"></span>
+</div>
 
-      <div class=navigation>
-        <ul>
-            <li><a href="http://wyattwinters.com/pages/about.html">About</a> </li>
-            <li><a href="http://wyattwinters.com/category/blog">Blog</a> </li>
-            <li><a href="http://wyattwinters.com/category/school">School-related</a> </li>
-        </ul>
-      </div>
-      <div class=separator></div>        
+<div class=navigation>
+    <ul>
+            <li><a href="/pages/about.html">About</a> </li>
+            <li><a href="/category/blog">Blog</a> </li>
+            <li><a href="/category/school">School-related</a> </li>
+    </ul>
+</div>
+<div class=separator></div>        
         <div class=body>
     <h1 class="title"> Backwards-compatible Short URL conversion of Mediawiki</h1>
     <p class=date> 2013 07 14 </p>
@@ -31,7 +37,7 @@
 <p>First, if you're like me, you don't plan ahead very much when doing software installs. A Mediawiki site I help with has been running for some time, and several links exist pointing to old, ugly URLs like "www.example.com/wiki/index.php/Main_Page". However, the decision makers wanted the links to lose the "index.php" in the URL!</p>
 <p>That's easy enough to do. The <a href="https://www.mediawiki.org/wiki/Manual:Short_URL">Mediawiki meta-wiki</a> has a great write up on the topic. They also link to <a href="http://shorturls.redwerks.org/">this handy wizard</a>, which I used.</p>
 <p>You should come up with something like this:</p>
-<div class="highlight"><pre>RewriteRule ^/?wiki(/.*)?$ %{DOCUMENT_ROOT}/w/index.php [QSA,L]
+<div class="highlight"><pre><span></span>RewriteRule ^/?wiki(/.*)?$ %{DOCUMENT_ROOT}/w/index.php [QSA,L]
 RewriteRule ^/?$ %{DOCUMENT_ROOT}/w/index.php [QSA,L]
 
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
@@ -45,7 +51,7 @@ RewriteRule ^/?w/images/thumb/archive/[0-9a-f]/[0-9a-f][0-9a-f]/([^/]+)/([0-9]+)
 
 
 <p>That's all great, but old links won't work anymore! Let's fix that by adding this before all the other new RewriteRules:</p>
-<div class="highlight"><pre>RewriteRule ^/?wiki/index.php(/(.*))?$ /wiki/$2 [R=301,L]
+<div class="highlight"><pre><span></span>RewriteRule ^/?wiki/index.php(/(.*))?$ /wiki/$2 [R=301,L]
 </pre></div>
 
 
@@ -55,23 +61,21 @@ RewriteRule ^/?w/images/thumb/archive/[0-9a-f]/[0-9a-f][0-9a-f]/([^/]+)/([0-9]+)
         
 <div class=footer>
   <p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a></p>
-  <p> Powered by <a href="http://pypi.python.org/pypi/pelican/" target="_blank">Pelican</a>.  
+  <p> Powered by <a href="http://pypi.python.org/pypi/pelican/" target="_blank">Pelican</a>.
     <a href="https://github.com/fjavieralba/flasky">Theme</a>  by <a href="http://fjavieralba.com">fjavieralba</a>
-  </p> 
+  </p>
   <p>
     <div class=social style="font-size: 27px;">
       <ul>
-        <script language="JavaScript">
+<script language="JavaScript">
           u = 'blog';
           s = 'wyattwinters.com';
           document.write('<a href=\"mailto:' + u + '@' + s + '\" target=\"_blank\">');
         </script>
             <li><i class="icon-envelope icon-large"></i> </li>
-        </a>
-        <a href="http://twitter.com/wyatt_winters" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a>
-        <a href="http://www.linkedin.com/in/wyattwinters"><li><i class="icon-linkedin-sign icon-large" ></i></li></a>
-        <a href="http://github.com/wywin" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
-        <a href="http://wyattwinters.com/feeds/all.atom.xml" rel="alternate" title="Recent Blog Posts"><li> <i class="icon-rss icon-large"></i> </li></a>
+        </a><a href="http://twitter.com/wyatt_winters" target="_blank"> <li> <i class="icon-twitter-sign icon-large"> </li></i> </a><a href="http://github.com/wywin" target="_blank"> <li> <i class="icon-github-sign icon-large"></i> </li> </a>
+
+        <a href="http://wyattwinters.com/feeds/all.rss.xml" rel="alternate" title="Recent Blog Posts"><li> <i class="icon-rss icon-large"></i> </li></a>
       </ul>
     </div>
   </p>

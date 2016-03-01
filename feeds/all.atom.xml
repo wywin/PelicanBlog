@@ -2793,7 +2793,7 @@ This is primary reason the project was created. We could get any number of cheap
 &lt;p&gt;optional: php5, phpmyadmin&lt;/p&gt;
 &lt;p&gt;First, let's create a database and user for Tracks to use.
 I used phpmyadmin here because its easiest for me, but you can do it as you see fit.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;CREATE USER &amp;#39;tracks&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;***&amp;#39;;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;CREATE USER &amp;#39;tracks&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;***&amp;#39;;
 
 GRANT USAGE ON * . * TO &amp;#39;tracks&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;***&amp;#39; WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0 ;
 
@@ -2804,18 +2804,18 @@ GRANT ALL PRIVILEGES ON `tracks` . * TO &amp;#39;tracks&amp;#39;@&amp;#39;localh
 
 
 &lt;p&gt;Switch into a root shell with &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo -s
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo -s
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;for the remainder of the install process.&lt;/p&gt;
 &lt;p&gt;We need some packages, so let's install them:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;apt-get install curl unzip libxslt-dev libxml2-dev libmysql-ruby libmysqlclient-dev libcurl4-openssl-dev apache2-threaded-dev libapr1-dev libaprutil1-dev
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;apt-get install curl unzip libxslt-dev libxml2-dev libmysql-ruby libmysqlclient-dev libcurl4-openssl-dev apache2-threaded-dev libapr1-dev libaprutil1-dev
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Tracks works best with Ruby 1.9.3, so we will use Ruby Version Manager (RVM) to install it. &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;\curl -L https://get.rvm.io | bash
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;\curl -L https://get.rvm.io | bash
 source /etc/profile.d/rvm.sh
 rvm requirements
 rvm install 1.9.3
@@ -2823,17 +2823,17 @@ rvm install 1.9.3
 
 
 &lt;p&gt;Verify &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;which ruby
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;which ruby
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;and&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;which gem
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;which gem
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;point to &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;/usr/local/rvm/rubies/ruby-1.9.3-p448/bin/ruby
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/usr/local/rvm/rubies/ruby-1.9.3-p448/bin/ruby
 /usr/local/rvm/rubies/ruby-1.9.3-p448/bin/gem
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -2841,7 +2841,7 @@ rvm install 1.9.3
 &lt;p&gt;respectively, or something close to that.&lt;/p&gt;
 &lt;p&gt;Now we have Ruby all situated, it's time to get Tracks.
 In /root run:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;wget https://github.com/TracksApp/tracks/zipball/v2.2.2
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;wget https://github.com/TracksApp/tracks/zipball/v2.2.2
 mkdir /srv/tracks
 unzip v2.2.2 -d /srv/tracks
 cd /srv/tracks/TracksApp-tracks-bc8b817/
@@ -2852,7 +2852,7 @@ rm -r TracksApp-tracks-bc8b817/
 
 
 &lt;p&gt;Now Tracks is unzipped and ready to be installed.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;cd /srv/tracks
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cd /srv/tracks
 gem install bundler
 bundle install
 gem install passenger
@@ -2861,26 +2861,26 @@ gem install passenger
 
 
 &lt;p&gt;The passenger install wizard will do its magic, and spit back out something similar to:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;LoadModule passenger_module /usr/local/rvm/gems/ruby-1.9.3-p448/gems/passenger-4.0.10/buildout/apache2/mod_passenger.so
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;LoadModule passenger_module /usr/local/rvm/gems/ruby-1.9.3-p448/gems/passenger-4.0.10/buildout/apache2/mod_passenger.so
 PassengerRoot /usr/local/rvm/gems/ruby-1.9.3-p448/gems/passenger-4.0.10
 PassengerDefaultRuby /usr/local/rvm/wrappers/ruby-1.9.3-p448/ruby
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Append those lines along with&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;PassengerDefaultUser www-data
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;PassengerDefaultUser www-data
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;to the end of /etc/apache2/apache2.conf&lt;/p&gt;
 &lt;p&gt;In your VirtualHosts files (likely at /etc/apache2/sites-enabled/&lt;em&gt;yoursitehere&lt;/em&gt;), add&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;RailsBaseURI /tracks
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;RailsBaseURI /tracks
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;or whatever you want to be the directory that holds Tracks.&lt;/p&gt;
 &lt;p&gt;Now that Apache knows where to look, we need to tell Tracks what database to look for, and what settings to use&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;cd /srv/tracks/config
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cd /srv/tracks/config
 cp site.yml.tmpl site.yml
 cp database.yml.tmpl database.yml
 &lt;/pre&gt;&lt;/div&gt;
@@ -2888,18 +2888,18 @@ cp database.yml.tmpl database.yml
 
 &lt;p&gt;Configure variables per &lt;a href="https://github.com/TracksApp/tracks/blob/v2.2.2/doc/installation.textile#configure-variables"&gt;official documentation.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Back in /srv/tracks finish installation with the new database settings:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;bundle exec rake db:migrate RAILS_ENV=production
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;bundle exec rake db:migrate RAILS_ENV=production
 bundle exec rake assets:precompile
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;The final step is adding a link in /var/www to the public folder of Tracks:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;ln -s /var/www/tracks /srv/tracks/public
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ln -s /var/www/tracks /srv/tracks/public
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Restart Apache to make sure it's up to date:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;/etc/init.d/apache2 restart
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/etc/init.d/apache2 restart
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -2911,7 +2911,7 @@ If everything went well, you should be prompted with the admin account creation 
 &lt;p&gt;First, if you're like me, you don't plan ahead very much when doing software installs. A Mediawiki site I help with has been running for some time, and several links exist pointing to old, ugly URLs like "www.example.com/wiki/index.php/Main_Page". However, the decision makers wanted the links to lose the "index.php" in the URL!&lt;/p&gt;
 &lt;p&gt;That's easy enough to do. The &lt;a href="https://www.mediawiki.org/wiki/Manual:Short_URL"&gt;Mediawiki meta-wiki&lt;/a&gt; has a great write up on the topic. They also link to &lt;a href="http://shorturls.redwerks.org/"&gt;this handy wizard&lt;/a&gt;, which I used.&lt;/p&gt;
 &lt;p&gt;You should come up with something like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;RewriteRule ^/?wiki(/.*)?$ %{DOCUMENT_ROOT}/w/index.php [QSA,L]
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;RewriteRule ^/?wiki(/.*)?$ %{DOCUMENT_ROOT}/w/index.php [QSA,L]
 RewriteRule ^/?$ %{DOCUMENT_ROOT}/w/index.php [QSA,L]
 
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
@@ -2925,7 +2925,7 @@ RewriteRule ^/?w/images/thumb/archive/[0-9a-f]/[0-9a-f][0-9a-f]/([^/]+)/([0-9]+)
 
 
 &lt;p&gt;That's all great, but old links won't work anymore! Let's fix that by adding this before all the other new RewriteRules:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;RewriteRule ^/?wiki/index.php(/(.*))?$ /wiki/$2 [R=301,L]
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;RewriteRule ^/?wiki/index.php(/(.*))?$ /wiki/$2 [R=301,L]
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -2939,7 +2939,7 @@ RewriteRule ^/?w/images/thumb/archive/[0-9a-f]/[0-9a-f][0-9a-f]/([^/]+)/([0-9]+)
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Edit your torrc. It is likely at /etc/tor/torrc. Uncomment the following lines:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;HiddenServiceDir /var/lib/tor/hiddenService/
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;HiddenServiceDir /var/lib/tor/hiddenService/
 HiddenServicePort 80 127.0.0.1:80
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -2948,14 +2948,14 @@ HiddenServicePort 80 127.0.0.1:80
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Restart Tor to apply new settings. In Debian Wheezy: &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo /etc/init.d/tor restart
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo /etc/init.d/tor restart
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Get your hostname&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo cat /var/lib/tor/hiddenService/hostname
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo cat /var/lib/tor/hiddenService/hostname
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -2963,7 +2963,7 @@ HiddenServicePort 80 127.0.0.1:80
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Backup your private key&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo cp /var/lib/tor/hiddenService/privateKey /root
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo cp /var/lib/tor/hiddenService/privateKey /root
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -2973,14 +2973,14 @@ HiddenServicePort 80 127.0.0.1:80
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Enable mod_rewrite (if not already)&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo a2enmod rewrite
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo a2enmod rewrite
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Edit (on a default Debian Wheezy apache install) /var/www/.htaccess and add:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;RewriteEngine On
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;RewriteEngine On
 RewriteCond %{HTTP_HOST} !^youronionaddress.onion$
 RewriteCond %{HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
@@ -3025,39 +3025,39 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 &lt;p&gt;and on all low settings I can easily get a solid 60 FPS in-game, with no dips. Your mileage may vary according to your hardware. &lt;/p&gt;
 &lt;h2&gt;Drivers&lt;/h2&gt;
 &lt;p&gt;First, we need the latest drivers from Nvidia (or ATI, depending on your card). The open source drivers are fine for day-to-day computing, but they don't handle games so well. A rather sexy fellow named Harold Hope made a delightful and very colorful script called &lt;a href="http://smxi.org/site/donations.htm"&gt;sgfxi&lt;/a&gt; that makes installing your latest and greatest binary drivers very easy. Grab a root shell, and run&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;cd /usr/local/bin &amp;amp;&amp;amp; wget -Nc smxi.org/sgfxi &amp;amp;&amp;amp; chmod +x sgfxi
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cd /usr/local/bin &amp;amp;&amp;amp; wget -Nc smxi.org/sgfxi &amp;amp;&amp;amp; chmod +x sgfxi
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Now we need to get into a non-X shell. CTRL-ALT-F1 will do the job nicely. Log in, and run&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo sgfxi
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo sgfxi
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;and follow the wizard. You may have to do this once or twice, to remove the old free-as-in-speech drivers before installing the binary drivers. It should be easy to follow.&lt;/p&gt;
 &lt;h2&gt;Getting Wine&lt;/h2&gt;
 &lt;p&gt;Man, Wine has improved &lt;em&gt;so much&lt;/em&gt; since I last messed with it around the Gutsy Gibon days. Let's add their PPA&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo add-apt-repository ppa:ubuntu-wine/ppa &amp;amp;&amp;amp; sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install wine winetricks
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo add-apt-repository ppa:ubuntu-wine/ppa &amp;amp;&amp;amp; sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install wine winetricks
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;and wait for all the goodies to download.&lt;/p&gt;
 &lt;p&gt;After Wine is installed and situated, we will follow a modified/updated version of the writeup on &lt;a href="http://appdb.winehq.org/objectManager.php?sClass=version&amp;amp;iId=24458"&gt;WineHQ&lt;/a&gt;. &lt;/p&gt;
 &lt;p&gt;Here's what we need to do:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;WINEPREFIX=~/.wine_dota2/ winecfg
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;WINEPREFIX=~/.wine_dota2/ winecfg
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;will set up a new bottle (haha wine puns) to be our Dota 2 machine. &lt;/p&gt;
 &lt;h2&gt;Getting Steamy&lt;/h2&gt;
 &lt;p&gt;Now, let's install Steam!&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;wget http://winetricks.org/winetricks
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;wget http://winetricks.org/winetricks
 WINEPREFIX=~/.wine_dota2/ sh winetricks --no-isolate steam
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Follow the wizard, let it update, and log into Steam. Download Dota 2, and add some launch options. Right click Dota 2 in the games list -&amp;gt; properties -&amp;gt; set launch options. These work for me:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;-novid -console -noforcemaccel -forcemspd -useforcedmparms -high -nod3d9ex -nod3dx -noborder -gl
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-novid -console -noforcemaccel -forcemspd -useforcedmparms -high -nod3d9ex -nod3dx -noborder -gl
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -3191,7 +3191,7 @@ If you are interested in more, &lt;a href="https://en.wikipedia.org/wiki/Public-
 
 &lt;h1&gt;Get latest version from repo&lt;/h1&gt;
 &lt;p&gt;Before starting to work I run this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/bin/bash&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
 git fetch
 git reset --hard origin/source
 git pull origin &lt;span class="nb"&gt;source&lt;/span&gt;
@@ -3204,7 +3204,7 @@ git pull origin master
 
 
 &lt;p&gt;or on Windows:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;call git fetch origin
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;call git fetch origin
 call git reset --hard origin/source
 call git pull origin source
 cd ./_deploy
@@ -3217,7 +3217,7 @@ cd ..
 
 &lt;p&gt;to effectively mirror the existing stuff on the repo, destroying(!) any unpushed changes on my current machine.&lt;/p&gt;
 &lt;h1&gt;After writing a post, page, or otherwise updating the site&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/bin/bash&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
 rake generate
 git add .
 git commit -m &lt;span class="s2"&gt;&amp;quot;updating via script!&amp;quot;&lt;/span&gt;
@@ -3227,7 +3227,7 @@ rake deploy
 
 
 &lt;p&gt;or on Windows&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;call rake generate
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;call rake generate
 call git add .
 call git commit -m &amp;quot;updating via script on Windows!&amp;quot;
 call git push origin source
@@ -3237,16 +3237,16 @@ call rake deploy
 
 &lt;p&gt;This will cleanly and nicely regenerate the static html, and update both the source and site in the repo. &lt;/p&gt;
 &lt;h1&gt;Setting up a computer to blog from for the first time&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git clone git@github.com:username/username.github.com.git
-&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;username.github.com
-username.github.com&lt;span class="nv"&gt;$ &lt;/span&gt;git checkout &lt;span class="nb"&gt;source&lt;/span&gt;
-username.github.com&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir _deploy
-username.github.com&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;_deploy
-username.github.com/_deploy&lt;span class="nv"&gt;$ &lt;/span&gt;git init
-username.github.com/_deploy&lt;span class="nv"&gt;$ &lt;/span&gt;git remote add origin git@github.com:username/username.github.com.git
-username.github.com/_deploy&lt;span class="nv"&gt;$ &lt;/span&gt;git pull origin master
-username.github.com/_deploy&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ..
-username.github.com&lt;span class="err"&gt;$&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone git@github.com:username/username.github.com.git
+$ &lt;span class="nb"&gt;cd&lt;/span&gt; username.github.com
+username.github.com$ git checkout &lt;span class="nb"&gt;source&lt;/span&gt;
+username.github.com$ mkdir _deploy
+username.github.com$ &lt;span class="nb"&gt;cd&lt;/span&gt; _deploy
+username.github.com/_deploy$ git init
+username.github.com/_deploy$ git remote add origin git@github.com:username/username.github.com.git
+username.github.com/_deploy$ git pull origin master
+username.github.com/_deploy$ &lt;span class="nb"&gt;cd&lt;/span&gt; ..
+username.github.com$
 &lt;/pre&gt;&lt;/div&gt;
 
 
